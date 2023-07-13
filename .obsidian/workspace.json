@@ -1,0 +1,176 @@
+{
+  "main": {
+    "id": "5c949641d59498ba",
+    "type": "split",
+    "children": [
+      {
+        "id": "91475eea602e764f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b8d4727c2d188800",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "音视频学习/ffmpeg/2. ffmpeg命令.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "79f9b38a2f7ceeb7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "音视频学习/ffmpeg/2. ffmpeg命令.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "27ffd96b18be074c",
+    "type": "split",
+    "children": [
+      {
+        "id": "6b0274004234f931",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "495e3bdec5d095f8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d6918303f7545881",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ded0f277a24ba84c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a4bc76af6d84c5a6",
+    "type": "split",
+    "children": [
+      {
+        "id": "e77082f80acf3542",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "45d02eb8c1bdd369",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "音视频学习/ffmpeg/2. ffmpeg命令.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "287f132b277c47ff",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "音视频学习/ffmpeg/2. ffmpeg命令.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "38e422abc31d387b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "3432bdf84fc6bb5a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "音视频学习/ffmpeg/2. ffmpeg命令.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "495e3bdec5d095f8",
+  "lastOpenFiles": [
+    "resource/ffmpeg音视频处理流程.svg",
+    "().md",
+    "ffmpeg音视频处理流程.svg",
+    "音视频学习/ffmpeg/2. ffmpeg命令.md",
+    "resource/ffmpeg音视频处理流程 (1).svg",
+    "音视频学习/ffmpeg/1. ffmpeg下载地址集合.md",
+    "resource",
+    "image",
+    "新建文件夹",
+    "音视频学习/ffmpeg",
+    "音视频学习"
+  ]
+}

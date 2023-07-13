@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b8d4727c2d188800",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "音视频学习/ffmpeg/2. ffmpeg命令.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "79f9b38a2f7ceeb7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "音视频学习/ffmpeg/2. ffmpeg命令.md",
+                "file": "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "音视频学习/ffmpeg/2. ffmpeg命令.md",
+                "file": "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "音视频学习/ffmpeg/2. ffmpeg命令.md",
+                "file": "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "音视频学习/ffmpeg/2. ffmpeg命令.md"
+                "file": "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md"
               }
             }
           }
@@ -161,12 +148,12 @@
   },
   "active": "495e3bdec5d095f8",
   "lastOpenFiles": [
+    "音视频学习/ffmpeg/1. ffmpeg下载地址集合.md",
+    "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md",
     "resource/ffmpeg音视频处理流程.svg",
     "().md",
     "ffmpeg音视频处理流程.svg",
-    "音视频学习/ffmpeg/2. ffmpeg命令.md",
     "resource/ffmpeg音视频处理流程 (1).svg",
-    "音视频学习/ffmpeg/1. ffmpeg下载地址集合.md",
     "resource",
     "image",
     "新建文件夹",

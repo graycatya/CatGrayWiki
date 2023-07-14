@@ -146,11 +146,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "495e3bdec5d095f8",
+  "active": "79f9b38a2f7ceeb7",
   "lastOpenFiles": [
     "音视频学习/ffmpeg/1. ffmpeg下载地址集合.md",
     "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md",
-    "resource/ffmpeg音视频处理流程.svg",
+    "resource/音视频学习/ffmpeg音视频处理流程.svg",
+    "resource/音视频学习",
+    "未命名",
     "().md",
     "ffmpeg音视频处理流程.svg",
     "resource/ffmpeg音视频处理流程 (1).svg",

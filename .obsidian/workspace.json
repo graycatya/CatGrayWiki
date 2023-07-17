@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md",
+                "file": "C++/面试宝典/basic knowledge.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 225.5
+    "width": 250.5
   },
   "right": {
     "id": "a4bc76af6d84c5a6",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md",
+                "file": "C++/面试宝典/basic knowledge.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md",
+                "file": "C++/面试宝典/basic knowledge.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md"
+                "file": "C++/面试宝典/basic knowledge.md"
               }
             }
           }
@@ -146,13 +146,16 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "495e3bdec5d095f8",
+  "active": "79f9b38a2f7ceeb7",
   "lastOpenFiles": [
-    "音视频学习/ffmpeg/1. ffmpeg下载地址集合.md",
     "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md",
+    "音视频学习/ffmpeg/1. ffmpeg下载地址集合.md",
+    "C++/面试宝典/basic knowledge.md",
+    "C++/未命名/未命名.canvas",
+    "C++/面试宝典",
+    "C++",
     "resource/音视频学习/ffmpeg音视频处理流程.svg",
     "resource/音视频学习",
-    "未命名",
     "().md",
     "ffmpeg音视频处理流程.svg",
     "resource/ffmpeg音视频处理流程 (1).svg",

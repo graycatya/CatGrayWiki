@@ -6,6 +6,7 @@
       {
         "id": "91475eea602e764f",
         "type": "tabs",
+        "dimension": 68.69806094182826,
         "children": [
           {
             "id": "79f9b38a2f7ceeb7",
@@ -13,11 +14,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "面试宝典/C++/basic knowledge.md",
+                "file": "面试宝典/网络/basic knowledge.md",
                 "mode": "source",
                 "source": false
               }
-            }
+            },
+            "group": "553a3ff192f5b25e"
+          }
+        ]
+      },
+      {
+        "id": "432fe856bc937b51",
+        "type": "tabs",
+        "dimension": 31.301939058171747,
+        "children": [
+          {
+            "id": "fe506fc6aba8c363",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "面试宝典/网络/basic knowledge.md"
+              }
+            },
+            "group": "553a3ff192f5b25e"
           }
         ]
       }
@@ -85,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "面试宝典/C++/basic knowledge.md",
+                "file": "面试宝典/网络/basic knowledge.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "面试宝典/C++/basic knowledge.md",
+                "file": "面试宝典/网络/basic knowledge.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "面试宝典/C++/basic knowledge.md"
+                "file": "面试宝典/网络/basic knowledge.md"
               }
             }
           }
@@ -146,12 +166,14 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "495e3bdec5d095f8",
+  "active": "79f9b38a2f7ceeb7",
   "lastOpenFiles": [
-    "面试宝典/网络/basic knowledge.md",
-    "音视频学习/ffmpeg/1. ffmpeg下载地址集合.md",
-    "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md",
     "面试宝典/C++/basic knowledge.md",
+    "面试宝典/网络/basic knowledge.md",
+    "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md",
+    "面试宝典/网络",
+    "音视频学习/ffmpeg/1. ffmpeg下载地址集合.md",
+    "未命名.canvas",
     "面试宝典/网络",
     "C++/未命名/未命名.canvas",
     "面试宝典/C++",

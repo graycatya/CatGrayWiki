@@ -4,29 +4,8 @@
     "type": "split",
     "children": [
       {
-        "id": "91475eea602e764f",
-        "type": "tabs",
-        "dimension": 72.45179063360881,
-        "children": [
-          {
-            "id": "79f9b38a2f7ceeb7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md",
-                "mode": "source",
-                "source": false
-              }
-            },
-            "group": "553a3ff192f5b25e"
-          }
-        ]
-      },
-      {
         "id": "432fe856bc937b51",
         "type": "tabs",
-        "dimension": 27.548209366391184,
         "children": [
           {
             "id": "fe506fc6aba8c363",
@@ -36,10 +15,22 @@
               "state": {
                 "file": "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md"
               }
-            },
-            "group": "553a3ff192f5b25e"
+            }
+          },
+          {
+            "id": "3b398006dc35a7dd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -123,7 +114,7 @@
               "type": "outgoing-link",
               "state": {
                 "file": "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md",
-                "linksCollapsed": false,
+                "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
             }
@@ -149,7 +140,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -166,27 +158,38 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "79f9b38a2f7ceeb7",
+  "active": "3b398006dc35a7dd",
   "lastOpenFiles": [
-    "音视频学习/ffmpeg/1. ffmpeg下载地址集合.md",
-    "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md",
-    "resource/音视频学习/ffmpeg音视频处理流程.svg",
-    "面试宝典/C++/basic knowledge.md",
-    "面试宝典/网络/basic knowledge.md",
-    "面试宝典/网络",
     "未命名.canvas",
-    "面试宝典/网络",
+    "2023-08-03.md",
+    "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md",
+    "Qt进阶之路/bluetooth/qtbluetooth.md",
+    "Qt进阶之路/bluetooth/Qt Bluetooth QML Types.md",
+    "Qt进阶之路/bluetooth/Qt Bluetooth C++ Classes.md",
+    "Qt进阶之路/bluetooth/蓝牙低功耗概述.md",
+    "resource/Qt进阶之路/peripheral-structure.png",
+    "Qt进阶之路/bluetooth/经典蓝牙概述.md",
+    "Qt进阶之路/webassembly/webassembly环境搭建.md",
+    "resource/Qt进阶之路/webassembly_doc.png",
+    "resource/Qt进阶之路",
+    "Qt进阶之路/Quick学习/1.import用法.md",
+    "Qt进阶之路/Quick学习/2.QML类型系统.md",
+    "Qt进阶之路/bluetooth",
+    "Qt进阶之路/webassembly",
+    "Qt进阶之路/Quick学习/Src/Class2/SignalClass.qml",
+    "Qt进阶之路/Quick学习/Src/Class2/qtquickcontrols2.conf",
+    "Qt进阶之路/Quick学习/Src/Class2/PropertyClass.qml",
+    "Qt进阶之路/Quick学习/Src/Class2/MethodClass.qml",
+    "Qt进阶之路/Quick学习/Src/Class2/EnumClass.qml",
+    "Qt进阶之路/Quick学习/Src/Class2/IdClass.qml",
+    "Qt进阶之路/Quick学习/Src/Class2/Class2.qmlproject",
+    "interview 宝典/C++/basic knowledge.md",
+    "interview 宝典/网络/basic knowledge.md",
+    "音视频学习/ffmpeg/1. ffmpeg下载地址集合.md",
     "C++/未命名/未命名.canvas",
-    "面试宝典/C++",
-    "面试宝典",
-    "resource/音视频学习",
+    "resource/音视频学习/ffmpeg音视频处理流程.svg",
     "().md",
     "ffmpeg音视频处理流程.svg",
-    "resource/ffmpeg音视频处理流程 (1).svg",
-    "resource",
-    "image",
-    "新建文件夹",
-    "音视频学习/ffmpeg",
-    "音视频学习"
+    "resource/ffmpeg音视频处理流程 (1).svg"
   ]
 }

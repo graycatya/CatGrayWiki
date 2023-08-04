@@ -8,22 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fe506fc6aba8c363",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md"
-              }
-            }
-          },
-          {
-            "id": "3b398006dc35a7dd",
+            "id": "68b94c2f980c29ba",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md",
+                "file": "计算机图形学/opengl/1. 前置知识.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4571c9b20239e7bd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "计算机图形学/opengl/2. opengl入门初识.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md",
+                "file": "计算机图形学/opengl/2. opengl入门初识.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,9 +115,9 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md",
-                "linksCollapsed": true,
-                "unlinkedCollapsed": true
+                "file": "计算机图形学/opengl/2. opengl入门初识.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -136,17 +138,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md"
+                "file": "计算机图形学/opengl/2. opengl入门初识.md"
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -158,38 +159,46 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "3b398006dc35a7dd",
+  "active": "495e3bdec5d095f8",
   "lastOpenFiles": [
+    "democode/learnopengl/$null",
+    "democode/learnopengl/glfw/docs/html/search/variables_7.js",
+    "democode/learnopengl/glfw/docs/html/search/variables_7.html",
+    "democode/learnopengl/glfw/docs/html/search/variables_6.html",
+    "democode/learnopengl/glfw/docs/html/search/variables_6.js",
+    "democode/learnopengl/glfw/docs/html/search/variables_5.js",
+    "democode/learnopengl/glfw/docs/html/search/variables_5.html",
+    "democode/learnopengl/glfw/docs/html/search/variables_4.js",
+    "democode/learnopengl/glfw/docs/html/search/typedefs_0.html",
+    "democode/learnopengl/glfw/docs/html/search/variables_3.html",
+    "democode/learnopengl/glfw/docs/html/search/variables_3.js",
+    "democode/learnopengl/glfw/docs/html/search/search_r.png",
+    "democode/learnopengl/glfw/docs/html/search/search_l.png",
+    "democode/learnopengl/glfw/docs/html/search/search_m.png",
+    "democode/learnopengl/glfw/docs/html/search/mag_sel.svg",
+    "democode/learnopengl/glfw/docs/html/search/close.svg",
+    "democode/learnopengl/glfw/docs/html/tab_s.png",
+    "democode/learnopengl/glfw/docs/html/tab_h.png",
+    "democode/learnopengl/glfw/docs/html/tab_b.png",
+    "democode/learnopengl/glfw/docs/html/tab_a.png",
+    "democode/learnopengl/glfw/docs/html/sync_on.png",
+    "计算机图形学/opengl/1. 前置知识.md",
+    "计算机图形学/opengl/2. opengl入门初识.md",
+    "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md",
+    "interview 宝典/网络/basic knowledge.md",
+    "interview 宝典/C++/basic knowledge.md",
     "未命名.canvas",
     "2023-08-03.md",
-    "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md",
     "Qt进阶之路/bluetooth/qtbluetooth.md",
     "Qt进阶之路/bluetooth/Qt Bluetooth QML Types.md",
     "Qt进阶之路/bluetooth/Qt Bluetooth C++ Classes.md",
     "Qt进阶之路/bluetooth/蓝牙低功耗概述.md",
-    "resource/Qt进阶之路/peripheral-structure.png",
     "Qt进阶之路/bluetooth/经典蓝牙概述.md",
     "Qt进阶之路/webassembly/webassembly环境搭建.md",
-    "resource/Qt进阶之路/webassembly_doc.png",
-    "resource/Qt进阶之路",
     "Qt进阶之路/Quick学习/1.import用法.md",
     "Qt进阶之路/Quick学习/2.QML类型系统.md",
-    "Qt进阶之路/bluetooth",
-    "Qt进阶之路/webassembly",
-    "Qt进阶之路/Quick学习/Src/Class2/SignalClass.qml",
-    "Qt进阶之路/Quick学习/Src/Class2/qtquickcontrols2.conf",
-    "Qt进阶之路/Quick学习/Src/Class2/PropertyClass.qml",
-    "Qt进阶之路/Quick学习/Src/Class2/MethodClass.qml",
-    "Qt进阶之路/Quick学习/Src/Class2/EnumClass.qml",
-    "Qt进阶之路/Quick学习/Src/Class2/IdClass.qml",
-    "Qt进阶之路/Quick学习/Src/Class2/Class2.qmlproject",
-    "interview 宝典/C++/basic knowledge.md",
-    "interview 宝典/网络/basic knowledge.md",
     "音视频学习/ffmpeg/1. ffmpeg下载地址集合.md",
     "C++/未命名/未命名.canvas",
-    "resource/音视频学习/ffmpeg音视频处理流程.svg",
-    "().md",
-    "ffmpeg音视频处理流程.svg",
-    "resource/ffmpeg音视频处理流程 (1).svg"
+    "().md"
   ]
 }

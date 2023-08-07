@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机图形学/opengl/2. opengl入门初识.md",
+                "file": "计算机图形学/opengl/3. 你好三角形.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 257.5
+    "width": 200
   },
   "right": {
     "id": "a4bc76af6d84c5a6",
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "计算机图形学/opengl/2. opengl入门初识.md",
+                "file": "计算机图形学/opengl/3. 你好三角形.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "计算机图形学/opengl/2. opengl入门初识.md",
+                "file": "计算机图形学/opengl/3. 你好三角形.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机图形学/opengl/2. opengl入门初识.md"
+                "file": "计算机图形学/opengl/3. 你好三角形.md"
               }
             }
           }
@@ -147,7 +147,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -161,6 +161,16 @@
   },
   "active": "495e3bdec5d095f8",
   "lastOpenFiles": [
+    "resource/计算机图形学/vertex_attribute_pointer.png",
+    "resource/计算机图形学/Snipaste_2023-08-06_17-09-22.png",
+    "计算机图形学/opengl/3. 你好三角形.md",
+    "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md",
+    "音视频学习/ffmpeg/1. ffmpeg下载地址集合.md",
+    "计算机图形学/opengl/1. 前置知识.md",
+    "计算机图形学/opengl/2. opengl入门初识.md",
+    "resource/计算机图形学/Snipaste_2023-08-06_11-00-38.png",
+    "resource/计算机图形学",
+    "resource/新建文件夹",
     "democode/learnopengl/$null",
     "democode/learnopengl/glfw/docs/html/search/variables_7.js",
     "democode/learnopengl/glfw/docs/html/search/variables_7.html",
@@ -169,9 +179,6 @@
     "democode/learnopengl/glfw/docs/html/search/variables_5.js",
     "democode/learnopengl/glfw/docs/html/search/variables_5.html",
     "democode/learnopengl/glfw/docs/html/search/variables_4.js",
-    "democode/learnopengl/glfw/docs/html/search/typedefs_0.html",
-    "democode/learnopengl/glfw/docs/html/search/variables_3.html",
-    "democode/learnopengl/glfw/docs/html/search/variables_3.js",
     "democode/learnopengl/glfw/docs/html/search/search_r.png",
     "democode/learnopengl/glfw/docs/html/search/search_l.png",
     "democode/learnopengl/glfw/docs/html/search/search_m.png",
@@ -180,11 +187,6 @@
     "democode/learnopengl/glfw/docs/html/tab_s.png",
     "democode/learnopengl/glfw/docs/html/tab_h.png",
     "democode/learnopengl/glfw/docs/html/tab_b.png",
-    "democode/learnopengl/glfw/docs/html/tab_a.png",
-    "democode/learnopengl/glfw/docs/html/sync_on.png",
-    "计算机图形学/opengl/1. 前置知识.md",
-    "计算机图形学/opengl/2. opengl入门初识.md",
-    "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md",
     "interview 宝典/网络/basic knowledge.md",
     "interview 宝典/C++/basic knowledge.md",
     "未命名.canvas",
@@ -197,7 +199,6 @@
     "Qt进阶之路/webassembly/webassembly环境搭建.md",
     "Qt进阶之路/Quick学习/1.import用法.md",
     "Qt进阶之路/Quick学习/2.QML类型系统.md",
-    "音视频学习/ffmpeg/1. ffmpeg下载地址集合.md",
     "C++/未命名/未命名.canvas",
     "().md"
   ]

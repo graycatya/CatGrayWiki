@@ -2,4 +2,5 @@ TEMPLATE = subdirs
 
 SUBDIRS += demo0 \
             demo1 \
-            demo2
+            demo2 \
+            demo3

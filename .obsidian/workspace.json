@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机图形学/opengl/1. 前置知识.md",
+                "file": "计算机图形学/opengl/3. 你好三角形.md",
                 "mode": "source",
                 "source": false
               }
@@ -23,16 +23,13 @@
             "id": "4571c9b20239e7bd",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "计算机图形学/opengl/3. 你好三角形.md",
-                "mode": "source",
-                "source": false
+                "file": "resource/计算机图形学/vertex_array_objects.png"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -159,14 +156,16 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "495e3bdec5d095f8",
+  "active": "68b94c2f980c29ba",
   "lastOpenFiles": [
+    "resource/计算机图形学/vertex_array_objects_ebo.png",
+    "计算机图形学/opengl/1. 前置知识.md",
+    "resource/计算机图形学/vertex_array_objects.png",
     "resource/计算机图形学/vertex_attribute_pointer.png",
-    "resource/计算机图形学/Snipaste_2023-08-06_17-09-22.png",
     "计算机图形学/opengl/3. 你好三角形.md",
+    "resource/计算机图形学/Snipaste_2023-08-06_17-09-22.png",
     "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md",
     "音视频学习/ffmpeg/1. ffmpeg下载地址集合.md",
-    "计算机图形学/opengl/1. 前置知识.md",
     "计算机图形学/opengl/2. opengl入门初识.md",
     "resource/计算机图形学/Snipaste_2023-08-06_11-00-38.png",
     "resource/计算机图形学",
@@ -185,8 +184,6 @@
     "democode/learnopengl/glfw/docs/html/search/mag_sel.svg",
     "democode/learnopengl/glfw/docs/html/search/close.svg",
     "democode/learnopengl/glfw/docs/html/tab_s.png",
-    "democode/learnopengl/glfw/docs/html/tab_h.png",
-    "democode/learnopengl/glfw/docs/html/tab_b.png",
     "interview 宝典/网络/basic knowledge.md",
     "interview 宝典/C++/basic knowledge.md",
     "未命名.canvas",

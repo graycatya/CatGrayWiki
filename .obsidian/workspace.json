@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机图形学/opengl/3. 你好三角形.md",
+                "file": "计算机图形学/opengl/4. 着色器.md",
                 "mode": "source",
                 "source": false
               }
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "计算机图形学/opengl/3. 你好三角形.md",
+                "file": "计算机图形学/opengl/4. 着色器.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "计算机图形学/opengl/3. 你好三角形.md",
+                "file": "计算机图形学/opengl/4. 着色器.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机图形学/opengl/3. 你好三角形.md"
+                "file": "计算机图形学/opengl/4. 着色器.md"
               }
             }
           }
@@ -156,13 +156,14 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "68b94c2f980c29ba",
+  "active": "495e3bdec5d095f8",
   "lastOpenFiles": [
+    "计算机图形学/opengl/3. 你好三角形.md",
+    "计算机图形学/opengl/4. 着色器.md",
     "resource/计算机图形学/vertex_array_objects_ebo.png",
     "计算机图形学/opengl/1. 前置知识.md",
     "resource/计算机图形学/vertex_array_objects.png",
     "resource/计算机图形学/vertex_attribute_pointer.png",
-    "计算机图形学/opengl/3. 你好三角形.md",
     "resource/计算机图形学/Snipaste_2023-08-06_17-09-22.png",
     "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md",
     "音视频学习/ffmpeg/1. ffmpeg下载地址集合.md",
@@ -183,7 +184,6 @@
     "democode/learnopengl/glfw/docs/html/search/search_m.png",
     "democode/learnopengl/glfw/docs/html/search/mag_sel.svg",
     "democode/learnopengl/glfw/docs/html/search/close.svg",
-    "democode/learnopengl/glfw/docs/html/tab_s.png",
     "interview 宝典/网络/basic knowledge.md",
     "interview 宝典/C++/basic knowledge.md",
     "未命名.canvas",

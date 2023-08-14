@@ -44,6 +44,10 @@ else: {
     # 执行其他平台相关操作
 }
 
+linux {
+    LIBS += -lglfw3 -lGL -lX11 -lpthread -lXrandr -lXi -ldl
+}
+
 SOURCES += \
     main.cpp
 

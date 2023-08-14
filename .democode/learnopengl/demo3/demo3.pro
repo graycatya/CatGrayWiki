@@ -6,8 +6,7 @@ INCLUDEPATH += $$PARENT_DIR/glfw/include
 
 INCLUDEPATH += $$PARENT_DIR/glad/include
 
-SOURCES += $$PARENT_DIR/glad/src/glad.c \
-    main.cpp
+SOURCES += $$PARENT_DIR/glad/src/glad.c
 
 win32: {
     # 执行Windows平台相关操作
@@ -42,6 +41,10 @@ win32: {
 }
 else: {
     # 执行其他平台相关操作
+}
+
+linux {
+    LIBS += -lglfw3 -lGL -lX11 -lpthread -lXrandr -lXi -ldl
 }
 
 SOURCES += \

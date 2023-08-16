@@ -3,7 +3,6 @@
 #include <GLFW/glfw3native.h>
 #include <iostream>
 #include <QCoreApplication>
-#include <cmath>
 
 // settings
 const unsigned int SCR_WIDTH = 800;
@@ -11,18 +10,19 @@ const unsigned int SCR_HEIGHT = 600;
 
 const char *vertexShaderSource = "#version 330 core\n"
                                  "layout (location = 0) in vec3 aPos;\n"
-                                 "out vec4 vertexColor;\n"
+                                 "layout (location = 1) in vec3 aColor;\n"
+                                 "out vec3 ourColor;"   // 向片段着色器输出一个颜色
                                  "void main()\n"
                                  "{\n"
                                  "   gl_Position = vec4(aPos, 1.0);\n"
-                                 "   vertexColor = vec4(0.5, 0.0, 0.0, 1.0);\n"
+                                 "   ourColor = aColor;\n" // 将ourColor设置为我们从顶点数据那里得到的输入颜色
                                  "}\0";
 const char *fragmentShaderSource = "#version 330 core\n"
                                    "out vec4 FragColor;\n"
-                                   "uniform vec4 ourColor;\n"
+                                   "in vec3 ourColor;\n"
                                    "void main()\n"
                                    "{\n"
-                                   "   FragColor = ourColor;\n"
+                                   "   FragColor = vec4(ourColor, 1.0f);\n"
                                    "}\n\0";
 
 void processInput(GLFWwindow *window)
@@ -80,10 +80,6 @@ int main(int argc, char *argv[])
         return -1;
     }
 
-    int nrAttributes;
-    glGetIntegerv(GL_MAX_VERTEX_ATTRIBS, &nrAttributes);
-    std::cout << "Maximum nr of vertex attributes supported: " << nrAttributes << std::endl;
-
     // build and compile our shader program
     // ------------------------------------
     // 顶点着色器
@@ -128,29 +124,18 @@ int main(int argc, char *argv[])
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
 
-    // 线框模式
-    //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-
-    // 默认模式
-    glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
     // set up vertex data (and buffer(s)) and configure vertex attributes
     // ------------------------------------------------------------------
     float vertices[] = {
-        0.5f, 0.5f, 0.0f, // 右上
-        0.5f, -0.5f, 0.0f, // 右下
-        -0.5f, -0.5f, 0.0f,  // 左下
-        -0.5f, 0.5f, 0.0f   // 左上
+        // 位置               // 颜色
+        -0.5f, -0.5f, 0.0f,  1.0f, 0.0f, 0.0f,  // left
+        0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,  // right
+        0.0f,  0.5f, 0.0f,   0.0f, 0.0f, 1.0f  // top
     };
 
-    unsigned int indices[] = {
-        0,1,3,  // 第一个三角形
-        1,2,3   // 第二个三角形
-    };
-
-    unsigned int VBO, VAO, EBO;
+    unsigned int VBO, VAO;
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
-    glGenBuffers(1, &EBO);
     // 首先绑定顶点数组对象，然后绑定和设置顶点缓冲区，然后配置顶点属性。
     glBindVertexArray(VAO);
 
@@ -160,14 +145,14 @@ int main(int argc, char *argv[])
     //我们使用的任何（在GL_ARRAY_BUFFER目标上的）缓冲调用都会用来配置当前绑定的缓冲(VBO)。然后我们可以调用glBufferData函数，它会把之前定义的顶点数据复制到缓冲的内存中
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 
-    // 复制我们的索引数组到一个索引缓冲中，供OpenGL使用
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
-
-
     //  设置顶点属性指针
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+    // 位置属性
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
+    // 颜色属性
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3* sizeof(float)));
+    glEnableVertexAttribArray(1);
+
 
     // 注意，这是允许的，调用glVertexAttribPointer将VBO注册为顶点属性的绑定顶点缓冲对象，因此之后我们可以安全地解除绑定
     glBindBuffer(GL_ARRAY_BUFFER, 0);
@@ -192,15 +177,10 @@ int main(int argc, char *argv[])
         glClear(GL_COLOR_BUFFER_BIT);
 
         // 画出第一个三角形
-        float timeValue = glfwGetTime();
-        float greenValue = (sin(timeValue) / 2.0f) + 0.5f;
-        int vertexColorLocation = glGetUniformLocation(shaderProgram, "ourColor");
         glUseProgram(shaderProgram);
-        glUniform4f(vertexColorLocation, 0.0f, greenValue, 0.0f, 1.0f);
         glBindVertexArray(VAO); // 因为我们只有一个VAO，所以没有必要每次都绑定它，但是我们这样做是为了让事情更有条理
-        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+        glDrawArrays(GL_TRIANGLES, 0, 3);
         // 函数检查有没有触发什么事件（比如键盘输入、鼠标移动等）、更新窗口状态，并调用对应的回调函数（可以通过回调方法手动设置）。
-        glBindVertexArray(0);
         glfwSwapBuffers(window);
         // 函数会交换颜色缓冲（它是一个储存着GLFW窗口每一个像素颜色值的大缓冲），它在这一迭代中被用来绘制，并且将会作为输出显示在屏幕上。
         glfwPollEvents();
@@ -210,7 +190,6 @@ int main(int argc, char *argv[])
     // ------------------------------------------------------------------------
     glDeleteVertexArrays(1, &VAO);
     glDeleteBuffers(1, &VBO);
-    glDeleteBuffers(1, &EBO);
     glDeleteProgram(shaderProgram);
 
     // 当渲染循环结束后我们需要正确释放/删除之前的分配的所有资源。我们可以在main函数的最后调用glfwTerminate函数来完成。
@@ -218,4 +197,6 @@ int main(int argc, char *argv[])
     //return app.exec();
     return 0;
 }
+
+
 

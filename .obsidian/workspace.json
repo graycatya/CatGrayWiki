@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机图形学/opengl/4. 着色器.md",
+                "file": "计算机图形学/opengl/5. 纹理.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 271.5
   },
   "right": {
     "id": "a4bc76af6d84c5a6",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "计算机图形学/opengl/4. 着色器.md",
+                "file": "计算机图形学/opengl/5. 纹理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "计算机图形学/opengl/4. 着色器.md",
+                "file": "计算机图形学/opengl/5. 纹理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机图形学/opengl/4. 着色器.md"
+                "file": "计算机图形学/opengl/5. 纹理.md"
               }
             }
           }
@@ -134,8 +134,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.5,
-    "collapsed": true
+    "width": 216.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -149,21 +148,24 @@
   },
   "active": "68b94c2f980c29ba",
   "lastOpenFiles": [
+    "().md",
+    "计算机图形学/opengl/5. 纹理.md",
+    "resource/计算机图形学/vertex_attribute_pointer_interleaved_textures.png",
+    "resource/计算机图形学/container.jpg",
+    "resource/计算机图形学/mipmaps.png",
+    "resource/计算机图形学/texture_filtering.png",
+    "resource/计算机图形学/filter_linear.png",
+    "resource/计算机图形学/filter_nearest.png",
+    "计算机图形学/opengl/2. opengl入门初识.md",
     "计算机图形学/opengl/3. 你好三角形.md",
     "计算机图形学/opengl/4. 着色器.md",
-    "resource/计算机图形学/vertex_attribute_pointer_interleaved.png",
+    "resource/计算机图形学/texture_wrapping.png",
     "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md",
-    "Pasted image 20230808143721.png",
-    "resource/音视频学习/Snipaste_2023-08-09_19-16-30.png",
-    "resource/音视频学习/裁剪.png",
-    "resource/计算机图形学/vertex_array_objects_ebo.png",
     "计算机图形学/opengl/1. 前置知识.md",
-    "resource/计算机图形学/vertex_array_objects.png",
-    "resource/计算机图形学/vertex_attribute_pointer.png",
-    "resource/计算机图形学/Snipaste_2023-08-06_17-09-22.png",
+    "resource/计算机图形学/tex_coords.png",
+    "resource/计算机图形学/vertex_attribute_pointer_interleaved.png",
+    "Pasted image 20230808143721.png",
     "音视频学习/ffmpeg/1. ffmpeg下载地址集合.md",
-    "计算机图形学/opengl/2. opengl入门初识.md",
-    "resource/计算机图形学/Snipaste_2023-08-06_11-00-38.png",
     "resource/计算机图形学",
     "resource/新建文件夹",
     "democode/learnopengl/$null",
@@ -174,7 +176,6 @@
     "democode/learnopengl/glfw/docs/html/search/variables_5.js",
     "democode/learnopengl/glfw/docs/html/search/variables_5.html",
     "democode/learnopengl/glfw/docs/html/search/variables_4.js",
-    "democode/learnopengl/glfw/docs/html/search/search_r.png",
     "interview 宝典/网络/basic knowledge.md",
     "interview 宝典/C++/basic knowledge.md",
     "未命名.canvas",
@@ -187,7 +188,6 @@
     "Qt进阶之路/webassembly/webassembly环境搭建.md",
     "Qt进阶之路/Quick学习/1.import用法.md",
     "Qt进阶之路/Quick学习/2.QML类型系统.md",
-    "C++/未命名/未命名.canvas",
-    "().md"
+    "C++/未命名/未命名.canvas"
   ]
 }

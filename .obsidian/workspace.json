@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "432fe856bc937b51",
+        "id": "2eaa4d8a376e32c5",
         "type": "tabs",
         "children": [
           {
-            "id": "68b94c2f980c29ba",
+            "id": "41b3da76295451b4",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,8 +18,29 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "22a71fb0f424f29c",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.12"
+              }
+            }
+          },
+          {
+            "id": "0501149acd55cd77",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.13"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -128,16 +149,28 @@
                 "file": "计算机图形学/opengl/5. 纹理.md"
               }
             }
+          },
+          {
+            "id": "4fad3dc475b0a644",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
           }
         ],
         "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 216.5
+    "width": 216.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "markdown-importer:打开 Markdown 格式转换器": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -146,10 +179,19 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "68b94c2f980c29ba",
+  "active": "0501149acd55cd77",
   "lastOpenFiles": [
-    "().md",
+    "resource/计算机图形学/textures_combined2.png",
+    "resource/计算机图形学/textures_combined.png",
+    "resources/textures/container.jpg",
+    "resources/textures",
+    "resources",
+    "resource/计算机图形学/textures_funky.png",
+    "resource/计算机图形学/textures2.png",
+    "2023-08-30.md",
+    "未命名.canvas",
     "计算机图形学/opengl/5. 纹理.md",
+    "().md",
     "resource/计算机图形学/vertex_attribute_pointer_interleaved_textures.png",
     "resource/计算机图形学/container.jpg",
     "resource/计算机图形学/mipmaps.png",
@@ -159,12 +201,8 @@
     "计算机图形学/opengl/2. opengl入门初识.md",
     "计算机图形学/opengl/3. 你好三角形.md",
     "计算机图形学/opengl/4. 着色器.md",
-    "resource/计算机图形学/texture_wrapping.png",
     "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md",
     "计算机图形学/opengl/1. 前置知识.md",
-    "resource/计算机图形学/tex_coords.png",
-    "resource/计算机图形学/vertex_attribute_pointer_interleaved.png",
-    "Pasted image 20230808143721.png",
     "音视频学习/ffmpeg/1. ffmpeg下载地址集合.md",
     "resource/计算机图形学",
     "resource/新建文件夹",
@@ -174,11 +212,8 @@
     "democode/learnopengl/glfw/docs/html/search/variables_6.html",
     "democode/learnopengl/glfw/docs/html/search/variables_6.js",
     "democode/learnopengl/glfw/docs/html/search/variables_5.js",
-    "democode/learnopengl/glfw/docs/html/search/variables_5.html",
-    "democode/learnopengl/glfw/docs/html/search/variables_4.js",
     "interview 宝典/网络/basic knowledge.md",
     "interview 宝典/C++/basic knowledge.md",
-    "未命名.canvas",
     "2023-08-03.md",
     "Qt进阶之路/bluetooth/qtbluetooth.md",
     "Qt进阶之路/bluetooth/Qt Bluetooth QML Types.md",

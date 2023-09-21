@@ -13,34 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机图形学/opengl/5. 纹理.md",
+                "file": "音视频学习/前置知识/6. 封装格式-音视频同步.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "22a71fb0f424f29c",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.12"
-              }
-            }
-          },
-          {
-            "id": "0501149acd55cd77",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.13"
-              }
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "计算机图形学/opengl/5. 纹理.md",
+                "file": "音视频学习/前置知识/6. 封装格式-音视频同步.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "计算机图形学/opengl/5. 纹理.md",
+                "file": "音视频学习/前置知识/6. 封装格式-音视频同步.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -146,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机图形学/opengl/5. 纹理.md"
+                "file": "音视频学习/前置知识/6. 封装格式-音视频同步.md"
               }
             }
           },
@@ -165,8 +144,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.5,
-    "collapsed": true
+    "width": 216.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -179,25 +157,38 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "0501149acd55cd77",
+  "active": "41b3da76295451b4",
   "lastOpenFiles": [
-    "resource/计算机图形学/textures_combined2.png",
-    "resource/计算机图形学/textures_combined.png",
-    "resources/textures/container.jpg",
+    "音视频学习/前置知识/5. 音频概念.md",
+    "音视频学习/前置知识/6. 封装格式-音视频同步.md",
+    "音视频学习/ffmpeg/6. ",
+    "resource/音视频学习/Compressionencodingmethod.png",
+    "音视频学习/前置知识/Compressionencodingmethod.png",
+    "音视频学习/前置知识/image.png",
+    "resource/音视频学习/Temporalmasking.png",
+    "音视频学习/前置知识/Temporalmasking.png",
+    "resource/音视频学习/Spectralmasking.png",
+    "resource/音视频学习/screen.png",
+    "音视频学习/前置知识/screen.png",
+    "resource/音视频学习/sampling.png",
+    "音视频学习/前置知识/sampling.png",
+    "音视频学习/前置知识/4. 视频概念.md",
+    "音视频学习/前置知识/3. RGB和YUV的转换.md",
+    "音视频学习/前置知识/2. RGB,YUV深入.md",
+    "音视频学习/前置知识/1. 图像基础.md",
+    "音视频学习/前置知识/RGB,YUV深入.md",
+    "音视频学习/前置知识/RGB,",
+    "系统构建/linux/buildroot",
+    "系统构建/linux",
+    "系统构建/android",
+    "未命名",
+    "系统构建",
+    "计算机图形学/opengl/5. 纹理.md",
     "resources/textures",
     "resources",
-    "resource/计算机图形学/textures_funky.png",
-    "resource/计算机图形学/textures2.png",
     "2023-08-30.md",
     "未命名.canvas",
-    "计算机图形学/opengl/5. 纹理.md",
     "().md",
-    "resource/计算机图形学/vertex_attribute_pointer_interleaved_textures.png",
-    "resource/计算机图形学/container.jpg",
-    "resource/计算机图形学/mipmaps.png",
-    "resource/计算机图形学/texture_filtering.png",
-    "resource/计算机图形学/filter_linear.png",
-    "resource/计算机图形学/filter_nearest.png",
     "计算机图形学/opengl/2. opengl入门初识.md",
     "计算机图形学/opengl/3. 你好三角形.md",
     "计算机图形学/opengl/4. 着色器.md",
@@ -205,13 +196,6 @@
     "计算机图形学/opengl/1. 前置知识.md",
     "音视频学习/ffmpeg/1. ffmpeg下载地址集合.md",
     "resource/计算机图形学",
-    "resource/新建文件夹",
-    "democode/learnopengl/$null",
-    "democode/learnopengl/glfw/docs/html/search/variables_7.js",
-    "democode/learnopengl/glfw/docs/html/search/variables_7.html",
-    "democode/learnopengl/glfw/docs/html/search/variables_6.html",
-    "democode/learnopengl/glfw/docs/html/search/variables_6.js",
-    "democode/learnopengl/glfw/docs/html/search/variables_5.js",
     "interview 宝典/网络/basic knowledge.md",
     "interview 宝典/C++/basic knowledge.md",
     "2023-08-03.md",
@@ -222,7 +206,6 @@
     "Qt进阶之路/bluetooth/经典蓝牙概述.md",
     "Qt进阶之路/webassembly/webassembly环境搭建.md",
     "Qt进阶之路/Quick学习/1.import用法.md",
-    "Qt进阶之路/Quick学习/2.QML类型系统.md",
     "C++/未命名/未命名.canvas"
   ]
 }

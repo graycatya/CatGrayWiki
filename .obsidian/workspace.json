@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "9a741d78cad41b14",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "计算机图形学/opengl/5. 纹理.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "音视频学习/SDL2/1. SDL简介.md",
+                "file": "计算机图形学/opengl/5. 纹理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "音视频学习/SDL2/1. SDL简介.md",
+                "file": "计算机图形学/opengl/5. 纹理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "音视频学习/SDL2/1. SDL简介.md"
+                "file": "计算机图形学/opengl/5. 纹理.md"
               }
             }
           },
@@ -157,8 +170,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "8d275f0cc38565a8",
+  "active": "9a741d78cad41b14",
   "lastOpenFiles": [
+    "计算机图形学/opengl/3. 你好三角形.md",
+    "计算机图形学/opengl/2. opengl入门初识.md",
+    "计算机图形学/opengl/1. 前置知识.md",
+    "音视频学习/前置知识/1. 图像基础.md",
     "resource/音视频学习/SDL视频显示的流程.png",
     "resource/音视频学习/微信截图_20230925203231.png",
     "音视频学习/SDL2/1. SDL简介.md",
@@ -174,14 +191,12 @@
     "resource/音视频学习/音视频录制原理.png",
     "音视频学习/前置知识/音视频录制原理.png",
     "音视频学习/前置知识/7. 音视频录制与播放原理.md",
-    "resource/计算机图形学/Snipaste_2023-08-06_11-00-38.png",
     "音视频学习/前置知识/6. 封装格式-音视频同步.md",
     "音视频学习/前置知识/5. 音频概念.md",
     "音视频学习/ffmpeg/6. ",
     "音视频学习/前置知识/4. 视频概念.md",
     "音视频学习/前置知识/3. RGB和YUV的转换.md",
     "音视频学习/前置知识/2. RGB,YUV深入.md",
-    "音视频学习/前置知识/1. 图像基础.md",
     "音视频学习/前置知识/RGB,YUV深入.md",
     "音视频学习/前置知识/RGB,",
     "系统构建/linux/buildroot",
@@ -194,11 +209,8 @@
     "2023-08-30.md",
     "未命名.canvas",
     "().md",
-    "计算机图形学/opengl/2. opengl入门初识.md",
-    "计算机图形学/opengl/3. 你好三角形.md",
     "计算机图形学/opengl/4. 着色器.md",
     "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md",
-    "计算机图形学/opengl/1. 前置知识.md",
     "音视频学习/ffmpeg/1. ffmpeg下载地址集合.md",
     "interview 宝典/网络/basic knowledge.md",
     "interview 宝典/C++/basic knowledge.md",

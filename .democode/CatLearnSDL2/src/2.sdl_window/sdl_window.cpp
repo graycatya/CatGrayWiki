@@ -1,5 +1,6 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <SDL.h>
+#include <cstdlib>
 
 #undef main
 int main()

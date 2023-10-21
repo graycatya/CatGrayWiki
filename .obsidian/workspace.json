@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机图形学/opengl/6. 变换.md",
+                "file": "健康管理师/1.健康管理概论/2.健康管理的基本策略.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "计算机图形学/opengl/6. 变换.md",
+                "file": "健康管理师/1.健康管理概论/2.健康管理的基本策略.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "计算机图形学/opengl/6. 变换.md",
+                "file": "健康管理师/1.健康管理概论/2.健康管理的基本策略.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机图形学/opengl/6. 变换.md"
+                "file": "健康管理师/1.健康管理概论/2.健康管理的基本策略.md"
               }
             }
           },
@@ -159,6 +159,7 @@
   },
   "active": "8d275f0cc38565a8",
   "lastOpenFiles": [
+    "计算机图形学/opengl/6. 变换.md",
     "resource/计算机图形学/vectors_scale.png",
     "resource/计算机图形学/matrix_multiplication.png",
     "resource/计算机图形学/vectors_triangle.png",
@@ -171,7 +172,6 @@
     "resource/音视频学习/音视频学习_复用器.png",
     "resource/音视频学习/音视频学习_编解码器.png",
     "resource/音视频学习/音视频学习-ffmpeg整体结构.png",
-    "resource/音视频学习/音视频学习-导出 (4).png",
     "音视频学习/ffmpeg/3. ffmpeg编程入门.md",
     "计算机图形学/opengl/3. 你好三角形.md",
     "计算机图形学/opengl/2. opengl入门初识.md",

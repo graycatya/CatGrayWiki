@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "健康管理师/1.健康管理概论/2.健康管理的基本策略.md",
+                "file": "健康管理师/2.临床医学基础知识/2.现代医学主要诊断方法和技术.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "健康管理师/1.健康管理概论/2.健康管理的基本策略.md",
+                "file": "健康管理师/2.临床医学基础知识/2.现代医学主要诊断方法和技术.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "健康管理师/1.健康管理概论/2.健康管理的基本策略.md",
+                "file": "健康管理师/2.临床医学基础知识/2.现代医学主要诊断方法和技术.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "健康管理师/1.健康管理概论/2.健康管理的基本策略.md"
+                "file": "健康管理师/2.临床医学基础知识/2.现代医学主要诊断方法和技术.md"
               }
             }
           },
@@ -159,6 +159,9 @@
   },
   "active": "8d275f0cc38565a8",
   "lastOpenFiles": [
+    "健康管理师/2.临床医学基础知识/1.临床医学基础知识概述.md",
+    "健康管理师/2.临床医学基础知识/2.现代医学主要诊断方法和技术.md",
+    "健康管理师/1.健康管理概论/2.健康管理的基本策略.md",
     "计算机图形学/opengl/6. 变换.md",
     "resource/计算机图形学/vectors_scale.png",
     "resource/计算机图形学/matrix_multiplication.png",
@@ -203,9 +206,6 @@
     "音视频学习/ffmpeg/1. ffmpeg下载地址集合.md",
     "interview 宝典/网络/basic knowledge.md",
     "interview 宝典/C++/basic knowledge.md",
-    "2023-08-03.md",
-    "Qt进阶之路/bluetooth/qtbluetooth.md",
-    "Qt进阶之路/bluetooth/Qt Bluetooth QML Types.md",
     "C++/未命名/未命名.canvas"
   ]
 }

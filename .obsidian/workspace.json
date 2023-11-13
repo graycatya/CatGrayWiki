@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "0af9ab1966eea07b",
+        "id": "c59ab183c6b36720",
         "type": "tabs",
         "children": [
           {
-            "id": "8d275f0cc38565a8",
+            "id": "f3b4969c50fd99ec",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "音视频学习/前置知识/1. 图像基础.md",
+                "file": "健康管理师/5.流行病学和医疗统计学基础知识/2. 医学统计学基础知识.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 271.5
+    "width": 200
   },
   "right": {
     "id": "a4bc76af6d84c5a6",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "音视频学习/前置知识/1. 图像基础.md",
+                "file": "健康管理师/5.流行病学和医疗统计学基础知识/2. 医学统计学基础知识.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "音视频学习/前置知识/1. 图像基础.md",
+                "file": "健康管理师/5.流行病学和医疗统计学基础知识/2. 医学统计学基础知识.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "音视频学习/前置知识/1. 图像基础.md"
+                "file": "健康管理师/5.流行病学和医疗统计学基础知识/2. 医学统计学基础知识.md"
               }
             }
           },
@@ -157,55 +157,54 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "8d275f0cc38565a8",
+  "active": "f3b4969c50fd99ec",
   "lastOpenFiles": [
-    "健康管理师/2.临床医学基础知识/2.现代医学主要诊断方法和技术.md",
-    "健康管理师/2.临床医学基础知识/1.临床医学基础知识概述.md",
-    "健康管理师/1.健康管理概论/2.健康管理的基本策略.md",
+    "健康管理师/5.流行病学和医疗统计学基础知识/1. 流行病学基础知识.md",
+    "健康管理师/4.常见慢性病/5. 脑卒中和COPD.md",
+    "resource/健康管理师/Pasted_image_20231110173935.png",
+    "计算机图形学/opengl/7. 坐标系统.md",
+    "resource/健康管理师",
+    "健康管理师/4.常见慢性病/6. 其他常见慢性病.md",
+    "健康管理师/5.流行病学和医疗统计学基础知识/2. 医学统计学基础知识.md",
     "计算机图形学/opengl/6. 变换.md",
-    "resource/计算机图形学/vectors_scale.png",
-    "resource/计算机图形学/matrix_multiplication.png",
-    "resource/计算机图形学/vectors_triangle.png",
-    "resource/计算机图形学/vectors_subtraction.png",
-    "resource/计算机图形学/vectors_addition.png",
-    "音视频学习/SDL2/1. SDL简介.md",
-    "计算机图形学/opengl/5. 纹理.md",
-    "resource/音视频学习/音视频学习_ffmpeg整体结构.png",
-    "resource/音视频学习/音视频学习_解复用器.png",
-    "resource/音视频学习/音视频学习_复用器.png",
-    "resource/音视频学习/音视频学习_编解码器.png",
-    "resource/音视频学习/音视频学习-ffmpeg整体结构.png",
-    "音视频学习/ffmpeg/3. ffmpeg编程入门.md",
-    "计算机图形学/opengl/3. 你好三角形.md",
-    "计算机图形学/opengl/2. opengl入门初识.md",
-    "计算机图形学/opengl/1. 前置知识.md",
-    "音视频学习/前置知识/1. 图像基础.md",
-    "音视频学习/SDL2/1. SDL简介",
-    "音视频学习/SDL2",
-    "音视频学习/ffmpeg/ffmpeg编解码流程.md",
+    "健康管理师/4.常见慢性病/3. 1型糖尿病.md",
+    "健康管理师/4.常见慢性病/2. 高血压.md",
+    "健康管理师/4.常见慢性病/1. 恶性肿瘤.md",
+    "健康管理师/4.常见慢性病/4. 冠状动脉粥样硬化性心脏病.md",
+    "健康管理师/3.预防医学基础知识/2. 临床预防服务.md",
+    "健康管理师/3.预防医学基础知识/3. 社区公共卫生服务.md",
+    "健康管理师/2.临床医学基础知识/3. 现代医主要治疗方法.md",
+    "健康管理师/2.临床医学基础知识/2.现代医学主要诊断方法和技术.md",
+    "未命名.md",
+    "健康管理师/3.预防医学基础知识/1. 预防医学概述.md",
+    "resource/计算机图形学/perspective_orthographic.png",
+    "resource/计算机图形学/perspective_frustum.png",
+    "resource/计算机图形学/perspective.png",
+    "resource/计算机图形学/orthographic_frustum.png",
+    "健康管理师/2.临床医学基础知识/1.临床医学基础知识概述.md",
+    "音视频学习/前置知识/3. RGB和YUV的转换.md",
+    "音视频学习/前置知识/5. 音频概念.md",
     "音视频学习/前置知识/7. 音视频录制与播放原理.md",
     "音视频学习/前置知识/6. 封装格式-音视频同步.md",
-    "音视频学习/前置知识/5. 音频概念.md",
-    "音视频学习/ffmpeg/6. ",
     "音视频学习/前置知识/4. 视频概念.md",
-    "音视频学习/前置知识/3. RGB和YUV的转换.md",
     "音视频学习/前置知识/2. RGB,YUV深入.md",
-    "音视频学习/前置知识/RGB,YUV深入.md",
-    "音视频学习/前置知识/RGB,",
-    "系统构建/linux/buildroot",
-    "系统构建/linux",
-    "系统构建/android",
-    "未命名",
-    "系统构建",
-    "resources/textures",
-    "2023-08-30.md",
-    "未命名.canvas",
-    "().md",
-    "计算机图形学/opengl/4. 着色器.md",
-    "音视频学习/ffmpeg/2. ffmpeg&ffplay&ffprobe命令.md",
+    "音视频学习/前置知识/1. 图像基础.md",
     "音视频学习/ffmpeg/1. ffmpeg下载地址集合.md",
-    "interview 宝典/网络/basic knowledge.md",
-    "interview 宝典/C++/basic knowledge.md",
+    "resource/计算机图形学/container.jpg",
+    "resource/计算机图形学/coordinate_systems.png",
+    "resource/计算机图形学/transformations.png",
+    "健康管理师/16.健康管理相关法律，法规知识",
+    "健康管理师/15.健康管理服务营销",
+    "健康管理师/14.健康保险与健康管理",
+    "健康管理师/13.医学伦理与职业道德",
+    "健康管理师/12.健康信息学",
+    "健康管理师/11.康复信息学",
+    "健康管理师/10.中医养生学基础知识",
+    "健康管理师/9.心理健康",
+    "健康管理师/8.身体活动基本知识",
+    "resource/计算机图形学/vectors_scale.png",
+    "resource/计算机图形学/matrix_multiplication.png",
+    "未命名.canvas",
     "C++/未命名/未命名.canvas"
   ]
 }

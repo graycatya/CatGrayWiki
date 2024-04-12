@@ -135,7 +135,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -159,8 +161,17 @@
   },
   "active": "786f7374d8107927",
   "lastOpenFiles": [
-    "计算机图形学/opengl/1.opengl基础/复习.md",
+    "interview 宝典/C++/basic knowledge.md",
+    "interview 宝典/网络/basic knowledge.md",
+    "Qt进阶之路/webassembly/webassembly环境搭建.md",
+    "Qt进阶之路/Quick学习/2.QML类型系统.md",
+    "Qt进阶之路/bluetooth/Qt Bluetooth C++ Classes.md",
+    "Qt进阶之路/bluetooth/Qt Bluetooth QML Types.md",
+    "Qt进阶之路/bluetooth/qtbluetooth.md",
+    "Qt进阶之路/bluetooth/蓝牙低功耗概述.md",
+    "Qt进阶之路/bluetooth/经典蓝牙概述.md",
     "计算机图形学/opengl/2.opengl光照/1. 颜色.md",
+    "计算机图形学/opengl/1.opengl基础/复习.md",
     "计算机图形学/opengl/1.opengl基础/8. 摄像机.md",
     "light_reflection.png",
     "resource/计算机图形学/light_reflection.png",
@@ -179,25 +190,17 @@
     "计算机图形学/opengl/1.opengl基础/2. opengl入门初识.md",
     "健康管理师/2.临床医学基础知识/3. 现代医主要治疗方法.md",
     "计算机图形学/opengl/1.opengl基础/5. 纹理.md",
-    "音视频学习/前置知识/1. 图像基础.md",
     "resource/计算机图形学/camera_pitch.png",
     "camera_yaw.png",
     "resource/计算机图形学/camera_yaw.png",
     "resource/计算机图形学/camera_triangle.png",
     "未命名.canvas",
-    "计算机图形学/opengl/1.opengl基础/6. 变换.md",
     "resource/计算机图形学/camera_pitch_yaw_roll.png.part",
     "resource/计算机图形学/camera_pitch_yaw_roll.png",
-    "计算机图形学/opengl/1.opengl基础/3. 你好三角形.md",
-    "计算机图形学/opengl/1.opengl基础/4. 着色器.md",
     "resource/计算机图形学/camera_axes.png",
     "resource/计算机图形学/3d_rotate.png",
     "resource/计算机图形学/3d_rod.png",
     "计算机图形学/opengl/1.opengl基础",
-    "健康管理师/7.营养与食品安全/3. 蛋白质.md",
-    "健康管理师/7.营养与食品安全/2. 碳水化合物、脂类.md",
-    "健康管理师/7.营养与食品安全/1. 营养素.md",
-    "健康管理师/6.健康教育学/3. 健康教育计划的设计、实施与评价.md",
     "resource/健康管理师",
     "健康管理师/16.健康管理相关法律，法规知识",
     "健康管理师/15.健康管理服务营销",

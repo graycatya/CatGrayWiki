@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机图形学/opengl/2.opengl光照/1. 颜色.md",
+                "file": "计算机图形学/opengl/2.opengl光照/2. 基础光照.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "计算机图形学/opengl/2.opengl光照/1. 颜色.md",
+                "file": "计算机图形学/opengl/2.opengl光照/2. 基础光照.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "计算机图形学/opengl/2.opengl光照/1. 颜色.md",
+                "file": "计算机图形学/opengl/2.opengl光照/2. 基础光照.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机图形学/opengl/2.opengl光照/1. 颜色.md"
+                "file": "计算机图形学/opengl/2.opengl光照/2. 基础光照.md"
               }
             }
           },
@@ -161,6 +161,13 @@
   },
   "active": "786f7374d8107927",
   "lastOpenFiles": [
+    "计算机图形学/opengl/2.opengl光照/1. 颜色.md",
+    "计算机图形学/opengl/2.opengl光照/2. 基础光照.md",
+    "计算机图形学/opengl/1.opengl基础/8. 摄像机.md",
+    "人工智能/大语言模型/大语言模型.md",
+    "人工智能/大语言模型/大语言",
+    "人工智能/大语言模型",
+    "人工智能",
     "interview 宝典/C++/basic knowledge.md",
     "interview 宝典/网络/basic knowledge.md",
     "Qt进阶之路/webassembly/webassembly环境搭建.md",
@@ -170,9 +177,7 @@
     "Qt进阶之路/bluetooth/qtbluetooth.md",
     "Qt进阶之路/bluetooth/蓝牙低功耗概述.md",
     "Qt进阶之路/bluetooth/经典蓝牙概述.md",
-    "计算机图形学/opengl/2.opengl光照/1. 颜色.md",
     "计算机图形学/opengl/1.opengl基础/复习.md",
-    "计算机图形学/opengl/1.opengl基础/8. 摄像机.md",
     "light_reflection.png",
     "resource/计算机图形学/light_reflection.png",
     "音视频学习/ffmpeg/3. ffmpeg编程入门.md",
@@ -188,8 +193,6 @@
     "计算机图形学/opengl/1.opengl基础/1. 前置知识.md",
     "计算机图形学/opengl/2.opengl光照",
     "计算机图形学/opengl/1.opengl基础/2. opengl入门初识.md",
-    "健康管理师/2.临床医学基础知识/3. 现代医主要治疗方法.md",
-    "计算机图形学/opengl/1.opengl基础/5. 纹理.md",
     "resource/计算机图形学/camera_pitch.png",
     "camera_yaw.png",
     "resource/计算机图形学/camera_yaw.png",
@@ -205,9 +208,6 @@
     "健康管理师/16.健康管理相关法律，法规知识",
     "健康管理师/15.健康管理服务营销",
     "健康管理师/14.健康保险与健康管理",
-    "健康管理师/13.医学伦理与职业道德",
-    "健康管理师/12.健康信息学",
-    "健康管理师/11.康复信息学",
     "C++/未命名/未命名.canvas"
   ]
 }

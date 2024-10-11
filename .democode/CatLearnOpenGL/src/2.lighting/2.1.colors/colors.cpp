@@ -74,8 +74,8 @@ int main()
 
     // 构建并编译着色器z程序
     // ------------------------------------
-    Shader lightingShader("1.colors.vs", "1.colors.fs");
-    Shader lightCubeShader("1.light_cube.vs", "1.light_cube.fs");
+    Shader lightingShader("2.1.colors.vs", "2.1.colors.fs");
+    Shader lightCubeShader("2.1.light_cube.vs", "2.1.light_cube.fs");
 
         // 设置顶点数据（和缓冲区）并配置顶点属性
     // ------------------------------------------------------------------

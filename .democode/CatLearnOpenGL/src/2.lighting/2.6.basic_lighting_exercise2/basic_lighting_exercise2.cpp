@@ -74,8 +74,8 @@ int main()
 
     // 构建并编译着色器z程序
     // ------------------------------------
-    Shader lightingShader("basic_specular.vs", "basic_specular.fs");
-    Shader lightCubeShader("light_cube.vs", "light_cube.fs");
+    Shader lightingShader("2.6.basic_specular.vs", "2.6.basic_specular.fs");
+    Shader lightCubeShader("2.6.light_cube.vs", "2.6.light_cube.fs");
 
         // 设置顶点数据（和缓冲区）并配置顶点属性
     // ------------------------------------------------------------------

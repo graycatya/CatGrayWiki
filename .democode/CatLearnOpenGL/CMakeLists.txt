@@ -106,6 +106,8 @@ set(2.lighting
     2.4.basic_lighting_specular
     2.5.basic_lighting_exercise1
     2.6.basic_lighting_exercise2
+    2.7.basic_lighting_exercise3
+    2.8.materials
 )
 
 configure_file(configuration/root_directory.h.in configuration/root_directory.h)

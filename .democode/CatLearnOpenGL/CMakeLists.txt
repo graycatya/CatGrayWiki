@@ -108,6 +108,8 @@ set(2.lighting
     2.6.basic_lighting_exercise2
     2.7.basic_lighting_exercise3
     2.8.materials
+    2.9.materials_exercise1
+    2.10.lighting_maps_diffuse_map
 )
 
 configure_file(configuration/root_directory.h.in configuration/root_directory.h)

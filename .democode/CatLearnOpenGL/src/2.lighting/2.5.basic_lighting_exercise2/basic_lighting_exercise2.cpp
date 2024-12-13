@@ -74,8 +74,8 @@ int main()
 
     // 构建并编译着色器z程序
     // ------------------------------------
-    Shader lightingShader("2.3.basic_diffuse.vs", "2.3.basic_diffuse.fs");
-    Shader lightCubeShader("2.3.light_cube.vs", "2.3.light_cube.fs");
+    Shader lightingShader("2.5.basic_specular.vs", "2.5.basic_specular.fs");
+    Shader lightCubeShader("2.5.light_cube.vs", "2.5.light_cube.fs");
 
         // 设置顶点数据（和缓冲区）并配置顶点属性
     // ------------------------------------------------------------------
@@ -164,6 +164,9 @@ int main()
         // ------
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+        lightPos.x = 1.0f + sin(glfwGetTime()) * 2.0f;
+        lightPos.y = sin(glfwGetTime() / 2.0f) * 1.0f;
 
         lightingShader.use();
         lightingShader.setVec3("objectColor", 1.0f, 0.5f, 0.31f);

@@ -119,6 +119,7 @@ set(2.lighting
     4.5.lighting_maps_exercise4
     
     5.1.light_casters_directional
+    5.2.light_casters_point
 )
 
 configure_file(configuration/root_directory.h.in configuration/root_directory.h)

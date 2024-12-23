@@ -120,6 +120,7 @@ set(2.lighting
     
     5.1.light_casters_directional
     5.2.light_casters_point
+    5.3.light_casters_spot
 )
 
 configure_file(configuration/root_directory.h.in configuration/root_directory.h)

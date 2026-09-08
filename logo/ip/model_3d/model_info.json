@@ -1,0 +1,49 @@
+{
+  "objects": 58,
+  "vertices": 785841,
+  "triangles": 1568414,
+  "materials": [
+    "Ear rims | reference #747474",
+    "Eyes | painted white catchlights",
+    "Fur | UV painted tabby stripes",
+    "Fur | reference #979797",
+    "Hoodie | quiet topstitch",
+    "Hoodie | recessed seam shade",
+    "Hoodie | reference #575555",
+    "Hoodie | rounded folded edge",
+    "Hoodie | soft rib knit",
+    "Inner ears | reference #FFA3A3",
+    "Iris | deep amber edge",
+    "Iris | golden orange",
+    "Iris | lower honey highlight",
+    "Nose | reference #2D2D2D",
+    "Outlines and seams | charcoal",
+    "Pupil | round black",
+    "Tongue | warm pink",
+    "Undershirt | white neckline only"
+  ],
+  "dimensions_blender_units": [
+    3.65,
+    3.4084,
+    4.355
+  ],
+  "body_revision": {
+    "revision": "v2_continuous_body",
+    "garment_object": "Hoodie • continuous torso and sleeves",
+    "legs_object": "Body • connected pelvis legs and paws",
+    "hood_object": "Hood • continuous folded cloth",
+    "notes": "Continuous shoulders and sleeves, draped thick hood, integrated legs and paws."
+  },
+  "world_bounds": {
+    "min": [
+      -1.8249813318252563,
+      -1.6464462280273438,
+      0.0
+    ],
+    "max": [
+      1.8249813318252563,
+      1.7619999647140503,
+      4.355000019073486
+    ]
+  }
+}

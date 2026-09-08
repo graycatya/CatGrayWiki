@@ -1,0 +1,15 @@
+{
+  "head_objects_unchanged": 29,
+  "body_mesh_checks": {
+    "Hoodie • continuous torso and sleeves": {
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    "Body • connected pelvis legs and paws": {
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    }
+  }
+}

@@ -5,6 +5,7 @@ Coordinates: X left/right, -Y front, Z up. One unit = 100 reference pixels.
 The original PNGs stay untouched. All generated assets live beside this script.
 """
 import bpy
+import bmesh
 import math
 import json
 import sys
@@ -15,6 +16,7 @@ import numpy as np
 OUT = Path(__file__).resolve().parent
 REF = OUT.parent
 QUICK = '--quick' in sys.argv
+BUILD_ONLY = '--build-only' in sys.argv
 TAU = math.tau
 bpy.context.preferences.filepaths.save_version=0
 bpy.ops.object.select_all(action='SELECT')
@@ -56,9 +58,6 @@ pink = material('Inner ears | reference #FFA3A3', 'FFA3A3', .6)
 tongue_mat = material('Tongue | warm pink', 'FF939A', .5)
 dark = material('Outlines and seams | charcoal', '232320', .67)
 nose_mat = material('Nose | reference #2D2D2D', '2D2D2D', .5)
-cloth = material('Hoodie | reference #575555', '575555', .85)
-cloth_edge = material('Hoodie edge | subtly raised fabric', '5B5959', .85)
-white = material('Undershirt | white neckline only', 'F4F3F0', .78)
 iris_outer = material('Iris | deep amber edge', '995207', .34)
 iris_gold = material('Iris | golden orange', 'F79708', .3)
 iris_light = material('Iris | lower honey highlight', 'FFC451', .34)
@@ -139,17 +138,19 @@ def interpolate(table, z, column):
             return ((2*t**3-3*t*t+1)*a[column] + (t**3-2*t*t+t)*(b[0]-a[0])*ma
                     +(-2*t**3+3*t*t)*b[column]+(t**3-t*t)*(b[0]-a[0])*mb)
 
-# Width is fitted to the frontal drawing; depth follows the side drawing.
+# Frontal widths remain traced from the original front/back silhouettes.
+# A fuller upper occiput and straighter rear wall replace the spherical back.
+# The three drawings are stylized rather than exact orthographic projections.
 # Ring columns: height, half width, front Y, rear Y.
 HEAD = [
-    (1.405,.001,.12,.12), (1.445,.47,-.35,.60),
-    (1.51,.79,-.67,.85), (1.64,1.11,-.96,1.09),
-    (1.82,1.34,-1.19,1.31), (2.04,1.51,-1.40,1.47),
-    (2.27,1.64,-1.54,1.55), (2.51,1.72,-1.57,1.60),
-    (2.78,1.76,-1.49,1.58), (3.03,1.76,-1.36,1.52),
-    (3.28,1.72,-1.26,1.43), (3.57,1.63,-1.18,1.25),
-    (3.83,1.47,-1.02,1.01), (4.03,1.25,-.83,.80),
-    (4.20,.91,-.58,.53), (4.30,.54,-.34,.30),
+    (1.405,.001,.12,.12), (1.445,.47,-.37,.64),
+    (1.51,.79,-.70,.95), (1.64,1.11,-1.00,1.23),
+    (1.82,1.34,-1.24,1.43), (2.04,1.51,-1.43,1.55),
+    (2.27,1.64,-1.56,1.62), (2.51,1.72,-1.60,1.645),
+    (2.78,1.76,-1.51,1.63), (3.03,1.76,-1.37,1.595),
+    (3.28,1.72,-1.27,1.54), (3.57,1.63,-1.18,1.435),
+    (3.83,1.47,-1.02,1.265), (4.03,1.25,-.83,1.055),
+    (4.20,.91,-.58,.755), (4.30,.54,-.34,.400),
     (4.355,.001,-.03,-.03)
 ]
 POWER = 1.72
@@ -186,7 +187,13 @@ def ring_mesh(name,table,mat,power=POWER,nz=110,nt=160):
     faces.append(tuple(reversed(range(nt))))
     k=nz*(nt+1)
     faces.append(tuple(k+i for i in range(nt)))
-    return mesh(name,vertices,faces,mat,uv)
+    obj=mesh(name,vertices,faces,mat,uv)
+    # Weld the UV seam geometrically while retaining independent UV loops.
+    bm=bmesh.new();bm.from_mesh(obj.data)
+    bmesh.ops.remove_doubles(bm,verts=list(bm.verts),dist=.00001)
+    bmesh.ops.recalc_face_normals(bm,faces=list(bm.faces))
+    bm.to_mesh(obj.data);bm.free()
+    return obj
 
 # Paint the markings into a UV texture. They never float above the skin.
 # The contour landmarks and base colors are traced from the supplied drawings.
@@ -229,7 +236,8 @@ tex.pack()
 headmat=fur.copy(); headmat.name='Fur | UV painted tabby stripes'
 node=headmat.node_tree.nodes.new('ShaderNodeTexImage'); node.image=tex
 headmat.node_tree.links.new(node.outputs['Color'],headmat.node_tree.nodes.get('Principled BSDF').inputs['Base Color'])
-head=ring_mesh('Head • continuous shaped surface',HEAD,headmat)
+head=ring_mesh('Head • continuous shaped surface',HEAD,headmat,nz=180,nt=256)
+head['revision']='v3: fuller upper occiput, straighter rear contour, retained frontal widths'
 
 # Rounded 3D ear shells, with inset pink patches facing forwards and sideways.
 def closed_catmull(points,steps=10):
@@ -310,26 +318,49 @@ for cx,label in ((-.765,'L'),(.775,'R')):
         x=cx+ox;z=EYE_Z+oz
         ellipsoid('Eye '+label+' • catchlight '+str(idx+1),(x,eye_y(x,z,cx)-.034,z),(sz,.014,sz*1.15),sparkle,40,24)
 
-# Compact nose, the original small smile and a pink, pointed tongue.
+# Face edges are embedded into the skin; shallow relief provides volume.
+# Dense samples are projected after interpolation to avoid floating Beziers.
+def face_line(name,xzs,radius=.012,offset=.004,cyclic=False):
+    source=[Vector((x,z,0)) for x,z in xzs]
+    samples=[]
+    segments=len(source) if cyclic else len(source)-1
+    for i in range(segments):
+        def point(j):
+            return source[j%len(source)] if cyclic else source[max(0,min(len(source)-1,j))]
+        p0,p1,p2,p3=[point(j) for j in (i-1,i,i+1,i+2)]
+        for k in range(16):
+            t=k/16
+            v=.5*((2*p1)+(-p0+p2)*t+(2*p0-5*p1+4*p2-p3)*t*t+(-p0+3*p1-3*p2+p3)*t*t*t)
+            samples.append((v.x,front_surface(v.x,v.y,offset),v.y))
+    if not cyclic:
+        x,z=xzs[-1];samples.append((x,front_surface(x,z,offset),z))
+    data=bpy.data.curves.new(name,'CURVE');data.dimensions='3D'
+    data.bevel_depth=radius;data.bevel_resolution=4;data.use_fill_caps=True
+    spline=data.splines.new('POLY');spline.points.add(len(samples)-1)
+    for p,co in zip(spline.points,samples):p.co=(*co,1)
+    spline.use_cyclic_u=cyclic
+    obj=bpy.data.objects.new(name,data);model.objects.link(obj);data.materials.append(dark)
+    return obj
+
 nose_outline=[(-.14,2.565),(-.02,2.591),(.14,2.565),(.106,2.515),(0,2.492),(-.097,2.515)]
-patch('Face • little charcoal nose',nose_outline,lambda x,z:front_surface(x,z,.045),nose_mat,.035,10)
+patch('Face • little charcoal nose',nose_outline,lambda x,z:front_surface(x,z,-.001),nose_mat,.026,14)
 tongue_outline=[(-.122,2.356),(0,2.374),(.124,2.356),(.062,2.219),(0,2.151),(-.067,2.226)]
-patch('Face • pink tongue',tongue_outline,lambda x,z:front_surface(x,z,.028),tongue_mat,.015,12,dark,.014)
+patch('Face • pink tongue',tongue_outline,lambda x,z:front_surface(x,z,.0005),tongue_mat,.007,14)
+face_line('Face • pink tongue • perimeter',tongue_outline,.012,.004,True)
 for name,xzs in [('philtrum',[(0,2.516),(0,2.447)]),
                  ('smile L',[(0,2.443),(-.065,2.371),(-.165,2.343),(-.245,2.354)]),
                  ('smile R',[(0,2.443),(.065,2.371),(.165,2.343),(.245,2.354)])]:
-    curve('Face • '+name,[(x,front_surface(x,z,.048),z) for x,z in xzs],.013,dark)
+    face_line('Face • '+name,xzs)
 
-# Continuous tailored body; the approved head geometry above stays unchanged.
+# One unclothed skin volume with a short inset neck and a painted belly oval.
 sys.path.insert(0,str(OUT))
-from body_refinement import build_body
+from bare_body import build_body
 body_revision=build_body(mesh=mesh,curve=curve,ellipsoid=ellipsoid,patch=patch,
                          ring_mesh=ring_mesh,interpolate=interpolate,
-                         front_surface=front_surface,fur=fur,cloth=cloth,
-                         white=white,material=material)
+                         front_surface=front_surface,fur=fur,material=material,out=OUT)
 
-# A single continuous gray curled tail. It starts through the rear of the hoodie.
-tail_points=[(-.10,.47,.555),(-.36,.74,.575),(-.79,1.03,.661),
+# A single continuous gray curled tail. It joins the lower back under the skin.
+tail_points=[(-.10,.28,.555),(-.36,.65,.575),(-.79,1.03,.661),
              (-1.18,1.27,.862),(-1.36,1.45,1.17),(-1.30,1.53,1.34),
              (-1.12,1.60,1.355),(-1.02,1.63,1.20)]
 curve('Tail • continuous upright curl',tail_points,.132,fur)
@@ -343,7 +374,8 @@ root.empty_display_size=.30
 for obj in list(model.objects):
     if obj!=root: obj.parent=root
 root['reference']='正视.png / 侧视.png / 背视.png'
-root['style']='Gray tabby, circular amber eyes, charcoal hoodie, curled tail'
+root['style']='Gray tabby, circular amber eyes, unclothed short body, white oval belly, curled tail'
+root['revision']='v3: unclothed body, revised occiput, skin-conforming nose and mouth'
 root['scale_note']='Reference proportions; no real-world dimension supplied. Z-up, front -Y.'
 root['production_note']='Static character; separate editable meshes, no rig or animation.'
 
@@ -362,13 +394,22 @@ scene=bpy.context.scene
 scene.render.engine='CYCLES'
 scene.cycles.samples=24 if QUICK else 96
 scene.cycles.use_denoising=True
+scene.cycles.device='CPU'
 try:
     prefs=bpy.context.preferences.addons['cycles'].preferences
-    prefs.compute_device_type='OPTIX';prefs.get_devices()
-    for d in prefs.devices: d.use=d.type=='OPTIX' and '4060' in d.name
-    scene.cycles.device='GPU'
+    for backend in ('METAL','OPTIX','CUDA'):
+        try:
+            prefs.compute_device_type=backend;prefs.get_devices()
+            devices=[d for d in prefs.devices if d.type==backend]
+            if devices:
+                for d in prefs.devices:d.use=d in devices
+                scene.cycles.device='GPU'
+                print('RENDER_DEVICE',backend,[d.name for d in devices],flush=True)
+                break
+        except Exception:
+            continue
 except Exception:
-    scene.cycles.device='CPU'
+    pass
 scene.cycles.max_bounces=6
 scene.world.color=(.45,.45,.45)
 scene.world.use_nodes=True
@@ -409,7 +450,9 @@ cams={
     'side':camera('Camera • Side',(12,0,2.22),(0,0,2.22),5.14),
     'back':camera('Camera • Back',(0,12,2.22),(0,0,2.22),5.14),
     'hero':camera('Camera • Three quarter',(7,-12,6.1),(0,0,2.23),5.58),
-    'body':camera('Camera • Body detail',(4.7,-8,3.0),(0,0,.86),2.30),
+    'body':camera('Camera • Body detail',(2.6,-8,2.5),(0,0,.90),2.15),
+    'face_side':camera('Camera • Face contact detail',(8,-7,3.15),(0,-1.51,2.39),.70),
+    'rear_quarter':camera('Camera • Rear quarter',(7,12,5.8),(0,0,2.23),5.58),
 }
 scene.camera=cams['hero']
 scene.render.resolution_x=1200;scene.render.resolution_y=1200
@@ -459,7 +502,7 @@ stats['dimensions_blender_units']=[round(stats['world_bounds']['max'][i]-stats['
 for obj in export_objects:bpy.data.objects.remove(obj,do_unlink=True)
 bpy.data.collections.remove(export_coll)
 
-for name in ('front','side','back','hero','body'):
+for name in (() if BUILD_ONLY else ('front','side','back','hero','body','face_side','rear_quarter')):
     scene.camera=cams[name]
     scene.render.resolution_x=800 if QUICK else 1200
     scene.render.resolution_y=800 if QUICK else 1200

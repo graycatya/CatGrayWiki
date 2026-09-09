@@ -1,39 +1,42 @@
-# CatGray IP 三视图建模
+# CatGray IP 三视图模型 · v3 去衣与造型修正版
 
-依据上级目录的 `正视.png`、`侧视.png`、`背视.png` 制作，原图和 `logo` 下的旧模型均未覆盖。
+依据上级目录的 `正视.png`、`侧视.png`、`背视.png` 修改现有模型。原三视图未改动，修改前的完整 v2 模型、脚本和预览保存在 `revisions/v2`。
 
-## 使用文件
+## 本次修改
+
+- 移除帽衫、帽领、白色内衬、袖口、抽绳、拉链、口袋和所有服装结构；重新建立灰色胸腹、肩颈和手臂。
+- 裸身采用圆润短身、短手短腿，躯干、肩颈、双臂、髋部和腿脚为一个连续封闭曲面。
+- 保留正背面的头宽、头高和五官定位，增加后脑上部体积，使后侧轮廓更接近参考图，调整后下部收束。
+- 鼻边缘嵌入脸面，保留浅浅鼻头体积；嘴线和舌头轮廓沿头部表面密采样贴合，消除原本悬浮的间隙。
+- 重建宽而短的肩颈过渡，颈上端深入头部，维持原有大头短身比例。
+- 身体正面为竖向白色椭圆毛色，直接绘入皮肤基础颜色贴图，无额外腹部壳片。腹纹宽 0.78、高 0.92，中心高度 0.91，白色为 `#F4F3F0`，灰色为 `#979797`。
+
+三张参考图都穿着衣服，裸身与白色腹纹采用本次确认的造型方向。三视图是风格化手绘稿，侧面头顶和耳朵高度与正背面并非严格一致，因此以正背面宽高比例为基准协调侧面轮廓。
+
+## 文件
 
 | 文件 | 用途 |
 | --- | --- |
-| `CatGray_IP.blend` | Blender 可编辑工程，包含分件模型、材质、已打包贴图、三视图参考、五台相机和灯光 |
-| `CatGray_IP.glb` | 通用静态模型，内嵌材质和贴图，仅含角色，可导入支持 glTF 2.0 的软件 |
-| `preview_hero.png` | 1200 × 1200 三分之四角度渲染 |
-| `preview_body.png` | 1200 × 1200 身体近景，用于检查领口、衣服和腿脚 |
-| `preview_front.png` / `preview_side.png` / `preview_back.png` | 正交三视图渲染 |
-| `CatGray_Fur_BaseColor.png` | 头部灰色虎斑 UV 贴图，2048 × 1536 |
-| `build_cat.py` | 可重复生成模型的 Blender 脚本 |
-| `body_refinement.py` | 连续衣身、帽领及一体腿脚的建模模块，由主脚本调用 |
-| `model_info.json` | 导出模型的对象数、面数、材质和边界数据 |
+| `CatGray_IP.blend` | 可编辑 Blender 工程，含模型、打包贴图、隐藏三视图参考、七台相机与灯光 |
+| `CatGray_IP.glb` | 可导入常见 3D 软件的静态角色模型，内嵌两张贴图 |
+| `preview_hero.png` | 三分之四角度预览 |
+| `preview_front.png` / `preview_side.png` / `preview_back.png` | 正交三视图 |
+| `preview_rear_quarter.png` | 后脑与背部斜角预览 |
+| `preview_body.png` / `preview_face_side.png` | 身体及鼻嘴贴合近景 |
+| `CatGray_Fur_BaseColor.png` | 头部虎斑贴图，2048 × 1536 |
+| `CatGray_BareBody_BaseColor.png` | 灰色裸身与白色腹纹贴图，2048 × 2048 |
+| `build_cat.py` | 主建模和导出脚本 |
+| `bare_body.py` | 连续裸身及白色椭圆腹纹模块，参数位于文件顶部 |
+| `model_info.json` | 对象、面数、材质、尺寸及腹纹参数 |
+| `qa/unclothed_revision_verification.json` | 几何连接、服装移除、鼻嘴贴合、腹纹及头部修形检查 |
+| `qa/export_verification.json` | 实际交付 GLB 的重新导入检查 |
 
-## 还原依据
+## 编辑与生成
 
-- 以正视图确定头身比例、头部外轮廓和五官位置，结合侧视图确定头部、帽衫和尾巴的深度。
-- 保留灰色大头、四道额纹、两侧各三道虎斑、粉色耳内、圆形黑瞳与金橙色虹膜、小鼻子和吐舌表情。
-- 保留深灰帽衫、折叠帽领、背部 V 形帽兜、抽绳、前袋、袖口、灰色短腿及卷尾。
-- 虎斑通过 UV 贴图附着在连续头部表面；眼睛、耳朵、五官、帽衫和尾巴为实际三维几何。
-- 毛色 `#979797`、斑纹及耳缘 `#747474`、帽衫 `#575555`、耳内 `#FFA3A3` 取自原图。渲染中的观感会随灯光变化。
+在 Blender 选择 `CATGRAY_IP • Model root` 可整体变换角色。角色位于 `CATGRAY • Character` 集合，场景灯光相机位于 `STUDIO • Cameras and lighting`，三视图参考位于 `REFERENCES • Original three views`，默认隐藏。
 
-三张图属于风格化设计稿，眼睛在侧面的可见宽度、头顶与耳顶关系、尾巴正背投影并非严格一致的工程投影。本模型以正视比例为基准，对这些位置作了连贯的三维调整，因此不宣称三个投影逐像素重合。
+使用 Blender 在后台执行 `build_cat.py` 可生成工程、GLB 和七张渲染图。`--quick` 使用 800 像素预览和较低采样；`--build-only` 仅生成模型。主脚本和 `bare_body.py` 必须位于同一目录。脚本使用 Blender 自带 Python 和 NumPy。
 
-## 编辑说明
+Blender 为 Z 轴向上、角色正面朝 -Y；GLB 使用 glTF 的 Y 轴向上约定。尺寸采用相对比例，尚未指定厘米尺度。当前交付为静态模型，头部、身体、耳朵和五官仍为可单独编辑的对象，未做骨骼绑定或 3D 打印用全角色一体化。
 
-当前版本为 **v2 身体修整版**。头部、五官和耳朵保留上一版几何；衣身与袖子已融合为一个连续曲面，帽领重做为贴合肩部的有厚度布面，口袋、拉链和收口改为贴服的布料结构。髋部、双腿与脚掌合并成连续造型，消除了原有球体与扁椭球脚掌的拼接线。
-
-上一版工程、GLB、建模脚本及四张渲染图保存在 `revisions/v1`。`qa/body_revision_verification.json` 记录头部几何对比与衣身、腿部的连通性检查；`qa/export_verification.json` 记录交付 GLB 的重新导入检查。
-
-在 Blender 中选择 `CATGRAY_IP • Model root` 可整体移动、旋转或缩放角色。角色放在 `CATGRAY • Character` 集合，灯光及相机在 `STUDIO • Cameras and lighting` 集合；原图参考在 `REFERENCES • Original three views` 集合，默认隐藏。
-
-模型使用相对比例，未指定实际厘米尺寸。Blender 工程为 Z 轴向上、角色正面朝 -Y；GLB 按 glTF 规范导出为 Y 轴向上。当前交付为静态分件模型，尚未进行骨骼绑定、动画或面向 3D 打印的一体化处理。
-
-使用 Blender 4.1 或更新版本，在后台运行 `build_cat.py` 可重新生成工程、GLB 和渲染图；请将 `body_refinement.py` 与主脚本放在同一目录。脚本使用 Blender 自带 Python 与 NumPy，无额外依赖。
+`body_refinement.py` 与 `qa/verify_body_revision.py` 是 v2 服装版的历史脚本，当前 v3 不再调用。历史 v2 的验证记录请以 `revisions/v2/qa` 为准。

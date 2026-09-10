@@ -1,0 +1,85 @@
+00:00.134  translation      | WARNING Falling back to standard locale ("C")
+/Volumes/CatDisk/codes/catgray/CatGrayWiki/logo/ip/model_3d/build_cat.py:48: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat.use_nodes = True
+RENDER_DEVICE METAL ['Apple M4 (GPU - 10 cores)']
+/Volumes/CatDisk/codes/catgray/CatGrayWiki/logo/ip/model_3d/build_cat.py:420: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world.use_nodes=True
+Info: Saved as "CatGray_IP.blend"
+INFO Draco is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.dylib
+INFO MeshOptimizer is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.dylib
+09:46:40 | INFO: Starting glTF 2.0 export
+09:46:40 | INFO: Extracting primitive: Body volume • torso and broad neck.001
+09:46:41 | INFO: Primitives created: 1
+09:46:41 | INFO: Extracting primitive: Ear L • reference gray shell and smaller pink inset.001
+09:46:41 | INFO: Primitives created: 2
+09:46:41 | INFO: Extracting primitive: Ear R • reference gray shell and smaller pink inset.001
+09:46:41 | INFO: Primitives created: 2
+09:46:41 | INFO: Extracting primitive: Eye L • amber outer edge.001
+09:46:41 | INFO: Primitives created: 1
+09:46:41 | INFO: Extracting primitive: Sphere.006
+09:46:41 | INFO: Primitives created: 1
+09:46:41 | INFO: Extracting primitive: Sphere.007
+09:46:41 | INFO: Primitives created: 1
+09:46:41 | INFO: Extracting primitive: Eye L • charcoal socket.001
+09:46:41 | INFO: Primitives created: 1
+09:46:41 | INFO: Extracting primitive: Eye L • honey crescent
+09:46:41 | INFO: Primitives created: 1
+09:46:41 | INFO: Extracting primitive: Eye L • orange iris.001
+09:46:41 | INFO: Primitives created: 1
+09:46:41 | INFO: Extracting primitive: Eye L • pupil.001
+09:46:41 | INFO: Primitives created: 1
+09:46:41 | INFO: Extracting primitive: Eye R • amber outer edge.001
+09:46:41 | INFO: Primitives created: 1
+09:46:41 | INFO: Extracting primitive: Sphere.008
+09:46:41 | INFO: Primitives created: 1
+09:46:41 | INFO: Extracting primitive: Sphere.009
+09:46:41 | INFO: Primitives created: 1
+09:46:41 | INFO: Extracting primitive: Eye R • charcoal socket.001
+09:46:41 | INFO: Primitives created: 1
+09:46:41 | INFO: Extracting primitive: Eye R • honey crescent
+09:46:41 | INFO: Primitives created: 1
+09:46:41 | INFO: Extracting primitive: Eye R • orange iris.001
+09:46:41 | INFO: Primitives created: 1
+09:46:41 | INFO: Extracting primitive: Eye R • pupil.001
+09:46:41 | INFO: Primitives created: 1
+09:46:41 | INFO: Extracting primitive: Face • little charcoal nose.001
+09:46:41 | INFO: Primitives created: 1
+09:46:41 | INFO: Extracting primitive: Face • philtrum
+09:46:41 | INFO: Primitives created: 1
+09:46:41 | INFO: Extracting primitive: Face • pink tongue • perimeter
+09:46:41 | INFO: Primitives created: 1
+09:46:41 | INFO: Extracting primitive: Face • pink tongue.001
+09:46:41 | INFO: Primitives created: 1
+09:46:41 | INFO: Extracting primitive: Face • smile L
+09:46:41 | INFO: Primitives created: 1
+09:46:41 | INFO: Extracting primitive: Face • smile R
+09:46:41 | INFO: Primitives created: 1
+09:46:41 | INFO: Extracting primitive: Head • continuous shaped surface.001
+09:46:41 | INFO: Primitives created: 1
+09:46:41 | INFO: Extracting primitive: Tail • continuous upright curl
+09:46:41 | INFO: Primitives created: 1
+09:46:41 | INFO: Extracting primitive: Sphere.010
+09:46:41 | INFO: Primitives created: 1
+09:46:41 | INFO: Finished glTF 2.0 export in 0.3865830898284912 s
+
+RENDER_VIEW front
+00:17.564  render           | Saved: '/Volumes/CatDisk/codes/catgray/CatGrayWiki/logo/ip/model_3d/preview_front.png'
+RENDER_VIEW side
+00:24.740  render           | Saved: '/Volumes/CatDisk/codes/catgray/CatGrayWiki/logo/ip/model_3d/preview_side.png'
+RENDER_VIEW back
+00:31.973  render           | Saved: '/Volumes/CatDisk/codes/catgray/CatGrayWiki/logo/ip/model_3d/preview_back.png'
+RENDER_VIEW hero
+00:39.415  render           | Saved: '/Volumes/CatDisk/codes/catgray/CatGrayWiki/logo/ip/model_3d/preview_hero.png'
+RENDER_VIEW body
+00:47.071  render           | Saved: '/Volumes/CatDisk/codes/catgray/CatGrayWiki/logo/ip/model_3d/preview_body.png'
+RENDER_VIEW face_side
+00:54.671  render           | Saved: '/Volumes/CatDisk/codes/catgray/CatGrayWiki/logo/ip/model_3d/preview_face_side.png'
+RENDER_VIEW rear_quarter
+01:02.194  render           | Saved: '/Volumes/CatDisk/codes/catgray/CatGrayWiki/logo/ip/model_3d/preview_rear_quarter.png'
+RENDER_VIEW ear
+01:09.693  render           | Saved: '/Volumes/CatDisk/codes/catgray/CatGrayWiki/logo/ip/model_3d/preview_ear.png'
+Info: Saved as "CatGray_IP.blend"
+CATGRAY_COMPLETE {"objects": 26, "vertices": 370319, "triangles": 738158, "materials": ["Ear rims | reference #747474", "Eyes | painted white catchlights", "Fur | UV painted tabby stripes", "Fur | bare body with UV painted white oval", "Fur | reference #979797", "Inner ears | reference #FFA3A3", "Iris | deep amber edge", "Iris | golden orange", "Iris | lower honey highlight", "Nose | reference #2D2D2D", "Outlines and seams | charcoal", "Pupil | round black", "Tongue | warm pink"], "dimensions_blender_units": [3.5769, 3.4892, 4.5658], "body_revision": {"revision": "v5 relaxed rounded arms on unchanged v4 body proportions", "body_object": "Body \u2022 continuous bare skin and painted oval belly", "skin_connected_components": 1, "skin_non_manifold_edges": 0, "evaluated_triangles": 441936, "voxel_size": 0.015, "width_with_arms": 2.0763, "height": 1.886, "torso_width_scale_from_v3": 1.12, "body_height_scale_from_v3": 1.15, "arm_attachment": "Relaxed inward curve and forward rounded paws; free inner edges below shoulders", "belly": {"type": "packed sRGB basecolor image, front surface only", "texture": "CatGray_BareBody_BaseColor.png", "resolution": [2048, 2048], "width": 0.88, "height": 1.06, "center_z": 1.05, "edge_width": 0.0078, "fur_srgb": "#979797", "belly_srgb": "#F4F3F0"}}, "ear_revision": {"revision": "v5 convex reference ears with smaller pink region", "objects": ["Ear L \u2022 reference gray shell and smaller pink inset", "Ear R \u2022 reference gray shell and smaller pink inset"], "outline_curves": false, "shell_thickness": 0.17, "shell_srgb": "#747474", "pink_srgb": "#FFA3A3", "pink_radius": 0.59}, "head_revision": {"geometry": "Preserved v3 head and face", "translation_z": 0.21075}, "world_bounds": {"min": [-1.7884403467178345, -1.6214314699172974, 0.0], "max": [1.7884403467178345, 1.867799997329712, 4.5657501220703125]}}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit

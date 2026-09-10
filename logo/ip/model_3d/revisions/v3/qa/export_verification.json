@@ -1,0 +1,10 @@
+{
+  "glb_header": "valid glTF 2.0 binary",
+  "embedded_images": 2,
+  "mesh_objects_after_reimport": 32,
+  "world_bounds_match": true,
+  "triangles": 636482,
+  "materials": 13,
+  "external_dependencies": false,
+  "reimport_render": "qa/glb_reimport_hero.png"
+}

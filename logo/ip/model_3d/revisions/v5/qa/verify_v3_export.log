@@ -1,0 +1,41 @@
+00:00.064  translation      | WARNING Falling back to standard locale ("C")
+00:00.330  blend            | Read blend: "/Volumes/CatDisk/codes/catgray/CatGrayWiki/logo/ip/model_3d/CatGray_IP.blend"
+14:11:53 | INFO: Data are loaded, start creating Blender stuff
+14:11:53 | INFO: Blender create Mesh node Body volume • torso and broad neck.001
+14:11:53 | INFO: Blender create Mesh node Ear L • inset pink • perimeter
+14:11:53 | INFO: Blender create Mesh node Ear L • inset pink.001
+14:11:53 | INFO: Blender create Mesh node Ear L • rounded outer shell • perimeter
+14:11:53 | INFO: Blender create Mesh node Ear L • rounded outer shell.001
+14:11:53 | INFO: Blender create Mesh node Ear R • inset pink • perimeter
+14:11:53 | INFO: Blender create Mesh node Ear R • inset pink.001
+14:11:53 | INFO: Blender create Mesh node Ear R • rounded outer shell • perimeter
+14:11:53 | INFO: Blender create Mesh node Ear R • rounded outer shell.001
+14:11:53 | INFO: Blender create Mesh node Eye L • amber outer edge.001
+14:11:53 | INFO: Blender create Mesh node Sphere.006
+14:11:53 | INFO: Blender create Mesh node Sphere.007
+14:11:53 | INFO: Blender create Mesh node Eye L • charcoal socket.001
+14:11:53 | INFO: Blender create Mesh node Eye L • honey crescent
+14:11:53 | INFO: Blender create Mesh node Eye L • orange iris.001
+14:11:53 | INFO: Blender create Mesh node Eye L • pupil.001
+14:11:53 | INFO: Blender create Mesh node Eye R • amber outer edge.001
+14:11:53 | INFO: Blender create Mesh node Sphere.008
+14:11:53 | INFO: Blender create Mesh node Sphere.009
+14:11:53 | INFO: Blender create Mesh node Eye R • charcoal socket.001
+14:11:53 | INFO: Blender create Mesh node Eye R • honey crescent
+14:11:53 | INFO: Blender create Mesh node Eye R • orange iris.001
+14:11:53 | INFO: Blender create Mesh node Eye R • pupil.001
+14:11:53 | INFO: Blender create Mesh node Face • little charcoal nose.001
+14:11:53 | INFO: Blender create Mesh node Face • philtrum
+14:11:53 | INFO: Blender create Mesh node Face • pink tongue • perimeter
+14:11:53 | INFO: Blender create Mesh node Face • pink tongue.001
+14:11:53 | INFO: Blender create Mesh node Face • smile L
+14:11:53 | INFO: Blender create Mesh node Face • smile R
+14:11:53 | INFO: Blender create Mesh node Head • continuous shaped surface.001
+14:11:53 | INFO: Blender create Mesh node Tail • continuous upright curl
+14:11:53 | INFO: Blender create Mesh node Sphere.010
+14:11:53 | INFO: glTF import finished in 0.57s
+00:08.018  render           | Saved: '/Volumes/CatDisk/codes/catgray/CatGrayWiki/logo/ip/model_3d/qa/glb_reimport_hero.png'
+EXPORT_VERIFIED {"glb_header": "valid glTF 2.0 binary", "embedded_images": 2, "mesh_objects_after_reimport": 32, "world_bounds_match": true, "triangles": 636482, "materials": 13, "external_dependencies": false, "reimport_render": "qa/glb_reimport_hero.png"}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit

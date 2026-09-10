@@ -1,0 +1,46 @@
+00:00.080  translation      | WARNING Falling back to standard locale ("C")
+00:00.326  blend            | Read blend: "/Volumes/CatDisk/codes/catgray/CatGrayWiki/logo/ip/model_3d/revisions/v3/CatGray_IP.blend"
+00:00.668  blend            | Read blend: "/Volumes/CatDisk/codes/catgray/CatGrayWiki/logo/ip/model_3d/revisions/v4/CatGray_IP.blend"
+00:02.150  blend            | Read blend: "/Volumes/CatDisk/codes/catgray/CatGrayWiki/logo/ip/model_3d/CatGray_IP.blend"
+{
+  "v3": {
+    "projected_pink_area": 0.12075227272727608,
+    "projected_visible_ear_area": 0.3293243801652984,
+    "visible_pink_fraction": 0.36666666666666664,
+    "pink_bounds_xz": [
+      1.2645454545454544,
+      3.665818181818182,
+      1.672272727272727,
+      4.148272727272727
+    ]
+  },
+  "v4": {
+    "projected_pink_area": 0.14028235537190473,
+    "projected_visible_ear_area": 0.22430103305785745,
+    "visible_pink_fraction": 0.6254200146092038,
+    "pink_bounds_xz": [
+      1.2349999999999999,
+      3.699090909090909,
+      1.7431818181818182,
+      4.176
+    ]
+  },
+  "v5": {
+    "projected_pink_area": 0.10761206611570547,
+    "projected_visible_ear_area": 0.312350247933893,
+    "visible_pink_fraction": 0.3445237096097356,
+    "pink_bounds_xz": [
+      1.1227272727272726,
+      3.676909090909091,
+      1.619090909090909,
+      4.159363636363636
+    ]
+  },
+  "front_reference": {
+    "pink_pixels_right_ear": 1058,
+    "pink_area_at_100_pixels_per_unit": 0.1058
+  }
+}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit

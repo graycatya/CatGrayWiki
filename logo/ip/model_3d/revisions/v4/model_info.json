@@ -1,0 +1,76 @@
+{
+  "objects": 26,
+  "vertices": 357479,
+  "triangles": 712462,
+  "materials": [
+    "Eyes | painted white catchlights",
+    "Fur | UV painted tabby stripes",
+    "Fur | bare body with UV painted white oval",
+    "Fur | reference #979797",
+    "Inner ears | reference #FFA3A3",
+    "Iris | deep amber edge",
+    "Iris | golden orange",
+    "Iris | lower honey highlight",
+    "Nose | reference #2D2D2D",
+    "Outlines and seams | charcoal",
+    "Pupil | round black",
+    "Tongue | warm pink"
+  ],
+  "dimensions_blender_units": [
+    3.6098,
+    3.4892,
+    4.5658
+  ],
+  "body_revision": {
+    "revision": "v4 fuller taller body with free arm inner edges",
+    "body_object": "Body • continuous bare skin and painted oval belly",
+    "skin_connected_components": 1,
+    "skin_non_manifold_edges": 0,
+    "evaluated_triangles": 436880,
+    "voxel_size": 0.015,
+    "width_with_arms": 2.0953,
+    "height": 1.886,
+    "torso_width_scale_from_v3": 1.12,
+    "body_height_scale_from_v3": 1.15,
+    "arm_attachment": "Shoulders only; visible gap along forearms and lower upper arms",
+    "belly": {
+      "type": "packed sRGB basecolor image, front surface only",
+      "texture": "CatGray_BareBody_BaseColor.png",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "width": 0.88,
+      "height": 1.06,
+      "center_z": 1.05,
+      "edge_width": 0.0078,
+      "fur_srgb": "#979797",
+      "belly_srgb": "#F4F3F0"
+    }
+  },
+  "ear_revision": {
+    "revision": "v4 rounded ears without drawn borders",
+    "objects": [
+      "Ear L • soft rounded shell and inset pink",
+      "Ear R • soft rounded shell and inset pink"
+    ],
+    "outline_curves": false,
+    "shell_thickness": 0.23
+  },
+  "head_revision": {
+    "geometry": "Preserved v3 head and face",
+    "translation_z": 0.21075
+  },
+  "world_bounds": {
+    "min": [
+      -1.8048917055130005,
+      -1.6214314699172974,
+      0.0
+    ],
+    "max": [
+      1.8048917055130005,
+      1.867799997329712,
+      4.5657501220703125
+    ]
+  }
+}

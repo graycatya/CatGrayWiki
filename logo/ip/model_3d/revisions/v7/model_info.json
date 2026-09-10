@@ -1,0 +1,87 @@
+{
+  "objects": 28,
+  "vertices": 354571,
+  "triangles": 706638,
+  "materials": [
+    "Ear rims | reference #747474",
+    "Eyes | painted white catchlights",
+    "Fur | UV painted tabby stripes",
+    "Fur | bare body with UV painted white oval",
+    "Fur | reference #979797",
+    "Inner ears | reference #FFA3A3",
+    "Iris | deep amber edge",
+    "Iris | golden orange",
+    "Iris | lower honey highlight",
+    "Nose | reference #2D2D2D",
+    "Outlines and seams | charcoal",
+    "Pupil | round black",
+    "Tongue | warm pink"
+  ],
+  "dimensions_blender_units": [
+    3.541,
+    3.4892,
+    4.5658
+  ],
+  "body_revision": {
+    "revision": "v6 close rounded independent arms and smooth hip/leg transition",
+    "body_object": "Body • continuous bare skin and painted oval belly",
+    "arm_objects": [
+      "Arm L • independent rounded limb",
+      "Arm R • independent rounded limb"
+    ],
+    "skin_connected_components": 1,
+    "skin_non_manifold_edges": 0,
+    "evaluated_triangles": 327472,
+    "voxel_size": 0.015,
+    "width_with_arms": 1.99,
+    "height": 1.886,
+    "torso_width_scale_from_v3": 1.12,
+    "body_height_scale_from_v3": 1.15,
+    "arm_attachment": "Independent closed quad meshes, narrow flank clearance, concealed shoulder caps",
+    "rigging_status": "Shoulder origins and joint landmarks only; skeleton and weights not yet created",
+    "belly": {
+      "type": "packed sRGB basecolor image, front surface only",
+      "texture": "CatGray_BareBody_BaseColor.png",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "width": 0.88,
+      "height": 1.06,
+      "center_z": 1.05,
+      "edge_width": 0.0078,
+      "fur_srgb": "#979797",
+      "belly_srgb": "#F4F3F0"
+    }
+  },
+  "ear_revision": {
+    "revision": "v7 thicker rounded ear backs with preserved front silhouette and colors",
+    "objects": [
+      "Ear L • reference gray shell and smaller pink inset",
+      "Ear R • reference gray shell and smaller pink inset"
+    ],
+    "outline_curves": false,
+    "shell_thickness": 0.36,
+    "rear_offset": 0.095,
+    "front_center_offset": -0.07699999999999999,
+    "shell_srgb": "#747474",
+    "pink_srgb": "#FFA3A3",
+    "pink_radius": 0.57
+  },
+  "head_revision": {
+    "geometry": "Preserved v3 head and face",
+    "translation_z": 0.21075
+  },
+  "world_bounds": {
+    "min": [
+      -1.77051842212677,
+      -1.6214314699172974,
+      0.0
+    ],
+    "max": [
+      1.7705183029174805,
+      1.867799997329712,
+      4.5657501220703125
+    ]
+  }
+}

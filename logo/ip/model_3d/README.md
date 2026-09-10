@@ -1,42 +1,71 @@
-# CatGray IP 三视图模型 · v3 去衣与造型修正版
+# CatGray IP · v8 骨骼与基础动画
 
-依据上级目录的 `正视.png`、`侧视.png`、`背视.png` 修改现有模型。原三视图未改动，修改前的完整 v2 模型、脚本和预览保存在 `revisions/v2`。
+基于已确认的 v7 模型添加骨骼和动画。原静态工程、导出文件、脚本与预览完整保存在 `revisions/v7`。头部、加厚耳朵、身体比例、独立手臂、圆润腿根与白色椭圆腹纹均保留。
 
-## 本次修改
+## 已完成
 
-- 移除帽衫、帽领、白色内衬、袖口、抽绳、拉链、口袋和所有服装结构；重新建立灰色胸腹、肩颈和手臂。
-- 裸身采用圆润短身、短手短腿，躯干、肩颈、双臂、髋部和腿脚为一个连续封闭曲面。
-- 保留正背面的头宽、头高和五官定位，增加后脑上部体积，使后侧轮廓更接近参考图，调整后下部收束。
-- 鼻边缘嵌入脸面，保留浅浅鼻头体积；嘴线和舌头轮廓沿头部表面密采样贴合，消除原本悬浮的间隙。
-- 重建宽而短的肩颈过渡，颈上端深入头部，维持原有大头短身比例。
-- 身体正面为竖向白色椭圆毛色，直接绘入皮肤基础颜色贴图，无额外腹部壳片。腹纹宽 0.78、高 0.92，中心高度 0.91，白色为 `#F4F3F0`，灰色为 `#979797`。
+- 43 根原生骨骼，其中 38 根用于变形，包含头身、双臂、腿脚、耳朵和七段尾骨。
+- 全部 28 个角色网格完成归一化权重，每个顶点最多受四根骨骼影响。
+- 头部、眼睛和鼻嘴共同跟随头骨，保持五官贴合。
+- 双臂保留独立网格，肩根渐变连接胸部；手臂采用 FK 控制。
+- 双腿采用脚部 IK 控制和膝盖方向控制，走路支撑阶段脚底接地。
+- 肘、腕、膝、踝设辅助骨骼，分散弯曲，减轻短粗四肢的折痕。
+- 三个独立动作，24 FPS。GLB 包含烘焙后的通用骨骼动画，原生 Blender 工程保留约束与控制器。
 
-三张参考图都穿着衣服，裸身与白色腹纹采用本次确认的造型方向。三视图是风格化手绘稿，侧面头顶和耳朵高度与正背面并非严格一致，因此以正背面宽高比例为基准协调侧面轮廓。
+| 动作 | 名称 | 动作长度 | 播放方式 |
+| --- | --- | --- | --- |
+| 待机呼吸 | `Idle_Breathe` | 3 秒 / 72 帧 | 可循环；轻微呼吸、头部与尾巴摆动 |
+| 挥手 | `Wave` | 4 秒 / 96 帧 | 抬手、摆动、回到原姿势 |
+| 原地走路 | `Walk_InPlace` | 1.5 秒 / 36 帧 | 可循环；预览视频重复两轮 |
 
-## 文件
+## 打开与播放
+
+打开 `CatGray_IP.blend`，时间轴已排好 **1–240 帧的 10 秒预览**：待机、挥手、两轮走路。按空格即可播放。
+
+需要编辑单个动作时，在 NLA 编辑器禁用 `播放预览 • 待机 / 挥手 / 走路` 轨道，再在动作编辑器选择对应 Action。三个同名的独立 NLA 轨道默认静音，作为动作存档保留。不要同时打开叠加的多个动作轨道。
+
+选择 `CATGRAY_RIG` 后进入姿态模式：
+
+| 控制项 | 用途 |
+| --- | --- |
+| `CTRL_Root` | 整个角色的移动和旋转 |
+| `Pelvis` / `Spine` / `Chest` / `Head` | 骨盆、躯干和头部姿态 |
+| `Clavicle.L/R`、`UpperArm.L/R`、`Forearm.L/R`、`Hand.L/R` | 肩、上臂、前臂和手掌 |
+| `CTRL_Foot_IK.L/R` | 脚的位置与朝向 |
+| `CTRL_Knee_Pole.L/R` | 膝盖的弯曲方向 |
+| `Ear.L/R` | 耳朵轻微摆动 |
+| `Tail.01`–`Tail.07` | 尾巴分段控制 |
+
+辅助关节和腿部变形骨骼默认放在隐藏的骨骼集合中。原静态手臂对象的肩部原点仍保留，但绑定后应通过骨骼摆姿势。
+
+## 交付文件
 
 | 文件 | 用途 |
 | --- | --- |
-| `CatGray_IP.blend` | 可编辑 Blender 工程，含模型、打包贴图、隐藏三视图参考、七台相机与灯光 |
-| `CatGray_IP.glb` | 可导入常见 3D 软件的静态角色模型，内嵌两张贴图 |
-| `preview_hero.png` | 三分之四角度预览 |
-| `preview_front.png` / `preview_side.png` / `preview_back.png` | 正交三视图 |
-| `preview_rear_quarter.png` | 后脑与背部斜角预览 |
-| `preview_body.png` / `preview_face_side.png` | 身体及鼻嘴贴合近景 |
-| `CatGray_Fur_BaseColor.png` | 头部虎斑贴图，2048 × 1536 |
-| `CatGray_BareBody_BaseColor.png` | 灰色裸身与白色腹纹贴图，2048 × 2048 |
-| `build_cat.py` | 主建模和导出脚本 |
-| `bare_body.py` | 连续裸身及白色椭圆腹纹模块，参数位于文件顶部 |
-| `model_info.json` | 对象、面数、材质、尺寸及腹纹参数 |
-| `qa/unclothed_revision_verification.json` | 几何连接、服装移除、鼻嘴贴合、腹纹及头部修形检查 |
-| `qa/export_verification.json` | 实际交付 GLB 的重新导入检查 |
+| `CatGray_IP.blend` | 可编辑骨骼、权重、三个动作和播放时间轴 |
+| `CatGray_IP.glb` | 含三个骨骼动画片段的模型，内嵌两张贴图 |
+| `animations/CatGray_Animation_Preview.mp4` | 10 秒完整预览，720 × 720，24 FPS |
+| `animations/Idle_Breathe.mp4` | 待机呼吸 |
+| `animations/Wave.mp4` | 挥手 |
+| `animations/Walk_InPlace.mp4` | 两轮原地走路 |
+| `preview_animation.png` | 动画预览封面 |
+| `preview_front.png` 等原有预览 | v7 静态外形参考 |
+| `model_info.json` | 模型与骨骼、动作参数 |
+| `qa/rig_verification.json` | 原始外形、权重、循环、接地和穿插检查 |
+| `qa/export_bake_verification.json` | 原生约束姿势与烘焙骨骼姿势的比较 |
+| `qa/animated_export_verification.json` | 交付 GLB 重新导入后的动作、贴图与动态尺寸检查 |
+| `qa/animation_video_verification.json` | MP4 时长、帧数与解码检查 |
 
-## 编辑与生成
+GLB 的脚部 IK 和辅助约束已经转换为普通骨骼关键帧；它用于播放和跨软件导入，进一步调整控制器请使用 Blender 工程。烘焙会将呼吸缩放产生的极小剪切近似为通用的平移、旋转、缩放，导入后会再次校验实际姿势。
 
-在 Blender 选择 `CATGRAY_IP • Model root` 可整体变换角色。角色位于 `CATGRAY • Character` 集合，场景灯光相机位于 `STUDIO • Cameras and lighting`，三视图参考位于 `REFERENCES • Original three views`，默认隐藏。
+当前提供身体动作绑定，不含眨眼、口型或手指表情系统。已验证的是随附三个动作；制作幅度更大的动作时，仍需检查大头与手臂、短腿的接触与变形。
 
-使用 Blender 在后台执行 `build_cat.py` 可生成工程、GLB 和七张渲染图。`--quick` 使用 800 像素预览和较低采样；`--build-only` 仅生成模型。主脚本和 `bare_body.py` 必须位于同一目录。脚本使用 Blender 自带 Python 和 NumPy。
+## 重新生成
 
-Blender 为 Z 轴向上、角色正面朝 -Y；GLB 使用 glTF 的 Y 轴向上约定。尺寸采用相对比例，尚未指定厘米尺度。当前交付为静态模型，头部、身体、耳朵和五官仍为可单独编辑的对象，未做骨骼绑定或 3D 打印用全角色一体化。
+- `rig_cat.py`：读取 `revisions/v7/CatGray_IP.blend`，重新生成绑定、动作和原生工程，再调用动画导出。`--no-export` 只生成原生工程。
+- `export_rig.py`：读取当前骨骼工程，在临时内存副本中烘焙并导出 GLB，不改写原生约束。
+- `render_animations.py`：生成预览帧，再编码独立 MP4 和完整预览；编码、解码检查通过后删除临时帧序列。
+- `verify_export.py`：自动选择静态或动画模型的重新导入验证。
+- `build_cat.py`、`bare_body.py`、`soft_ears.py`：保留的静态造型生成源；直接运行 `build_cat.py` 会重新生成静态版，不包含骨骼。
 
-`body_refinement.py` 与 `qa/verify_body_revision.py` 是 v2 服装版的历史脚本，当前 v3 不再调用。历史 v2 的验证记录请以 `revisions/v2/qa` 为准。
+脚本使用 Blender 自带 Python、NumPy、渲染器与视频编码器。当前按相对比例建模，Blender 为 Z 向上、正面朝 -Y；GLB 为标准 glTF 坐标约定。

@@ -1,0 +1,42 @@
+00:00.074  translation      | WARNING Falling back to standard locale ("C")
+00:00.301  blend            | Read blend: "/Volumes/CatDisk/codes/catgray/CatGrayWiki/logo/ip/model_3d/CatGray_IP.blend"
+15:35:04 | INFO: Data are loaded, start creating Blender stuff
+15:35:04 | INFO: Blender create Mesh node Arm L • independent rounded limb
+15:35:05 | INFO: Blender create Mesh node Arm R • independent rounded limb
+15:35:05 | INFO: Blender create Mesh node Body volume • torso and broad neck
+15:35:05 | INFO: Blender create Mesh node Ear L • reference gray shell and smaller pink inset
+15:35:05 | INFO: Blender create Mesh node Ear R • reference gray shell and smaller pink inset
+15:35:05 | INFO: Blender create Mesh node Eye L • amber outer edge
+15:35:05 | INFO: Blender create Mesh node Sphere
+15:35:05 | INFO: Blender create Mesh node Sphere.001
+15:35:05 | INFO: Blender create Mesh node Eye L • charcoal socket
+15:35:05 | INFO: Blender create Mesh node Eye L • honey crescent
+15:35:05 | INFO: Blender create Mesh node Eye L • orange iris
+15:35:05 | INFO: Blender create Mesh node Eye L • pupil
+15:35:05 | INFO: Blender create Mesh node Eye R • amber outer edge
+15:35:05 | INFO: Blender create Mesh node Sphere.002
+15:35:05 | INFO: Blender create Mesh node Sphere.003
+15:35:05 | INFO: Blender create Mesh node Eye R • charcoal socket
+15:35:05 | INFO: Blender create Mesh node Eye R • honey crescent
+15:35:05 | INFO: Blender create Mesh node Eye R • orange iris
+15:35:05 | INFO: Blender create Mesh node Eye R • pupil
+15:35:05 | INFO: Blender create Mesh node Face • little charcoal nose
+15:35:05 | INFO: Blender create Mesh node Face • philtrum
+15:35:05 | INFO: Blender create Mesh node Face • pink tongue
+15:35:05 | INFO: Blender create Mesh node Face • pink tongue • perimeter
+15:35:05 | INFO: Blender create Mesh node Face • smile L
+15:35:05 | INFO: Blender create Mesh node Face • smile R
+15:35:05 | INFO: Blender create Mesh node Head • continuous shaped surface
+15:35:05 | INFO: Blender create Mesh node Tail • continuous upright curl
+15:35:05 | INFO: Blender create Mesh node Sphere.004
+15:35:05 | INFO: glTF import finished in 0.99s
+Traceback (most recent call last):
+  File "/Volumes/CatDisk/codes/catgray/CatGrayWiki/logo/ip/model_3d/qa/verify_animated_export.py", line 63, in <module>
+    assert len(armatures)==1 and len(imported_meshes)==len(meshes)==28, {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'armatures': ['CATGRAY_RIG.001'], 'imported_meshes': ['Arm L • independent rounded limb.001', 'Body • continuous bare skin and painted oval belly.001', 'Eye L • amber outer edge.001', 'Eye R • pupil.001', 'Eye L • orange iris.001', 'Face • pink tongue.001', 'Eye R • honey crescent.001', 'Face • smile L.001', 'Face • smile R.001', 'Ear L • reference gray shell and smaller pink inset.001', 'Eye R • amber outer edge.001', 'Eye R • charcoal socket.001', 'Head • continuous shaped surface.001', 'Icosphere', 'Tail • rounded tip.001', 'Arm R • independent rounded limb.001', 'Face • little charcoal nose.001', 'Eye L • catchlight 1.001', 'Eye L • catchlight 2.001', 'Eye L • honey crescent.001', 'Face • pink tongue • perimeter.001', 'Eye R • orange iris.001', 'Eye R • catchlight 2.001', 'Tail • continuous upright curl.001', 'Ear R • reference gray shell and smaller pink inset.001', 'Eye L • charcoal socket.001', 'Eye L • pupil.001', 'Eye R • catchlight 1.001', 'Face • philtrum.001'], 'native_meshes': ['Head • continuous shaped surface', 'Ear L • reference gray shell and smaller pink inset', 'Ear R • reference gray shell and smaller pink inset', 'Eye L • charcoal socket', 'Eye L • amber outer edge', 'Eye L • orange iris', 'Eye L • pupil', 'Eye L • honey crescent', 'Eye L • catchlight 1', 'Eye L • catchlight 2', 'Eye R • charcoal socket', 'Eye R • amber outer edge', 'Eye R • orange iris', 'Eye R • pupil', 'Eye R • honey crescent', 'Eye R • catchlight 1', 'Eye R • catchlight 2', 'Face • little charcoal nose', 'Face • pink tongue', 'Face • pink tongue • perimeter', 'Face • philtrum', 'Face • smile L', 'Face • smile R', 'Body • continuous bare skin and painted oval belly', 'Arm L • independent rounded limb', 'Arm R • independent rounded limb', 'Tail • continuous upright curl', 'Tail • rounded tip']}
+
+Error: script failed, file: 'logo/ip/model_3d/qa/verify_animated_export.py', exiting.
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit

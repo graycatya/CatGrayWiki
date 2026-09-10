@@ -1,0 +1,62 @@
+{
+  "objects": 32,
+  "vertices": 319539,
+  "triangles": 636482,
+  "materials": [
+    "Ear rims | reference #747474",
+    "Eyes | painted white catchlights",
+    "Fur | UV painted tabby stripes",
+    "Fur | bare body with UV painted white oval",
+    "Fur | reference #979797",
+    "Inner ears | reference #FFA3A3",
+    "Iris | deep amber edge",
+    "Iris | golden orange",
+    "Iris | lower honey highlight",
+    "Nose | reference #2D2D2D",
+    "Outlines and seams | charcoal",
+    "Pupil | round black",
+    "Tongue | warm pink"
+  ],
+  "dimensions_blender_units": [
+    3.65,
+    3.3834,
+    4.355
+  ],
+  "body_revision": {
+    "revision": "bare body with continuous shoulders and short legs",
+    "body_object": "Body • continuous bare skin and painted oval belly",
+    "skin_connected_components": 1,
+    "skin_non_manifold_edges": 0,
+    "evaluated_triangles": 353616,
+    "voxel_size": 0.015,
+    "width_with_arms": 1.7493,
+    "height": 1.64,
+    "neck_profile_width_at_z_1_4": 0.88,
+    "belly": {
+      "type": "packed sRGB basecolor image, front surface only",
+      "texture": "CatGray_BareBody_BaseColor.png",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "width": 0.78,
+      "height": 0.92,
+      "center_z": 0.91,
+      "edge_width": 0.0078,
+      "fur_srgb": "#979797",
+      "belly_srgb": "#F4F3F0"
+    }
+  },
+  "world_bounds": {
+    "min": [
+      -1.8249813318252563,
+      -1.6214314699172974,
+      0.0
+    ],
+    "max": [
+      1.8249813318252563,
+      1.7619999647140503,
+      4.355000019073486
+    ]
+  }
+}

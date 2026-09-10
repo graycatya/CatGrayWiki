@@ -1,0 +1,14 @@
+{
+  "glb_header": "valid glTF 2.0 binary",
+  "embedded_images": 2,
+  "mesh_objects_after_reimport": 28,
+  "world_bounds_match": true,
+  "independent_arm_meshes": [
+    "Arm L \u2022 independent rounded limb.001",
+    "Arm R \u2022 independent rounded limb.001"
+  ],
+  "triangles": 706638,
+  "materials": 13,
+  "external_dependencies": false,
+  "reimport_render": "qa/glb_reimport_hero.png"
+}

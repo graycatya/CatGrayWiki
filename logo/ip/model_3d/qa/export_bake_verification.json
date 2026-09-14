@@ -7,7 +7,7 @@
     },
     {
       "clip": "Wave",
-      "maximum_baked_pose_matrix_error": 0.0007669925689697266
+      "maximum_baked_pose_matrix_error": 0.0009560883045196533
     },
     {
       "clip": "Walk_InPlace",

@@ -72,11 +72,25 @@ for item in videos:
     assert item['decoded_frames']==item['frames'],item
     movies.strips.remove(movie)
 movie=movies.strips.new_movie('Verify reel',str(ANIM/'CatGray_Animation_Preview.mp4'),channel=1,frame_start=1)
+# Still renders use the window's current frame; select the decoding scene
+# explicitly rather than inheriting the completed reel's final frame.
+bpy.context.window.scene=decode
 decode.frame_set(126)
 decode.render.image_settings.file_format='PNG'
 decode.render.filepath=str(OUT/'qa/video_decoded_wave.png')
 bpy.ops.render.render(write_still=True,scene=decode.name)
-(OUT/'qa/animation_video_verification.json').write_text(json.dumps({'passed':True,'videos':videos},indent=2))
+import numpy as np
+def image_pixels(path):
+    image=bpy.data.images.load(str(path),check_existing=False)
+    values=np.empty(len(image.pixels),dtype=np.float32)
+    image.pixels.foreach_get(values)
+    bpy.data.images.remove(image)
+    return values.reshape(-1,4)[:,:3]
+pixel_error=float(np.mean(np.abs(image_pixels(OUT/'preview_animation.png')-
+    image_pixels(OUT/'qa/video_decoded_wave.png'))))
+assert pixel_error<.015, ('Encoded wave differs from source frame',pixel_error)
+(OUT/'qa/animation_video_verification.json').write_text(json.dumps({'passed':True,'videos':videos,
+    'reel_frame_126_mean_rgb_error':pixel_error},indent=2))
 # The delivered videos and decoded/poster frames are retained. Temporary
 # image sequences are generated solely for encoding, so remove them now.
 for path in FRAMES.glob('frame_*.png'): path.unlink()

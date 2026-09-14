@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "clips": [
+    {
+      "clip": "Idle_Breathe",
+      "maximum_baked_pose_matrix_error": 4.488229751586914e-05
+    },
+    {
+      "clip": "Wave",
+      "maximum_baked_pose_matrix_error": 0.0007669925689697266
+    },
+    {
+      "clip": "Walk_InPlace",
+      "maximum_baked_pose_matrix_error": 4.2632222175598145e-05
+    }
+  ],
+  "export_bones": 39,
+  "native_constraints_preserved": true
+}

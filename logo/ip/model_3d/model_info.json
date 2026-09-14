@@ -85,7 +85,7 @@
     ]
   },
   "rig_revision": {
-    "revision": "v8",
+    "revision": "v9",
     "source": "revisions/v7/CatGray_IP.blend",
     "armature": "CATGRAY_RIG",
     "bones": 43,
@@ -239,13 +239,13 @@
       {
         "object": "Arm L • independent rounded limb",
         "vertices": 1312,
-        "maximum_influences": 2,
+        "maximum_influences": 4,
         "normalization_error": 0
       },
       {
         "object": "Arm R • independent rounded limb",
         "vertices": 1312,
-        "maximum_influences": 2,
+        "maximum_influences": 4,
         "normalization_error": 0
       },
       {

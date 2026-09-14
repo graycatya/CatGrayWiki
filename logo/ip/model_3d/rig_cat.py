@@ -29,8 +29,8 @@ data=bpy.data.armatures.new('CatGray • Skeleton')
 rig=bpy.data.objects.new('CATGRAY_RIG',data)
 character.objects.link(rig)
 rig.parent=root
-rig.show_in_front=True
-data.display_type='OCTAHEDRAL'
+rig.show_in_front=False
+data.display_type='STICK'
 bpy.ops.object.select_all(action='DESELECT')
 rig.select_set(True); bpy.context.view_layer.objects.active=rig
 bpy.ops.object.mode_set(mode='EDIT')
@@ -155,8 +155,14 @@ def weights(obj,p):
         return blend_centres(tail_station(p),tail_centres)
     if name.startswith('Arm '):
         side='L' if x<0 else 'R'
-        limb=blend_centres(z,[('Hand.'+side,.62),('WristSoft.'+side,.71),
-                             ('Forearm.'+side,.86),('ElbowSoft.'+side,1.08),('UpperArm.'+side,1.30)])
+        # Overlapping quadratic weights distribute elbow rotation over the
+        # whole rounded joint, instead of short isolated support-bone bands.
+        u=smooth(.78,1.43,z)
+        palm=1-smooth(.59,.81,z)
+        limb={'UpperArm.'+side:u*u,
+              'ElbowSoft.'+side:2*u*(1-u),
+              'Forearm.'+side:(1-u)**2*(1-palm),
+              'Hand.'+side:(1-u)**2*palm}
         anchored=smooth(1.57,1.73,z)
         return {**{n:w*(1-anchored) for n,w in limb.items()},'Chest':anchored}
     if name.startswith('Body '):
@@ -196,10 +202,10 @@ for obj in skins:
     weight_report.append({'object':obj.name,'vertices':len(obj.data.vertices),
                           'maximum_influences':maximum,'normalization_error':error})
 
-rig['version']='v8 • first animation rig on approved v7 geometry'
+rig['version']='v9 • smooth arm weights, stable paw wave, unobstructed viewport'
 rig['controls']='CTRL_Root; Pelvis/Spine/Chest/Head; arm FK; foot IK; knee poles; Ear.L/R; Tail.01-07'
 rig['forward_axis']='-Y; Z up; 24 FPS'
-root['revision']='v8: weighted skeleton, Idle_Breathe / Wave / Walk_InPlace'
+root['revision']='v9: smooth wave and unobstructed viewport; approved v7 geometry'
 root['production_note']='Editable skeletal rig and three actions. Foot IK, arm FK, segmented tail. No facial expression rig.'
 
 def rotate(name,axis,degrees):
@@ -227,12 +233,14 @@ def idle_pose(t):
 
 def wave_pose(t):
     idle_pose(t)
-    envelope=smooth(0,.20,t)*(1-smooth(.80,1,t))
-    wiggle=math.sin(math.tau*3*(t-.20)/.60)
-    locate('Clavicle.R',(.045*envelope,-.015*envelope,-.008*envelope))
-    rotate('UpperArm.R',(0,1,0),-64*envelope)
-    rotate('Forearm.R',(0,1,0),(-43+8*wiggle)*envelope)
-    rotate('Hand.R',(0,1,0),6*wiggle*envelope)
+    envelope=smooth(0,.25,t)*(1-smooth(.78,1,t))
+    wave_time=max(0,min(1,(t-.25)/.53))
+    wiggle=math.sin(math.tau*2*wave_time)*math.sin(math.pi*wave_time)**2
+    locate('Clavicle.R',(.09*envelope,-.05*envelope,0))
+    rotate('UpperArm.R',(0,1,0),(-60+3*wiggle)*envelope)
+    rotate('Forearm.R',(0,1,0),(-48+10*wiggle)*envelope)
+    # Keep the mitten-shaped paw aligned with the forearm throughout the wave.
+    rotate('Hand.R',(0,1,0),0)
     rest=data.bones['Head'].matrix_local.to_quaternion()
     q=Quaternion(Vector((0,0,1)),math.radians(3*envelope))@Quaternion(Vector((0,1,0)),math.radians(-2*envelope))
     rig.pose.bones['Head'].rotation_quaternion=rest.inverted()@q@rest
@@ -293,7 +301,7 @@ for obj in skins:
         if abs(total-1)>.0001 or len(vertex.groups)>4: bind_errors.append((obj.name,vertex.index,total))
 if bind_errors: raise RuntimeError('Invalid weights '+str(bind_errors[:3]))
 
-report={'revision':'v8','source':'revisions/v7/CatGray_IP.blend',
+report={'revision':'v9','source':'revisions/v7/CatGray_IP.blend',
         'armature':rig.name,'bones':len(data.bones),'deform_bones':sum(b.use_deform for b in data.bones),
         'skinned_objects':len(skins),'weights':weight_report,'ik_calibration':ik_calibration,
         'fps':FPS,'clips':clips,'skin_algorithm':'linear blend; max four influences; subdivision before skinning'}
@@ -326,10 +334,11 @@ for label,frame in [('待机呼吸 / Idle',1),('挥手 / Wave',73),('原地走�
     scene.timeline_markers.new(label,frame=frame)
 scene.frame_set(1)
 notes=bpy.data.texts.new('使用说明 • 骨骼与动画')
-notes.write('''CatGray v8 骨骼动画\n\n时间轴 1–240 帧：待机呼吸、挥手、两轮原地走路。空格播放。\n独立动作：Idle_Breathe / Wave / Walk_InPlace，24 FPS。\n编辑单个动作：禁用“播放预览”NLA 轨道，在动作编辑器选择对应动作。\nCTRL_Root：整体移动。CTRL_Foot_IK.L/R：脚底位置和朝向。\nCTRL_Knee_Pole.L/R：膝盖弯曲方向。\nHead / Chest / Pelvis：头身姿态。UpperArm / Forearm / Hand：手臂 FK。\nTail.01–07：尾巴；Ear.L/R：耳朵。左右手臂仍为独立网格。\n当前是第一版基础身体动画；没有眨眼、口型或手指表情绑定。\n''')
+notes.write('''CatGray v9 骨骼动画\n\n时间轴 1–240 帧：待机呼吸、挥手、两轮原地走路。空格播放。\n独立动作：Idle_Breathe / Wave / Walk_InPlace，24 FPS。\n编辑单个动作：禁用“播放预览”NLA 轨道，在动作编辑器选择对应动作。\nCTRL_Root：整体移动。CTRL_Foot_IK.L/R：脚底位置和朝向。\nCTRL_Knee_Pole.L/R：膝盖弯曲方向。\nHead / Chest / Pelvis：头身姿态。UpperArm / Forearm / Hand：手臂 FK。\nTail.01–07：尾巴；Ear.L/R：耳朵。左右手臂仍为独立网格。\n骨骼默认不置顶，使用细线显示；物体模式打开即可查看表面。需要透视编辑时，在骨架对象的数据/视图显示设置中开启 In Front（在前面）。\n招手使用连续肘部权重，手掌随前臂摆动。没有眨眼、口型或手指表情绑定。\n''')
 root['animation_preview']='Timeline 1–240 at 24 fps: Idle, Wave, Walk twice'
 bpy.ops.object.select_all(action='DESELECT')
-rig.select_set(True); bpy.context.view_layer.objects.active=rig
+body_view=next(o for o in skins if o.name.startswith('Body '))
+bpy.context.view_layer.objects.active=body_view
 scene.camera=bpy.data.objects['Camera • Three quarter']
 bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'CatGray_IP.blend'))
 manifest=json.loads((OUT/'revisions/v7/model_info.json').read_text())

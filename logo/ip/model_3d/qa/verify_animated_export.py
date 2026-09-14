@@ -37,7 +37,7 @@ def activate(target,action,frame):
     target.animation_data.use_nla=False
     target.animation_data.action=action
     target.animation_data.action_slot=action.slots[0]
-    scene.frame_set(frame)
+    scene.frame_set(int(frame),subframe=frame-int(frame))
 
 def bounds(obj):
     ev=obj.evaluated_get(bpy.context.evaluated_depsgraph_get()); data=ev.to_mesh()

@@ -14,7 +14,7 @@ skins=[o for o in bpy.data.collections['CATGRAY • Character'].objects if o.typ
 body=next(o for o in skins if o.name.startswith('Body '))
 head=next(o for o in skins if o.name.startswith('Head '))
 arms=[o for o in skins if o.name.startswith('Arm ')]
-report={'revision':'v8','checks':{},'failures':[]}
+report={'revision':'v9','checks':{},'failures':[]}
 def check(name,passed,details):
     report['checks'][name]={'passed':bool(passed),**details}
     if not passed: report['failures'].append(name)

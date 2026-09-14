@@ -1,0 +1,18 @@
+00:00.069  translation      | WARNING Falling back to standard locale ("C")
+00:00.276  blend            | Read blend: "/Volumes/CatDisk/codes/catgray/CatGrayWiki/logo/ip/model_3d/CatGray_IP.blend"
+RIG_POSE_RENDER rig_idle 1
+00:13.326  render           | Saved: '/Volumes/CatDisk/codes/catgray/CatGrayWiki/logo/ip/model_3d/qa/rig_idle.png'
+RIG_POSE_RENDER rig_wave 126
+00:22.588  render           | Saved: '/Volumes/CatDisk/codes/catgray/CatGrayWiki/logo/ip/model_3d/qa/rig_wave.png'
+RIG_POSE_RENDER rig_wave_front 126
+00:30.388  render           | Saved: '/Volumes/CatDisk/codes/catgray/CatGrayWiki/logo/ip/model_3d/qa/rig_wave_front.png'
+RIG_POSE_RENDER rig_walk_side 178
+00:37.489  render           | Saved: '/Volumes/CatDisk/codes/catgray/CatGrayWiki/logo/ip/model_3d/qa/rig_walk_side.png'
+RIG_POSE_RENDER rig_walk_front 178
+00:45.263  render           | Saved: '/Volumes/CatDisk/codes/catgray/CatGrayWiki/logo/ip/model_3d/qa/rig_walk_front.png'
+00:50.640  render           | Saved: '/Volumes/CatDisk/codes/catgray/CatGrayWiki/logo/ip/model_3d/qa/rig_wave_eevee.png'
+SEQUENCE_API ['strips']
+RIG_POSE_PREVIEWS_COMPLETE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit

@@ -1,9 +1,9 @@
 {
-  "revision": "v9",
+  "revision": "v10",
   "source": "revisions/v7/CatGray_IP.blend",
   "armature": "CATGRAY_RIG",
-  "bones": 43,
-  "deform_bones": 38,
+  "bones": 84,
+  "deform_bones": 79,
   "skinned_objects": 28,
   "weights": [
     {
@@ -159,7 +159,7 @@
     {
       "object": "Arm R • independent rounded limb",
       "vertices": 1312,
-      "maximum_influences": 4,
+      "maximum_influences": 3,
       "normalization_error": 0
     },
     {
@@ -217,5 +217,48 @@
       "looping": true
     }
   ],
-  "skin_algorithm": "linear blend; max four influences; subdivision before skinning"
+  "skin_algorithm": "linear blend; right arm uses 41 arc section bones with overlapping weights; max four export influences; subdivision before skinning",
+  "wave_arc_bones": [
+    "ArmArc.R.00",
+    "ArmArc.R.01",
+    "ArmArc.R.02",
+    "ArmArc.R.03",
+    "ArmArc.R.04",
+    "ArmArc.R.05",
+    "ArmArc.R.06",
+    "ArmArc.R.07",
+    "ArmArc.R.08",
+    "ArmArc.R.09",
+    "ArmArc.R.10",
+    "ArmArc.R.11",
+    "ArmArc.R.12",
+    "ArmArc.R.13",
+    "ArmArc.R.14",
+    "ArmArc.R.15",
+    "ArmArc.R.16",
+    "ArmArc.R.17",
+    "ArmArc.R.18",
+    "ArmArc.R.19",
+    "ArmArc.R.20",
+    "ArmArc.R.21",
+    "ArmArc.R.22",
+    "ArmArc.R.23",
+    "ArmArc.R.24",
+    "ArmArc.R.25",
+    "ArmArc.R.26",
+    "ArmArc.R.27",
+    "ArmArc.R.28",
+    "ArmArc.R.29",
+    "ArmArc.R.30",
+    "ArmArc.R.31",
+    "ArmArc.R.32",
+    "ArmArc.R.33",
+    "ArmArc.R.34",
+    "ArmArc.R.35",
+    "ArmArc.R.36",
+    "ArmArc.R.37",
+    "ArmArc.R.38",
+    "ArmArc.R.39",
+    "ArmArc.R.40"
+  ]
 }

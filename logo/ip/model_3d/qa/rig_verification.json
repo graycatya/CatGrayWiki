@@ -1,5 +1,5 @@
 {
-  "revision": "v9",
+  "revision": "v10",
   "checks": {
     "approved_v7_rest_shape_preserved": {
       "passed": true,
@@ -106,7 +106,7 @@
         },
         {
           "object": "Arm R • independent rounded limb",
-          "max_vertex_error": 2.3853496600168e-07
+          "max_vertex_error": 1.3333209381016786e-07
         },
         {
           "object": "Tail • continuous upright curl",
@@ -679,49 +679,49 @@
           "clip": "Idle_Breathe",
           "frame": 1,
           "hand_head_signed_clearance": 0.3936835197964683,
-          "distal_arm_body_signed_clearance": 0.02759435123152798
+          "distal_arm_body_signed_clearance": 0.027594407336437143
         },
         {
           "clip": "Idle_Breathe",
           "frame": 7,
-          "hand_head_signed_clearance": 0.3902935042278841,
-          "distal_arm_body_signed_clearance": 0.027987699329969473
+          "hand_head_signed_clearance": 0.39029362343717366,
+          "distal_arm_body_signed_clearance": 0.027987567569653038
         },
         {
           "clip": "Idle_Breathe",
           "frame": 13,
-          "hand_head_signed_clearance": 0.38800890650600195,
-          "distal_arm_body_signed_clearance": 0.029062069246720057
+          "hand_head_signed_clearance": 0.3880090373568237,
+          "distal_arm_body_signed_clearance": 0.029062146772048436
         },
         {
           "clip": "Idle_Breathe",
           "frame": 19,
-          "hand_head_signed_clearance": 0.3874703263863921,
-          "distal_arm_body_signed_clearance": 0.030529807241691742
+          "hand_head_signed_clearance": 0.38747045770287514,
+          "distal_arm_body_signed_clearance": 0.030529863346600905
         },
         {
           "clip": "Idle_Breathe",
           "frame": 25,
-          "hand_head_signed_clearance": 0.3888220732915215,
+          "hand_head_signed_clearance": 0.3888223111862317,
           "distal_arm_body_signed_clearance": 0.03199760646384675
         },
         {
           "clip": "Idle_Breathe",
           "frame": 31,
-          "hand_head_signed_clearance": 0.3916971794096753,
-          "distal_arm_body_signed_clearance": 0.033071998914238065
+          "hand_head_signed_clearance": 0.39169731142465025,
+          "distal_arm_body_signed_clearance": 0.03307205315650208
         },
         {
           "clip": "Idle_Breathe",
           "frame": 37,
-          "hand_head_signed_clearance": 0.39530567650217563,
-          "distal_arm_body_signed_clearance": 0.03346521477214992
+          "hand_head_signed_clearance": 0.39530568895861506,
+          "distal_arm_body_signed_clearance": 0.03346529183181701
         },
         {
           "clip": "Idle_Breathe",
           "frame": 43,
           "hand_head_signed_clearance": 0.3916974990279414,
-          "distal_arm_body_signed_clearance": 0.033071998914238065
+          "distal_arm_body_signed_clearance": 0.03307205315650208
         },
         {
           "clip": "Idle_Breathe",
@@ -733,198 +733,203 @@
           "clip": "Idle_Breathe",
           "frame": 55,
           "hand_head_signed_clearance": 0.38747016654815525,
-          "distal_arm_body_signed_clearance": 0.030529807241691742
+          "distal_arm_body_signed_clearance": 0.030529863346600905
         },
         {
           "clip": "Idle_Breathe",
           "frame": 61,
           "hand_head_signed_clearance": 0.3880087868310511,
-          "distal_arm_body_signed_clearance": 0.029062069246720057
+          "distal_arm_body_signed_clearance": 0.029062146772048436
         },
         {
           "clip": "Idle_Breathe",
           "frame": 67,
           "hand_head_signed_clearance": 0.39029532024869695,
-          "distal_arm_body_signed_clearance": 0.027987699329969473
+          "distal_arm_body_signed_clearance": 0.027987567569653038
         },
         {
           "clip": "Idle_Breathe",
           "frame": 73,
           "hand_head_signed_clearance": 0.3936835197964683,
-          "distal_arm_body_signed_clearance": 0.02759435123152798
+          "distal_arm_body_signed_clearance": 0.027594407336437143
         },
         {
           "clip": "Idle_Breathe",
           "frame": 73,
           "hand_head_signed_clearance": 0.3936835197964683,
-          "distal_arm_body_signed_clearance": 0.02759435123152798
+          "distal_arm_body_signed_clearance": 0.027594407336437143
         },
         {
           "clip": "Wave",
           "frame": 1,
           "hand_head_signed_clearance": 0.3936835197964683,
-          "distal_arm_body_signed_clearance": 0.02759435123152798
+          "distal_arm_body_signed_clearance": 0.027594407336437143
         },
         {
           "clip": "Wave",
           "frame": 7,
-          "hand_head_signed_clearance": 0.37875887149129994,
+          "hand_head_signed_clearance": 0.39049296703888103,
           "distal_arm_body_signed_clearance": 0.02781933783990098
         },
         {
           "clip": "Wave",
           "frame": 13,
-          "hand_head_signed_clearance": 0.28589130914770067,
+          "hand_head_signed_clearance": 0.36108650639653206,
           "distal_arm_body_signed_clearance": 0.02845605961192632
         },
         {
           "clip": "Wave",
           "frame": 19,
-          "hand_head_signed_clearance": 0.1529610751895234,
+          "hand_head_signed_clearance": 0.2870040349662304,
           "distal_arm_body_signed_clearance": 0.029408711394353304
         },
         {
           "clip": "Wave",
           "frame": 25,
-          "hand_head_signed_clearance": 0.09146013611461967,
+          "hand_head_signed_clearance": 0.14052018709480762,
           "distal_arm_body_signed_clearance": 0.03053208409983199
         },
         {
           "clip": "Wave",
           "frame": 31,
-          "hand_head_signed_clearance": 0.09524498030077666,
+          "hand_head_signed_clearance": 0.14933345653116703,
           "distal_arm_body_signed_clearance": 0.03165541910129832
         },
         {
           "clip": "Wave",
           "frame": 37,
-          "hand_head_signed_clearance": 0.09488684614188969,
+          "hand_head_signed_clearance": 0.14804315939545631,
           "distal_arm_body_signed_clearance": 0.032607788554742
         },
         {
           "clip": "Wave",
           "frame": 43,
-          "hand_head_signed_clearance": 0.07665038073901087,
+          "hand_head_signed_clearance": 0.10420838743448257,
           "distal_arm_body_signed_clearance": 0.033244079451833386
         },
         {
           "clip": "Wave",
           "frame": 49,
-          "hand_head_signed_clearance": 0.0861665306147188,
+          "hand_head_signed_clearance": 0.12441578134894371,
           "distal_arm_body_signed_clearance": 0.03346752263314556
         },
         {
           "clip": "Wave",
           "frame": 55,
-          "hand_head_signed_clearance": 0.11226418160367757,
+          "hand_head_signed_clearance": 0.2127401866018772,
           "distal_arm_body_signed_clearance": 0.033244079451833386
         },
         {
           "clip": "Wave",
           "frame": 61,
-          "hand_head_signed_clearance": 0.10024364833952859,
+          "hand_head_signed_clearance": 0.1643981859087944,
           "distal_arm_body_signed_clearance": 0.032607788554742
         },
         {
           "clip": "Wave",
           "frame": 67,
-          "hand_head_signed_clearance": 0.08748105575796217,
+          "hand_head_signed_clearance": 0.1313179675489664,
           "distal_arm_body_signed_clearance": 0.03165541910129832
         },
         {
           "clip": "Wave",
           "frame": 73,
-          "hand_head_signed_clearance": 0.09100913268048316,
+          "hand_head_signed_clearance": 0.1396367158740759,
           "distal_arm_body_signed_clearance": 0.03053208409983199
         },
         {
           "clip": "Wave",
           "frame": 79,
-          "hand_head_signed_clearance": 0.11409816751256585,
+          "hand_head_signed_clearance": 0.20188818499445915,
           "distal_arm_body_signed_clearance": 0.029408711394353304
         },
         {
           "clip": "Wave",
           "frame": 85,
-          "hand_head_signed_clearance": 0.24743381061125547,
+          "hand_head_signed_clearance": 0.33887933753430843,
           "distal_arm_body_signed_clearance": 0.02845605961192632
         },
         {
           "clip": "Wave",
           "frame": 91,
-          "hand_head_signed_clearance": 0.373939341166988,
+          "hand_head_signed_clearance": 0.3896574657410383,
           "distal_arm_body_signed_clearance": 0.02781933783990098
         },
         {
           "clip": "Wave",
           "frame": 97,
           "hand_head_signed_clearance": 0.3936835197964683,
-          "distal_arm_body_signed_clearance": 0.02759435123152798
+          "distal_arm_body_signed_clearance": 0.027594407336437143
         },
         {
           "clip": "Wave",
           "frame": 97,
           "hand_head_signed_clearance": 0.3936835197964683,
-          "distal_arm_body_signed_clearance": 0.02759435123152798
+          "distal_arm_body_signed_clearance": 0.027594407336437143
         },
         {
           "clip": "Walk_InPlace",
           "frame": 1,
-          "hand_head_signed_clearance": 0.36610165383899584,
-          "distal_arm_body_signed_clearance": 0.05132981167116668
+          "hand_head_signed_clearance": 0.3655726814758964,
+          "distal_arm_body_signed_clearance": 0.05129418784053996
         },
         {
           "clip": "Walk_InPlace",
           "frame": 7,
-          "hand_head_signed_clearance": 0.3770120858680457,
-          "distal_arm_body_signed_clearance": 0.05315336034982465
+          "hand_head_signed_clearance": 0.3767315484001301,
+          "distal_arm_body_signed_clearance": 0.053157332848059013
         },
         {
           "clip": "Walk_InPlace",
           "frame": 13,
           "hand_head_signed_clearance": 0.37724856100976467,
-          "distal_arm_body_signed_clearance": 0.0550497361109592
+          "distal_arm_body_signed_clearance": 0.05503997748019174
         },
         {
           "clip": "Walk_InPlace",
           "frame": 19,
           "hand_head_signed_clearance": 0.36610154854133725,
-          "distal_arm_body_signed_clearance": 0.053520083405601326
+          "distal_arm_body_signed_clearance": 0.05345370241411729
         },
         {
           "clip": "Walk_InPlace",
           "frame": 25,
           "hand_head_signed_clearance": 0.3770132897188887,
-          "distal_arm_body_signed_clearance": 0.05494572489988059
+          "distal_arm_body_signed_clearance": 0.0549359884171281
         },
         {
           "clip": "Walk_InPlace",
           "frame": 31,
-          "hand_head_signed_clearance": 0.3772477075108327,
-          "distal_arm_body_signed_clearance": 0.05357866606209427
+          "hand_head_signed_clearance": 0.3769676265656017,
+          "distal_arm_body_signed_clearance": 0.0535861705429852
         },
         {
           "clip": "Walk_InPlace",
           "frame": 37,
-          "hand_head_signed_clearance": 0.36610165383899584,
-          "distal_arm_body_signed_clearance": 0.05132981167116668
+          "hand_head_signed_clearance": 0.3655726814758964,
+          "distal_arm_body_signed_clearance": 0.05129418784053996
         },
         {
           "clip": "Walk_InPlace",
           "frame": 37,
-          "hand_head_signed_clearance": 0.36610165383899584,
-          "distal_arm_body_signed_clearance": 0.05132981167116668
+          "hand_head_signed_clearance": 0.3655726814758964,
+          "distal_arm_body_signed_clearance": 0.05129418784053996
         }
       ]
     },
     "wave_has_clear_gesture": {
       "passed": true,
-      "hand_displacement": 1.4307082516840526,
+      "hand_displacement": 1.705084225009,
       "raised_hand_position": [
-        1.7617192268371582,
-        -0.14190810918807983,
-        1.5351805686950684
+        1.3046327829360962,
+        -0.8311756253242493,
+        1.976845622062683
       ]
+    },
+    "wave_reaches_forward_and_up": {
+      "passed": true,
+      "forward_displacement": 0.7411756366491318,
+      "lift": 1.419095754623413
     }
   },
   "failures": [],

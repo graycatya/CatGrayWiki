@@ -1,0 +1,496 @@
+{
+  "revision": "v9",
+  "viewport": {
+    "in_front": false,
+    "bone_display": "STICK",
+    "rig_selected": false
+  },
+  "samples": [
+    {
+      "frame": 1,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 2,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 3,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 4,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 5,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 6,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 7,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 8,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 9,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 10,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 11,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 12,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 13,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 14,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 15,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 16,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 17,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 18,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 19,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 20,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 21,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 22,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 23,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 24,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 25,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 26,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 27,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 28,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 29,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 30,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 31,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 32,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 33,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 34,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 35,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 36,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 37,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 38,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 39,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 40,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 41,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 42,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 43,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 44,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 45,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 46,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 47,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 48,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 49,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 50,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 51,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 52,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 53,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 54,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 55,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 56,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 57,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 58,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 59,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 60,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 61,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 62,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 63,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 64,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 65,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 66,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 67,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 68,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 69,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 70,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 71,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 72,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 73,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 74,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 75,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 76,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 77,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 78,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 79,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 80,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 81,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 82,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 83,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 84,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 85,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 86,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 87,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 88,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 89,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 90,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 91,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 92,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 93,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 94,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 95,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 96,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    },
+    {
+      "frame": 97,
+      "nonadjacent_surface_intersections": 0,
+      "local_hand_rotation_radians": 0.0
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "videos": [
+    {
+      "file": "animations/Idle_Breathe.mp4",
+      "frames": 72,
+      "duration_seconds": 3.0,
+      "resolution": [
+        720,
+        720
+      ],
+      "bytes": 179545,
+      "decoded_frames": 72
+    },
+    {
+      "file": "animations/Wave.mp4",
+      "frames": 96,
+      "duration_seconds": 4.0,
+      "resolution": [
+        720,
+        720
+      ],
+      "bytes": 248916,
+      "decoded_frames": 96
+    },
+    {
+      "file": "animations/Walk_InPlace.mp4",
+      "frames": 72,
+      "duration_seconds": 3.0,
+      "resolution": [
+        720,
+        720
+      ],
+      "bytes": 200710,
+      "decoded_frames": 72
+    },
+    {
+      "file": "animations/CatGray_Animation_Preview.mp4",
+      "frames": 240,
+      "duration_seconds": 10.0,
+      "resolution": [
+        720,
+        720
+      ],
+      "bytes": 646452,
+      "decoded_frames": 240
+    }
+  ],
+  "reel_frame_126_mean_rgb_error": 0.0030529028736054897
+}

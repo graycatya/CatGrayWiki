@@ -7,6 +7,8 @@ from pathlib import Path
 from mathutils import Vector, Matrix, Quaternion
 
 OUT=Path(__file__).resolve().parent
+sys.path.insert(0,str(OUT))
+from wave_arc import WaveArc
 FPS=24
 bpy.ops.wm.open_mainfile(filepath=str(OUT/'revisions/v7/CatGray_IP.blend'))
 scene=bpy.context.scene
@@ -24,6 +26,7 @@ for obj in list(character.objects):
         bpy.ops.object.convert(target='MESH')
 skins=[o for o in character.objects if o.type=='MESH']
 rest_vertices={o.name:[o.matrix_world@v.co for v in o.data.vertices] for o in skins}
+wave_arc=WaveArc(next(points for name,points in rest_vertices.items() if name.startswith('Arm R ')))
 
 data=bpy.data.armatures.new('CatGray • Skeleton')
 rig=bpy.data.objects.new('CATGRAY_RIG',data)
@@ -72,6 +75,7 @@ for sign,side in [(-1,'L'),(1,'R')]:
     bone('CTRL_Knee_Pole.'+side,(sign*.278,-.95,.34),(sign*.278,-.95,.48),'CTRL_Root',deform=False)
     bone('Ear.'+side,(sign*1.47,.25,3.69),(sign*1.55,.34,4.51),'Head')
 
+wave_arc.bones(bone)
 tail_points=[(-.10,.28,.555),(-.36,.65,.575),(-.79,1.03,.661),
              (-1.18,1.27,.862),(-1.36,1.45,1.17),(-1.30,1.53,1.34),
              (-1.12,1.60,1.355),(-1.02,1.63,1.20)]
@@ -84,9 +88,11 @@ control_collection=data.collections.new('控制 • Root / Feet / Knees')
 fk_collection=data.collections.new('姿态 • Head / Body / Arms / Tail')
 leg_collection=data.collections.new('腿部变形 • IK driven')
 for b in data.bones:
-    if b.name.startswith('CTRL_'):
+    if b.name in ('Forearm.R','Hand.R'):
+        leg_collection.assign(b); b.color.palette='THEME03'
+    elif b.name.startswith('CTRL_'):
         control_collection.assign(b); b.color.palette='THEME04'
-    elif b.name.startswith(('Thigh.','Shin.','Foot.','Toe.','ElbowSoft.','WristSoft.','KneeSoft.','AnkleSoft.')):
+    elif b.name.startswith(('ArmArc.','Thigh.','Shin.','Foot.','Toe.','ElbowSoft.','WristSoft.','KneeSoft.','AnkleSoft.')):
         leg_collection.assign(b); b.color.palette='THEME03'
     else:
         fk_collection.assign(b); b.color.palette='THEME02'
@@ -154,6 +160,7 @@ def weights(obj,p):
         if 'rounded tip' in name: return {'Tail.07':1.}
         return blend_centres(tail_station(p),tail_centres)
     if name.startswith('Arm '):
+        if name.startswith('Arm R '):return wave_arc.weights(p)
         side='L' if x<0 else 'R'
         # Overlapping quadratic weights distribute elbow rotation over the
         # whole rounded joint, instead of short isolated support-bone bands.
@@ -202,10 +209,10 @@ for obj in skins:
     weight_report.append({'object':obj.name,'vertices':len(obj.data.vertices),
                           'maximum_influences':maximum,'normalization_error':error})
 
-rig['version']='v9 • smooth arm weights, stable paw wave, unobstructed viewport'
-rig['controls']='CTRL_Root; Pelvis/Spine/Chest/Head; arm FK; foot IK; knee poles; Ear.L/R; Tail.01-07'
+rig['version']='v10 • forward arc wave with continuous cross-section skinning'
+rig['controls']='CTRL_Root; Pelvis/Spine/Chest/Head; left arm FK; right UpperArm.R global + ArmArc.R.00-40 sections; foot IK; Ear.L/R; Tail.01-07'
 rig['forward_axis']='-Y; Z up; 24 FPS'
-root['revision']='v9: smooth wave and unobstructed viewport; approved v7 geometry'
+root['revision']='v10: forward curved wave, smooth section skinning; approved v7 geometry'
 root['production_note']='Editable skeletal rig and three actions. Foot IK, arm FK, segmented tail. No facial expression rig.'
 
 def rotate(name,axis,degrees):
@@ -236,11 +243,7 @@ def wave_pose(t):
     envelope=smooth(0,.25,t)*(1-smooth(.78,1,t))
     wave_time=max(0,min(1,(t-.25)/.53))
     wiggle=math.sin(math.tau*2*wave_time)*math.sin(math.pi*wave_time)**2
-    locate('Clavicle.R',(.09*envelope,-.05*envelope,0))
-    rotate('UpperArm.R',(0,1,0),(-60+3*wiggle)*envelope)
-    rotate('Forearm.R',(0,1,0),(-48+10*wiggle)*envelope)
-    # Keep the mitten-shaped paw aligned with the forearm throughout the wave.
-    rotate('Hand.R',(0,1,0),0)
+    wave_arc.pose(rig,envelope,wiggle)
     rest=data.bones['Head'].matrix_local.to_quaternion()
     q=Quaternion(Vector((0,0,1)),math.radians(3*envelope))@Quaternion(Vector((0,1,0)),math.radians(-2*envelope))
     rig.pose.bones['Head'].rotation_quaternion=rest.inverted()@q@rest
@@ -294,17 +297,19 @@ data.pose_position='REST'
 bpy.context.view_layer.update()
 bind_errors=[]
 for obj in skins:
-    if obj.name.startswith('Arm '): obj['rigging_role']='Bound to UpperArm / Forearm / Hand; shoulder cap blends into Chest'
+    if obj.name.startswith('Arm R '): obj['rigging_role']='ArmArc.R section bones; UpperArm.R rotates the whole arm; animated forward arc'
+    elif obj.name.startswith('Arm L '): obj['rigging_role']='Left arm FK: UpperArm / Forearm / Hand; shoulder cap blends into Chest'
     # Every vertex must have a normalized nonzero weight and no more than four bones.
     for vertex in obj.data.vertices:
         total=sum(g.weight for g in vertex.groups)
         if abs(total-1)>.0001 or len(vertex.groups)>4: bind_errors.append((obj.name,vertex.index,total))
 if bind_errors: raise RuntimeError('Invalid weights '+str(bind_errors[:3]))
 
-report={'revision':'v9','source':'revisions/v7/CatGray_IP.blend',
+report={'revision':'v10','source':'revisions/v7/CatGray_IP.blend',
         'armature':rig.name,'bones':len(data.bones),'deform_bones':sum(b.use_deform for b in data.bones),
         'skinned_objects':len(skins),'weights':weight_report,'ik_calibration':ik_calibration,
-        'fps':FPS,'clips':clips,'skin_algorithm':'linear blend; max four influences; subdivision before skinning'}
+        'fps':FPS,'clips':clips,'skin_algorithm':'linear blend; right arm uses 41 arc section bones with overlapping weights; max four export influences; subdivision before skinning',
+        'wave_arc_bones':wave_arc.names}
 (OUT/'qa/rig_build.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
 print('RIG_BUILT',json.dumps(report,ensure_ascii=False),flush=True)
 if any(item['rest_knee_error']>.003 for item in ik_calibration): raise RuntimeError('IK changes neutral knee position')
@@ -334,7 +339,7 @@ for label,frame in [('待机呼吸 / Idle',1),('挥手 / Wave',73),('原地走�
     scene.timeline_markers.new(label,frame=frame)
 scene.frame_set(1)
 notes=bpy.data.texts.new('使用说明 • 骨骼与动画')
-notes.write('''CatGray v9 骨骼动画\n\n时间轴 1–240 帧：待机呼吸、挥手、两轮原地走路。空格播放。\n独立动作：Idle_Breathe / Wave / Walk_InPlace，24 FPS。\n编辑单个动作：禁用“播放预览”NLA 轨道，在动作编辑器选择对应动作。\nCTRL_Root：整体移动。CTRL_Foot_IK.L/R：脚底位置和朝向。\nCTRL_Knee_Pole.L/R：膝盖弯曲方向。\nHead / Chest / Pelvis：头身姿态。UpperArm / Forearm / Hand：手臂 FK。\nTail.01–07：尾巴；Ear.L/R：耳朵。左右手臂仍为独立网格。\n骨骼默认不置顶，使用细线显示；物体模式打开即可查看表面。需要透视编辑时，在骨架对象的数据/视图显示设置中开启 In Front（在前面）。\n招手使用连续肘部权重，手掌随前臂摆动。没有眨眼、口型或手指表情绑定。\n''')
+notes.write('''CatGray v10 骨骼动画\n\n时间轴 1–240 帧：待机呼吸、挥手、两轮原地走路。空格播放。\n独立动作：Idle_Breathe / Wave / Walk_InPlace，24 FPS。\n编辑单个动作：禁用“播放预览”NLA 轨道，在动作编辑器选择对应动作。\nCTRL_Root：整体移动。CTRL_Foot_IK.L/R：脚底位置和朝向。\nCTRL_Knee_Pole.L/R：膝盖弯曲方向。\nHead / Chest / Pelvis：头身姿态。左臂 UpperArm / Forearm / Hand：FK；右臂 UpperArm.R：整体旋转，ArmArc.R.00–40：弧线分段编辑。\nTail.01–07：尾巴；Ear.L/R：耳朵。左右手臂仍为独立网格。\n骨骼默认不置顶，使用细线显示；物体模式打开即可查看表面。需要透视编辑时，在骨架对象的数据/视图显示设置中开启 In Front（在前面）。\n招手沿空间弧线向前抬起；右臂采用 41 个连续截面骨骼并烘焙成普通关键帧。右侧旧 Forearm/Hand 辅助骨骼不再驱动皮肤。没有眨眼、口型或手指表情绑定。\n''')
 root['animation_preview']='Timeline 1–240 at 24 fps: Idle, Wave, Walk twice'
 bpy.ops.object.select_all(action='DESELECT')
 body_view=next(o for o in skins if o.name.startswith('Body '))
@@ -343,7 +348,7 @@ scene.camera=bpy.data.objects['Camera • Three quarter']
 bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'CatGray_IP.blend'))
 manifest=json.loads((OUT/'revisions/v7/model_info.json').read_text())
 manifest['rig_revision']=report
-manifest['body_revision']['rigging_status']='Weighted to CATGRAY_RIG; arm FK, leg IK, three animation clips'
+manifest['body_revision']['rigging_status']='Weighted to CATGRAY_RIG; left arm FK, right continuous arc skinning, leg IK, three animation clips'
 (OUT/'model_info.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2))
 print('CATGRAY_RIG_COMPLETE',flush=True)
 

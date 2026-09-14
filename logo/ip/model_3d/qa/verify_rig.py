@@ -14,7 +14,7 @@ skins=[o for o in bpy.data.collections['CATGRAY • Character'].objects if o.typ
 body=next(o for o in skins if o.name.startswith('Body '))
 head=next(o for o in skins if o.name.startswith('Head '))
 arms=[o for o in skins if o.name.startswith('Arm ')]
-report={'revision':'v9','checks':{},'failures':[]}
+report={'revision':'v10','checks':{},'failures':[]}
 def check(name,passed,details):
     report['checks'][name]={'passed':bool(passed),**details}
     if not passed: report['failures'].append(name)
@@ -118,10 +118,13 @@ for name,end in [('Idle_Breathe',73),('Wave',97),('Walk_InPlace',37)]:
 check('hands_and_forearms_clear_head_and_body',all(r['hand_head_signed_clearance']>-.003
       and r['distal_arm_body_signed_clearance']>-.006 for r in collision_samples),{'samples':collision_samples})
 
-activate('Wave',1); hand_start=rig.pose.bones['Hand.R'].tail.copy()
-activate('Wave',54); hand_end=rig.pose.bones['Hand.R'].tail.copy()
+hand_bone=sorted(p.name for p in rig.pose.bones if p.name.startswith('ArmArc.R.'))[-1]
+activate('Wave',1); hand_start=rig.pose.bones[hand_bone].head.copy()
+activate('Wave',54); hand_end=rig.pose.bones[hand_bone].head.copy()
 check('wave_has_clear_gesture', (hand_end-hand_start).length>.75,
       {'hand_displacement':(hand_end-hand_start).length,'raised_hand_position':list(hand_end)})
+check('wave_reaches_forward_and_up',hand_end.y-hand_start.y<-.60 and hand_end.z-hand_start.z>1.0,
+      {'forward_displacement':hand_start.y-hand_end.y,'lift':hand_end.z-hand_start.z})
 
 report['passed']=not report['failures']
 (OUT/'qa/rig_verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))

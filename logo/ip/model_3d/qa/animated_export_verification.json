@@ -7,7 +7,7 @@
     "Wave": 4.0
   },
   "skin_count": 1,
-  "joints": 39,
+  "joints": 80,
   "skinned_meshes": 28,
   "embedded_images": 2,
   "external_dependencies": false,
@@ -55,7 +55,7 @@
       "clip": "Wave",
       "native_frame": 54,
       "imported_frame": 54.0,
-      "maximum_bounds_error": 7.107853889465332e-06,
+      "maximum_bounds_error": 1.1920928955078125e-06,
       "objects": {
         "Head • continuous shaped surface": 2.384185791015625e-07,
         "Ear L • reference gray shell and smaller pink inset": 7.152557373046875e-07,
@@ -82,7 +82,7 @@
         "Face • smile R": 2.384185791015625e-07,
         "Body • continuous bare skin and painted oval belly": 1.1920928955078125e-07,
         "Arm L • independent rounded limb": 2.980232238769531e-07,
-        "Arm R • independent rounded limb": 7.107853889465332e-06,
+        "Arm R • independent rounded limb": 1.0728836059570312e-06,
         "Tail • continuous upright curl": 1.0728836059570312e-06,
         "Tail • rounded tip": 1.1920928955078125e-06
       }
@@ -118,11 +118,11 @@
         "Face • smile R": 1.1920928955078125e-07,
         "Body • continuous bare skin and painted oval belly": 4.76837158203125e-07,
         "Arm L • independent rounded limb": 4.76837158203125e-07,
-        "Arm R • independent rounded limb": 5.364418029785156e-07,
+        "Arm R • independent rounded limb": 6.556510925292969e-07,
         "Tail • continuous upright curl": 1.1920928955078125e-06,
         "Tail • rounded tip": 7.152557373046875e-07
       }
     }
   ],
-  "bytes": 26191160
+  "bytes": 26626192
 }

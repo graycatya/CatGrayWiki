@@ -1,0 +1,97 @@
+TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
+Blender 4.1.1 (hash e1743a0317bc built 2024-04-15 23:33:30)
+Read blend: "E:\code\catgrayprj\CatGrayWiki\logo\ip\model_3d\CatGray_IP.blend"
+Fra:1 Mem:225.73M (Peak 225.73M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Studio floor
+Fra:1 Mem:225.73M (Peak 225.73M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Head • continuous shaped surface.001
+Fra:1 Mem:225.73M (Peak 225.73M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Ear R • rounded outer shell • perimeter.001
+Fra:1 Mem:225.73M (Peak 225.73M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Ear R • inset pink.001
+Fra:1 Mem:225.79M (Peak 225.79M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Eye L • charcoal socket.001
+Fra:1 Mem:226.80M (Peak 226.80M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Eye L • pupil.001
+Fra:1 Mem:227.85M (Peak 227.85M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Eye L • catchlight 2.001
+Fra:1 Mem:227.86M (Peak 227.86M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Eye R • orange iris.001
+Fra:1 Mem:228.10M (Peak 228.10M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tail • rounded tip.001
+Fra:1 Mem:239.84M (Peak 239.84M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tail • continuous upright curl.001
+Fra:1 Mem:239.85M (Peak 239.85M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Eye R • pupil.001
+Fra:1 Mem:240.20M (Peak 240.20M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Eye R • honey crescent.001
+Fra:1 Mem:240.39M (Peak 240.39M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Eye R • catchlight 1.001
+Fra:1 Mem:241.68M (Peak 241.68M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Eye R • catchlight 2.001
+Fra:1 Mem:242.37M (Peak 242.37M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Face • little charcoal nose.001
+Fra:1 Mem:242.43M (Peak 242.43M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Face • pink tongue.001
+Fra:1 Mem:242.80M (Peak 242.80M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Face • pink tongue • perimeter.001
+Fra:1 Mem:242.85M (Peak 242.85M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Face • philtrum.001
+Fra:1 Mem:243.05M (Peak 243.05M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Face • smile L.001
+Fra:1 Mem:243.50M (Peak 243.50M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Face • smile R.001
+Fra:1 Mem:243.69M (Peak 243.70M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Body • connected pelvis legs and paws.001
+Fra:1 Mem:245.02M (Peak 245.02M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cuff L • inset hem stitch.001
+Fra:1 Mem:245.58M (Peak 245.58M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hand L • relaxed mitten.001
+Fra:1 Mem:245.66M (Peak 245.66M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cuff R • rounded rib band.001
+Fra:1 Mem:247.37M (Peak 247.37M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cuff R • inset hem stitch.001
+Fra:1 Mem:247.52M (Peak 247.52M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hand R • relaxed mitten.001
+Fra:1 Mem:248.46M (Peak 248.46M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hood • continuous folded cloth.001
+Fra:1 Mem:249.19M (Peak 249.19M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hood • soft rolled outer hem.001
+Fra:1 Mem:250.30M (Peak 250.30M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hood • fine perimeter seam.001
+Fra:1 Mem:266.05M (Peak 266.05M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hoodie • drawcord tip 0.001
+Fra:1 Mem:269.85M (Peak 269.85M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hoodie • soft drawcord 0.001
+Fra:1 Mem:275.39M (Peak 275.39M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hoodie • drawcord tip -0.001
+Fra:1 Mem:275.48M (Peak 275.48M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hood • neckline fold.001
+Fra:1 Mem:275.49M (Peak 275.49M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hoodie • soft drawcord -0.001
+Fra:1 Mem:278.43M (Peak 278.43M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hoodie • small zipper pull.001
+Fra:1 Mem:279.69M (Peak 279.92M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hoodie • centered zipper seam.001
+Fra:1 Mem:279.94M (Peak 279.94M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Neckline • inset white undershirt.001
+Fra:1 Mem:287.55M (Peak 287.84M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hoodie • flat zipper placket.001
+Fra:1 Mem:288.16M (Peak 288.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Pocket R • topstitch.001
+Fra:1 Mem:290.34M (Peak 290.34M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hoodie • soft waistband.001
+Fra:1 Mem:292.14M (Peak 292.23M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Pocket L • sewn fabric panel.001
+Fra:1 Mem:305.71M (Peak 305.71M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Pocket L • hand opening.001
+Fra:1 Mem:308.14M (Peak 308.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Pocket L • topstitch.001
+Fra:1 Mem:308.19M (Peak 308.19M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Pocket R • sewn fabric panel.001
+Fra:1 Mem:309.58M (Peak 309.58M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Pocket R • hand opening.001
+Fra:1 Mem:362.27M (Peak 455.46M) | Time:00:00.16 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:362.03M (Peak 455.46M) | Time:00:00.17 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading CatGray_Fur_BaseColor
+Fra:1 Mem:371.39M (Peak 455.46M) | Time:00:00.19 | Mem:12.00M, Peak:12.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:371.40M (Peak 455.46M) | Time:00:00.19 | Mem:12.00M, Peak:12.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:371.40M (Peak 455.46M) | Time:00:00.19 | Mem:12.00M, Peak:12.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:371.40M (Peak 455.46M) | Time:00:00.19 | Mem:12.00M, Peak:12.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:371.49M (Peak 455.46M) | Time:00:00.19 | Mem:12.01M, Peak:12.01M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:371.49M (Peak 455.46M) | Time:00:00.19 | Mem:12.01M, Peak:12.01M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:371.49M (Peak 455.46M) | Time:00:00.19 | Mem:12.01M, Peak:12.01M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:371.49M (Peak 455.46M) | Time:00:00.19 | Mem:12.01M, Peak:12.01M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:371.49M (Peak 455.46M) | Time:00:00.19 | Mem:12.01M, Peak:12.01M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:371.49M (Peak 455.46M) | Time:00:00.19 | Mem:12.01M, Peak:12.01M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:371.50M (Peak 455.46M) | Time:00:00.19 | Mem:12.03M, Peak:12.03M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:371.50M (Peak 455.46M) | Time:00:00.19 | Mem:12.03M, Peak:12.03M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:371.50M (Peak 455.46M) | Time:00:00.19 | Mem:12.03M, Peak:12.03M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:371.51M (Peak 455.46M) | Time:00:00.19 | Mem:12.03M, Peak:12.03M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:395.44M (Peak 455.46M) | Time:00:00.22 | Mem:12.03M, Peak:12.03M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:407.94M (Peak 455.46M) | Time:00:00.22 | Mem:12.03M, Peak:12.03M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:407.93M (Peak 455.46M) | Time:00:00.22 | Mem:24.52M, Peak:24.52M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:407.94M (Peak 455.46M) | Time:00:00.22 | Mem:24.52M, Peak:24.52M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:407.94M (Peak 455.46M) | Time:00:00.22 | Mem:72.39M, Peak:72.39M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:1 Mem:407.94M (Peak 455.46M) | Time:00:00.27 | Mem:124.52M, Peak:172.39M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:407.94M (Peak 455.46M) | Time:00:00.27 | Mem:124.52M, Peak:172.39M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:468.75M (Peak 468.75M) | Time:00:00.29 | Mem:124.52M, Peak:172.39M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:468.75M (Peak 468.75M) | Time:00:00.29 | Mem:185.34M, Peak:185.34M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:468.75M (Peak 468.75M) | Time:00:00.29 | Mem:185.34M, Peak:185.34M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:468.75M (Peak 468.75M) | Time:00:00.29 | Mem:185.34M, Peak:185.34M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:468.75M (Peak 468.75M) | Time:00:00.29 | Mem:185.34M, Peak:185.34M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:468.75M (Peak 468.75M) | Time:00:00.29 | Mem:185.34M, Peak:185.34M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:468.75M (Peak 468.75M) | Time:00:00.29 | Mem:185.42M, Peak:185.42M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:468.75M (Peak 468.75M) | Time:00:00.29 | Mem:185.42M, Peak:185.42M | Scene, ViewLayer | Updating Lights | Computing distribution
+Fra:1 Mem:468.75M (Peak 468.75M) | Time:00:00.29 | Mem:185.42M, Peak:185.42M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:468.75M (Peak 468.75M) | Time:00:00.29 | Mem:185.42M, Peak:185.42M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:469.75M (Peak 469.75M) | Time:00:00.29 | Mem:186.42M, Peak:186.42M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:469.75M (Peak 469.75M) | Time:00:00.29 | Mem:186.34M, Peak:186.42M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:469.75M (Peak 469.75M) | Time:00:00.29 | Mem:186.42M, Peak:186.42M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:469.75M (Peak 469.75M) | Time:00:00.29 | Mem:186.42M, Peak:186.42M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:469.76M (Peak 469.76M) | Time:00:00.29 | Mem:186.42M, Peak:186.42M | Scene, ViewLayer | Sample 0/48
+Fra:1 Mem:516.23M (Peak 516.23M) | Time:00:00.41 | Remaining:00:05.65 | Mem:232.82M, Peak:232.82M | Scene, ViewLayer | Sample 1/48
+Fra:1 Mem:535.77M (Peak 565.07M) | Time:00:06.06 | Mem:232.82M, Peak:232.82M | Scene, ViewLayer | Sample 48/48
+Fra:1 Mem:535.77M (Peak 565.07M) | Time:00:06.06 | Mem:232.82M, Peak:232.82M | Scene, ViewLayer | Finished
+Saved: 'E:\code\catgrayprj\CatGrayWiki\logo\ip\model_3d\qa\glb_reimport_hero.png'
+Time: 00:06.13 (Saving: 00:00.05)
+
+Data are loaded, start creating Blender stuff
+glTF import finished in 1.87s
+EXPORT_VERIFIED {"glb_header": "valid glTF 2.0 binary", "embedded_images": 1, "mesh_objects_after_reimport": 58, "world_bounds_match": true, "triangles": 1568414, "materials": 18, "external_dependencies": false, "reimport_render": "qa/glb_reimport_hero.png"}
+
+Blender quit

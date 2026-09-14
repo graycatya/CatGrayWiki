@@ -1,5 +1,5 @@
 {
-  "revision": "v9",
+  "revision": "v10",
   "viewport": {
     "in_front": false,
     "bone_display": "STICK",
@@ -9,487 +9,681 @@
     {
       "frame": 1,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.9999997010273777,
+      "maximum_section_area_ratio": 1.0000005265577105,
+      "maximum_adjacent_section_turn_degrees": 7.10155429328465
     },
     {
       "frame": 2,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0000240327477505,
+      "maximum_section_area_ratio": 1.0000260247131643,
+      "maximum_adjacent_section_turn_degrees": 7.210038187871962
     },
     {
       "frame": 3,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.000072455172164,
+      "maximum_section_area_ratio": 1.0001027997278016,
+      "maximum_adjacent_section_turn_degrees": 7.517055191064036
     },
     {
       "frame": 4,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.000080305692171,
+      "maximum_section_area_ratio": 1.0002300585017452,
+      "maximum_adjacent_section_turn_degrees": 8.1159270312644
     },
     {
       "frame": 5,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.9999536805505075,
+      "maximum_section_area_ratio": 1.0004069558624356,
+      "maximum_adjacent_section_turn_degrees": 8.992741466907386
     },
     {
       "frame": 6,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.9995736089936652,
+      "maximum_section_area_ratio": 1.0006315767462792,
+      "maximum_adjacent_section_turn_degrees": 10.00173799223669
     },
     {
       "frame": 7,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.9988026196868873,
+      "maximum_section_area_ratio": 1.0009019591868469,
+      "maximum_adjacent_section_turn_degrees": 11.055084643394178
     },
     {
       "frame": 8,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.997518533925479,
+      "maximum_section_area_ratio": 1.0012152616491514,
+      "maximum_adjacent_section_turn_degrees": 12.059734607090416
     },
     {
       "frame": 9,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.995622852378967,
+      "maximum_section_area_ratio": 1.001569288575231,
+      "maximum_adjacent_section_turn_degrees": 12.919674206615237
     },
     {
       "frame": 10,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.9930946176258855,
+      "maximum_section_area_ratio": 1.0019589709538095,
+      "maximum_adjacent_section_turn_degrees": 13.546809369601116
     },
     {
       "frame": 11,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.9900205274510446,
+      "maximum_section_area_ratio": 1.0023802103672126,
+      "maximum_adjacent_section_turn_degrees": 13.866026798198124
     },
     {
       "frame": 12,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.9866338146092272,
+      "maximum_section_area_ratio": 1.0028296336199953,
+      "maximum_adjacent_section_turn_degrees": 13.827256083148193
     },
     {
       "frame": 13,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.9832959075045046,
+      "maximum_section_area_ratio": 1.0033001271173463,
+      "maximum_adjacent_section_turn_degrees": 13.408574024762872
     },
     {
       "frame": 14,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.9804843530018144,
+      "maximum_section_area_ratio": 1.0037881959892438,
+      "maximum_adjacent_section_turn_degrees": 12.621512543682087
     },
     {
       "frame": 15,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.9787104248442966,
+      "maximum_section_area_ratio": 1.0042883558996003,
+      "maximum_adjacent_section_turn_degrees": 11.508381246719475
     },
     {
       "frame": 16,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.9784373211043186,
+      "maximum_section_area_ratio": 1.0047985108466717,
+      "maximum_adjacent_section_turn_degrees": 10.138223954873762
     },
     {
       "frame": 17,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.9799874463470429,
+      "maximum_section_area_ratio": 1.0053138051462918,
+      "maximum_adjacent_section_turn_degrees": 8.59996290094934
     },
     {
       "frame": 18,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.9834229319912203,
+      "maximum_section_area_ratio": 1.0058345851911854,
+      "maximum_adjacent_section_turn_degrees": 7.36420494894926
     },
     {
       "frame": 19,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.988512668238359,
+      "maximum_section_area_ratio": 1.0063599335485152,
+      "maximum_adjacent_section_turn_degrees": 6.356286312848348
     },
     {
       "frame": 20,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.994624197904407,
+      "maximum_section_area_ratio": 1.006892515095639,
+      "maximum_adjacent_section_turn_degrees": 5.386706382332365
     },
     {
       "frame": 21,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0007479046958543,
+      "maximum_section_area_ratio": 1.0074342564315084,
+      "maximum_adjacent_section_turn_degrees": 5.524496484214087
     },
     {
       "frame": 22,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0027492035514298,
+      "maximum_section_area_ratio": 1.0081652129800411,
+      "maximum_adjacent_section_turn_degrees": 5.75343289924869
     },
     {
       "frame": 23,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.003026982948013,
+      "maximum_section_area_ratio": 1.0092170696396614,
+      "maximum_adjacent_section_turn_degrees": 5.924799784203371
     },
     {
       "frame": 24,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0033447851500479,
+      "maximum_section_area_ratio": 1.0102903894545872,
+      "maximum_adjacent_section_turn_degrees": 6.032214754185576
     },
     {
       "frame": 25,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0036975009717328,
+      "maximum_section_area_ratio": 1.0111198154995624,
+      "maximum_adjacent_section_turn_degrees": 6.068826275684137
     },
     {
       "frame": 26,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0040793947697741,
+      "maximum_section_area_ratio": 1.01185721515491,
+      "maximum_adjacent_section_turn_degrees": 6.065821419336155
     },
     {
       "frame": 27,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.004459744382885,
+      "maximum_section_area_ratio": 1.0125946806061412,
+      "maximum_adjacent_section_turn_degrees": 6.060809768032658
     },
     {
       "frame": 28,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0048419498055174,
+      "maximum_section_area_ratio": 1.0133255737432965,
+      "maximum_adjacent_section_turn_degrees": 6.050418488984129
     },
     {
       "frame": 29,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0052287379439402,
+      "maximum_section_area_ratio": 1.0140384401564606,
+      "maximum_adjacent_section_turn_degrees": 6.0347811977662085
     },
     {
       "frame": 30,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.005617026334339,
+      "maximum_section_area_ratio": 1.014729698462506,
+      "maximum_adjacent_section_turn_degrees": 6.0206017250492625
     },
     {
       "frame": 31,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0060058360608635,
+      "maximum_section_area_ratio": 1.0153847367807047,
+      "maximum_adjacent_section_turn_degrees": 6.002602042152163
     },
     {
       "frame": 32,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0063820356448658,
+      "maximum_section_area_ratio": 1.0160242479255714,
+      "maximum_adjacent_section_turn_degrees": 5.985137675331264
     },
     {
       "frame": 33,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0067411941938627,
+      "maximum_section_area_ratio": 1.0166438394982609,
+      "maximum_adjacent_section_turn_degrees": 5.972481761686053
     },
     {
       "frame": 34,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0070713865585006,
+      "maximum_section_area_ratio": 1.0172517229046896,
+      "maximum_adjacent_section_turn_degrees": 5.96703084384156
     },
     {
       "frame": 35,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0073694504471256,
+      "maximum_section_area_ratio": 1.0178673947081667,
+      "maximum_adjacent_section_turn_degrees": 5.968706374622328
     },
     {
       "frame": 36,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0076265694182778,
+      "maximum_section_area_ratio": 1.018494064275453,
+      "maximum_adjacent_section_turn_degrees": 5.983761819100329
     },
     {
       "frame": 37,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0078341267953423,
+      "maximum_section_area_ratio": 1.0191078908942797,
+      "maximum_adjacent_section_turn_degrees": 6.01317346744005
     },
     {
       "frame": 38,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0079934540920494,
+      "maximum_section_area_ratio": 1.0196529458856638,
+      "maximum_adjacent_section_turn_degrees": 6.067437185961686
     },
     {
       "frame": 39,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0081056415239813,
+      "maximum_section_area_ratio": 1.0200262323698819,
+      "maximum_adjacent_section_turn_degrees": 6.132132737780046
     },
     {
       "frame": 40,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0081780204420432,
+      "maximum_section_area_ratio": 1.0201408185430472,
+      "maximum_adjacent_section_turn_degrees": 6.214890297971683
     },
     {
       "frame": 41,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0082168714669446,
+      "maximum_section_area_ratio": 1.019959591640482,
+      "maximum_adjacent_section_turn_degrees": 6.296564846293049
     },
     {
       "frame": 42,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.008242085758605,
+      "maximum_section_area_ratio": 1.0196116079391409,
+      "maximum_adjacent_section_turn_degrees": 6.377351043135491
     },
     {
       "frame": 43,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0082667093019089,
+      "maximum_section_area_ratio": 1.019377920742846,
+      "maximum_adjacent_section_turn_degrees": 6.447801029329587
     },
     {
       "frame": 44,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0083150510832195,
+      "maximum_section_area_ratio": 1.0194612672823953,
+      "maximum_adjacent_section_turn_degrees": 6.489512140817209
     },
     {
       "frame": 45,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0084016026157148,
+      "maximum_section_area_ratio": 1.0196556719194072,
+      "maximum_adjacent_section_turn_degrees": 6.499777915139738
     },
     {
       "frame": 46,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0085314710312994,
+      "maximum_section_area_ratio": 1.0198028872580114,
+      "maximum_adjacent_section_turn_degrees": 6.475022748266673
     },
     {
       "frame": 47,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0087089144490935,
+      "maximum_section_area_ratio": 1.0204068128535944,
+      "maximum_adjacent_section_turn_degrees": 6.411969003170054
     },
     {
       "frame": 48,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.00891460682123,
+      "maximum_section_area_ratio": 1.0212487934128767,
+      "maximum_adjacent_section_turn_degrees": 6.316803550577443
     },
     {
       "frame": 49,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.009131428366801,
+      "maximum_section_area_ratio": 1.0220490513063518,
+      "maximum_adjacent_section_turn_degrees": 6.2132497719104105
     },
     {
       "frame": 50,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.009340261655279,
+      "maximum_section_area_ratio": 1.0224293584993605,
+      "maximum_adjacent_section_turn_degrees": 6.097861409845861
     },
     {
       "frame": 51,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0095198252897462,
+      "maximum_section_area_ratio": 1.0222883930146867,
+      "maximum_adjacent_section_turn_degrees": 5.986742342899393
     },
     {
       "frame": 52,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.009655698919698,
+      "maximum_section_area_ratio": 1.02182976647498,
+      "maximum_adjacent_section_turn_degrees": 5.937259329909943
     },
     {
       "frame": 53,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0097287388564007,
+      "maximum_section_area_ratio": 1.0212769502071795,
+      "maximum_adjacent_section_turn_degrees": 5.910721910550328
     },
     {
       "frame": 54,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.009735679096333,
+      "maximum_section_area_ratio": 1.0207653107247527,
+      "maximum_adjacent_section_turn_degrees": 5.893252421087551
     },
     {
       "frame": 55,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0096568891415418,
+      "maximum_section_area_ratio": 1.0203321405396173,
+      "maximum_adjacent_section_turn_degrees": 5.876998705297036
     },
     {
       "frame": 56,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.009517442006876,
+      "maximum_section_area_ratio": 1.0199691592054982,
+      "maximum_adjacent_section_turn_degrees": 5.8743631060510575
     },
     {
       "frame": 57,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0093192706527372,
+      "maximum_section_area_ratio": 1.0196706739475208,
+      "maximum_adjacent_section_turn_degrees": 5.877999328010444
     },
     {
       "frame": 58,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0090661567928936,
+      "maximum_section_area_ratio": 1.0194235545405121,
+      "maximum_adjacent_section_turn_degrees": 5.8894595316640785
     },
     {
       "frame": 59,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0087678598495782,
+      "maximum_section_area_ratio": 1.0192216240232885,
+      "maximum_adjacent_section_turn_degrees": 5.904981990326578
     },
     {
       "frame": 60,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0084128089388498,
+      "maximum_section_area_ratio": 1.0190361189872714,
+      "maximum_adjacent_section_turn_degrees": 5.928966626483902
     },
     {
       "frame": 61,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0080246966168012,
+      "maximum_section_area_ratio": 1.018821286793279,
+      "maximum_adjacent_section_turn_degrees": 5.951999305025654
     },
     {
       "frame": 62,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0076236838854356,
+      "maximum_section_area_ratio": 1.0184949860430457,
+      "maximum_adjacent_section_turn_degrees": 5.984220295548366
     },
     {
       "frame": 63,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.00721775355472,
+      "maximum_section_area_ratio": 1.0180221832849095,
+      "maximum_adjacent_section_turn_degrees": 6.040885252450084
     },
     {
       "frame": 64,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.006821479817869,
+      "maximum_section_area_ratio": 1.0173992059645294,
+      "maximum_adjacent_section_turn_degrees": 6.103613282900659
     },
     {
       "frame": 65,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.006436752576612,
+      "maximum_section_area_ratio": 1.016703824993237,
+      "maximum_adjacent_section_turn_degrees": 6.136127544670858
     },
     {
       "frame": 66,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0060723732806218,
+      "maximum_section_area_ratio": 1.0159864940946481,
+      "maximum_adjacent_section_turn_degrees": 6.156828140497874
     },
     {
       "frame": 67,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0057243927009902,
+      "maximum_section_area_ratio": 1.0152941454422724,
+      "maximum_adjacent_section_turn_degrees": 6.162206914469259
     },
     {
       "frame": 68,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.005388141950934,
+      "maximum_section_area_ratio": 1.0146235913861879,
+      "maximum_adjacent_section_turn_degrees": 6.155936373924364
     },
     {
       "frame": 69,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0050600166682788,
+      "maximum_section_area_ratio": 1.0139588401891944,
+      "maximum_adjacent_section_turn_degrees": 6.142163297463034
     },
     {
       "frame": 70,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0047267168043739,
+      "maximum_section_area_ratio": 1.01328499235909,
+      "maximum_adjacent_section_turn_degrees": 6.126823546360831
     },
     {
       "frame": 71,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0043919441924558,
+      "maximum_section_area_ratio": 1.012580478379557,
+      "maximum_adjacent_section_turn_degrees": 6.110579222080425
     },
     {
       "frame": 72,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0040464618110165,
+      "maximum_section_area_ratio": 1.0118556550964937,
+      "maximum_adjacent_section_turn_degrees": 6.091363765511064
     },
     {
       "frame": 73,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0036836457973775,
+      "maximum_section_area_ratio": 1.0111179119408158,
+      "maximum_adjacent_section_turn_degrees": 6.079895877894612
     },
     {
       "frame": 74,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.003309204491801,
+      "maximum_section_area_ratio": 1.0103772493734076,
+      "maximum_adjacent_section_turn_degrees": 6.073798653399907
     },
     {
       "frame": 75,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0029295647333651,
+      "maximum_section_area_ratio": 1.0096441183267426,
+      "maximum_adjacent_section_turn_degrees": 6.072475304248217
     },
     {
       "frame": 76,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.002549918046745,
+      "maximum_section_area_ratio": 1.008909288207923,
+      "maximum_adjacent_section_turn_degrees": 6.072959393905641
     },
     {
       "frame": 77,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0022234720734096,
+      "maximum_section_area_ratio": 1.0080229579193252,
+      "maximum_adjacent_section_turn_degrees": 6.014021264670778
     },
     {
       "frame": 78,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.001959013823248,
+      "maximum_section_area_ratio": 1.007001824603741,
+      "maximum_adjacent_section_turn_degrees": 5.865948739880425
     },
     {
       "frame": 79,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0016156673776497,
+      "maximum_section_area_ratio": 1.0061164999446406,
+      "maximum_adjacent_section_turn_degrees": 5.638437273061416
     },
     {
       "frame": 80,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.9952640789935172,
+      "maximum_section_area_ratio": 1.005601330327901,
+      "maximum_adjacent_section_turn_degrees": 5.342581225859967
     },
     {
       "frame": 81,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.9884416080755537,
+      "maximum_section_area_ratio": 1.0051024860435902,
+      "maximum_adjacent_section_turn_degrees": 6.1770467811015815
     },
     {
       "frame": 82,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.9827328356520252,
+      "maximum_section_area_ratio": 1.0046163237850083,
+      "maximum_adjacent_section_turn_degrees": 7.319173511751365
     },
     {
       "frame": 83,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.9790876307271342,
+      "maximum_section_area_ratio": 1.0041389977420367,
+      "maximum_adjacent_section_turn_degrees": 8.744128557534445
     },
     {
       "frame": 84,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.9778404736220759,
+      "maximum_section_area_ratio": 1.003669738613555,
+      "maximum_adjacent_section_turn_degrees": 10.46944714848436
     },
     {
       "frame": 85,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.978803555139048,
+      "maximum_section_area_ratio": 1.0032106373860663,
+      "maximum_adjacent_section_turn_degrees": 11.948586938726798
     },
     {
       "frame": 86,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.9814512936380785,
+      "maximum_section_area_ratio": 1.0027643430441429,
+      "maximum_adjacent_section_turn_degrees": 13.061011311110311
     },
     {
       "frame": 87,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.9850743097365552,
+      "maximum_section_area_ratio": 1.0023348492425712,
+      "maximum_adjacent_section_turn_degrees": 13.720424240566377
     },
     {
       "frame": 88,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.9889651109274783,
+      "maximum_section_area_ratio": 1.0019287322206765,
+      "maximum_adjacent_section_turn_degrees": 13.890871611304044
     },
     {
       "frame": 89,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.9925460488132652,
+      "maximum_section_area_ratio": 1.0015500143249423,
+      "maximum_adjacent_section_turn_degrees": 13.589374254734988
     },
     {
       "frame": 90,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.9954592159608787,
+      "maximum_section_area_ratio": 1.0012039409050628,
+      "maximum_adjacent_section_turn_degrees": 12.8848795154359
     },
     {
       "frame": 91,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.9975746200242496,
+      "maximum_section_area_ratio": 1.0008952931520654,
+      "maximum_adjacent_section_turn_degrees": 11.88433278788355
     },
     {
       "frame": 92,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.9989303984434338,
+      "maximum_section_area_ratio": 1.000628273223549,
+      "maximum_adjacent_section_turn_degrees": 10.719922991953421
     },
     {
       "frame": 93,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.99967214331572,
+      "maximum_section_area_ratio": 1.000405628727664,
+      "maximum_adjacent_section_turn_degrees": 9.532009661315634
     },
     {
       "frame": 94,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.9999853011261758,
+      "maximum_section_area_ratio": 1.0002298331604704,
+      "maximum_adjacent_section_turn_degrees": 8.45008122980258
     },
     {
       "frame": 95,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.000052248013452,
+      "maximum_section_area_ratio": 1.0001028106656358,
+      "maximum_adjacent_section_turn_degrees": 7.6305695199750625
     },
     {
       "frame": 96,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 1.0000219728637074,
+      "maximum_section_area_ratio": 1.0000260897768671,
+      "maximum_adjacent_section_turn_degrees": 7.240747572153986
     },
     {
       "frame": 97,
       "nonadjacent_surface_intersections": 0,
-      "local_hand_rotation_radians": 0.0
+      "minimum_section_area_ratio": 0.9999997010273777,
+      "maximum_section_area_ratio": 1.0000005265577105,
+      "maximum_adjacent_section_turn_degrees": 7.10155429328465
     }
   ],
   "passed": true

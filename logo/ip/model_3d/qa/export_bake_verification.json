@@ -7,13 +7,13 @@
     },
     {
       "clip": "Wave",
-      "maximum_baked_pose_matrix_error": 0.0009560883045196533
+      "maximum_baked_pose_matrix_error": 1.5135854482650757e-05
     },
     {
       "clip": "Walk_InPlace",
       "maximum_baked_pose_matrix_error": 4.2632222175598145e-05
     }
   ],
-  "export_bones": 39,
+  "export_bones": 80,
   "native_constraints_preserved": true
 }

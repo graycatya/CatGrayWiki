@@ -15,7 +15,8 @@ doc=json.loads(raw[20:20+size])
 names={a['name'] for a in doc.get('animations',[])}
 assert names=={'Idle_Breathe','Wave','Walk_InPlace'},names
 assert len(doc.get('skins',[]))==1
-assert 38<=len(doc['skins'][0]['joints'])<=43
+expected_bones=json.loads((OUT/'model_info.json').read_text())['rig_revision']['bones']-4
+assert len(doc['skins'][0]['joints'])==expected_bones
 assert len(doc.get('images',[]))==2
 assert all('bufferView' in i and 'uri' not in i for i in doc['images'])
 assert all('uri' not in b for b in doc['buffers'])

@@ -91,6 +91,7 @@ pixel_error=float(np.mean(np.abs(image_pixels(OUT/'preview_animation.png')-
 assert pixel_error<.015, ('Encoded wave differs from source frame',pixel_error)
 (OUT/'qa/animation_video_verification.json').write_text(json.dumps({'passed':True,'videos':videos,
     'reel_frame_126_mean_rgb_error':pixel_error},indent=2))
+shutil.copy2(ANIM/'Wave.mp4',ANIM/'Wave_v10.mp4')
 # The delivered videos and decoded/poster frames are retained. Temporary
 # image sequences are generated solely for encoding, so remove them now.
 for path in FRAMES.glob('frame_*.png'): path.unlink()

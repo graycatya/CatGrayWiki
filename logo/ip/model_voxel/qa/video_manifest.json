@@ -1,0 +1,147 @@
+{
+  "videos": [
+    {
+      "file": "Walk_InPlace.mp4",
+      "frames": 96,
+      "duration_seconds": 4.0,
+      "fps": 24,
+      "resolution": [
+        720,
+        720
+      ],
+      "codec": "H.264"
+    },
+    {
+      "file": "Run_InPlace.mp4",
+      "frames": 96,
+      "duration_seconds": 4.0,
+      "fps": 24,
+      "resolution": [
+        720,
+        720
+      ],
+      "codec": "H.264"
+    },
+    {
+      "file": "Jump.mp4",
+      "frames": 96,
+      "duration_seconds": 4.0,
+      "fps": 24,
+      "resolution": [
+        720,
+        720
+      ],
+      "codec": "H.264"
+    },
+    {
+      "file": "Head_Nod.mp4",
+      "frames": 48,
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": [
+        720,
+        720
+      ],
+      "codec": "H.264"
+    },
+    {
+      "file": "Head_Shake.mp4",
+      "frames": 48,
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": [
+        720,
+        720
+      ],
+      "codec": "H.264"
+    },
+    {
+      "file": "Head_Turn.mp4",
+      "frames": 72,
+      "duration_seconds": 3.0,
+      "fps": 24,
+      "resolution": [
+        720,
+        720
+      ],
+      "codec": "H.264"
+    },
+    {
+      "file": "Blink.mp4",
+      "frames": 36,
+      "duration_seconds": 1.5,
+      "fps": 24,
+      "resolution": [
+        720,
+        720
+      ],
+      "codec": "H.264"
+    },
+    {
+      "file": "Mouth_Talk.mp4",
+      "frames": 72,
+      "duration_seconds": 3.0,
+      "fps": 24,
+      "resolution": [
+        720,
+        720
+      ],
+      "codec": "H.264"
+    },
+    {
+      "file": "Emotion_Joy.mp4",
+      "frames": 72,
+      "duration_seconds": 3.0,
+      "fps": 24,
+      "resolution": [
+        720,
+        720
+      ],
+      "codec": "H.264"
+    },
+    {
+      "file": "Emotion_Sad.mp4",
+      "frames": 72,
+      "duration_seconds": 3.0,
+      "fps": 24,
+      "resolution": [
+        720,
+        720
+      ],
+      "codec": "H.264"
+    },
+    {
+      "file": "Emotion_Pain.mp4",
+      "frames": 72,
+      "duration_seconds": 3.0,
+      "fps": 24,
+      "resolution": [
+        720,
+        720
+      ],
+      "codec": "H.264"
+    },
+    {
+      "file": "Emotion_Angry.mp4",
+      "frames": 72,
+      "duration_seconds": 3.0,
+      "fps": 24,
+      "resolution": [
+        720,
+        720
+      ],
+      "codec": "H.264"
+    },
+    {
+      "file": "CatGray_Voxel_Animation_Preview.mp4",
+      "frames": 852,
+      "duration_seconds": 35.5,
+      "fps": 24,
+      "resolution": [
+        720,
+        720
+      ],
+      "codec": "H.264"
+    }
+  ]
+}

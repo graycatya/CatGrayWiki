@@ -1,0 +1,255 @@
+{
+  "passed": true,
+  "videos": [
+    {
+      "file": "Walk_InPlace.mp4",
+      "expected_frames": 96,
+      "decoded_frames": 96,
+      "mean_rgb_error": 0.003928061109036207,
+      "comparisons": [
+        {
+          "frame": 13,
+          "source_action": "Walk_InPlace",
+          "mean_rgb_error": 0.003928061109036207
+        }
+      ],
+      "sha256": "3dff7b101ddd5f86ae3fb851367680d9b4f707c952b510c1a1370aa6c9248aa2",
+      "passed": true
+    },
+    {
+      "file": "Run_InPlace.mp4",
+      "expected_frames": 96,
+      "decoded_frames": 96,
+      "mean_rgb_error": 0.003989473916590214,
+      "comparisons": [
+        {
+          "frame": 8,
+          "source_action": "Run_InPlace",
+          "mean_rgb_error": 0.003989473916590214
+        }
+      ],
+      "sha256": "6d889e310fbfb598de58fb16fb574038e4ac55e28d8b0c017b9e2bdea420cc60",
+      "passed": true
+    },
+    {
+      "file": "Jump.mp4",
+      "expected_frames": 96,
+      "decoded_frames": 96,
+      "mean_rgb_error": 0.0035802791826426983,
+      "comparisons": [
+        {
+          "frame": 23,
+          "source_action": "Jump",
+          "mean_rgb_error": 0.0035802791826426983
+        }
+      ],
+      "sha256": "e38cc29f4d0b4f50dc3ce82d8f2053f795bf6f4343b0439cab2cdb23ba361fb2",
+      "passed": true
+    },
+    {
+      "file": "Head_Nod.mp4",
+      "expected_frames": 48,
+      "decoded_frames": 48,
+      "mean_rgb_error": 0.005440975073724985,
+      "comparisons": [
+        {
+          "frame": 15,
+          "source_action": "Head_Nod",
+          "mean_rgb_error": 0.005440975073724985
+        }
+      ],
+      "sha256": "76beb24ce02eb1b78643bd873c0cb5d49f9a4ecf87c026404b887933b20e13d1",
+      "passed": true
+    },
+    {
+      "file": "Head_Shake.mp4",
+      "expected_frames": 48,
+      "decoded_frames": 48,
+      "mean_rgb_error": 0.00449484633281827,
+      "comparisons": [
+        {
+          "frame": 19,
+          "source_action": "Head_Shake",
+          "mean_rgb_error": 0.00449484633281827
+        }
+      ],
+      "sha256": "0d84d237386907c3ba50c6f8b4efdcade927cf7f513a6fca6d2502e36cd82fbb",
+      "passed": true
+    },
+    {
+      "file": "Head_Turn.mp4",
+      "expected_frames": 72,
+      "decoded_frames": 72,
+      "mean_rgb_error": 0.003871351247653365,
+      "comparisons": [
+        {
+          "frame": 23,
+          "source_action": "Head_Turn",
+          "mean_rgb_error": 0.003871351247653365
+        }
+      ],
+      "sha256": "5b0b6156014a931474e293862c45381a5fa4b98f60ef138ac683b28876e5571b",
+      "passed": true
+    },
+    {
+      "file": "Blink.mp4",
+      "expected_frames": 36,
+      "decoded_frames": 36,
+      "mean_rgb_error": 0.003681791014969349,
+      "comparisons": [
+        {
+          "frame": 12,
+          "source_action": "Blink",
+          "mean_rgb_error": 0.003681791014969349
+        }
+      ],
+      "sha256": "c6a05423b4f8843a4e5591b85fd6a46c0ce8276f70166260770fb3cce3943d8e",
+      "passed": true
+    },
+    {
+      "file": "Mouth_Talk.mp4",
+      "expected_frames": 72,
+      "decoded_frames": 72,
+      "mean_rgb_error": 0.003803896252065897,
+      "comparisons": [
+        {
+          "frame": 19,
+          "source_action": "Mouth_Talk",
+          "mean_rgb_error": 0.003803896252065897
+        }
+      ],
+      "sha256": "07dbd494c1225428e505e6fc1718491bb82f08634458fbc15e10092f93e22d52",
+      "passed": true
+    },
+    {
+      "file": "Emotion_Joy.mp4",
+      "expected_frames": 72,
+      "decoded_frames": 72,
+      "mean_rgb_error": 0.003768808441236615,
+      "comparisons": [
+        {
+          "frame": 37,
+          "source_action": "Emotion_Joy",
+          "mean_rgb_error": 0.003768808441236615
+        }
+      ],
+      "sha256": "c3f93f3a85c6f6a08f00bb8ef4956157f9f66dc7cfcb9d0a7f86bbf97dd633b0",
+      "passed": true
+    },
+    {
+      "file": "Emotion_Sad.mp4",
+      "expected_frames": 72,
+      "decoded_frames": 72,
+      "mean_rgb_error": 0.0035777301527559757,
+      "comparisons": [
+        {
+          "frame": 37,
+          "source_action": "Emotion_Sad",
+          "mean_rgb_error": 0.0035777301527559757
+        }
+      ],
+      "sha256": "d86f095f9076648dc2f162cb9d30c7df0d23873bb3b6e1ca0e01ea23fcc0aee1",
+      "passed": true
+    },
+    {
+      "file": "Emotion_Pain.mp4",
+      "expected_frames": 72,
+      "decoded_frames": 72,
+      "mean_rgb_error": 0.003948935307562351,
+      "comparisons": [
+        {
+          "frame": 37,
+          "source_action": "Emotion_Pain",
+          "mean_rgb_error": 0.003948935307562351
+        }
+      ],
+      "sha256": "f7aa1fd9415b36ac964d499407b85d70cb3d014d3470820f3377044397d96c20",
+      "passed": true
+    },
+    {
+      "file": "Emotion_Angry.mp4",
+      "expected_frames": 72,
+      "decoded_frames": 72,
+      "mean_rgb_error": 0.0039609381929039955,
+      "comparisons": [
+        {
+          "frame": 37,
+          "source_action": "Emotion_Angry",
+          "mean_rgb_error": 0.0039609381929039955
+        }
+      ],
+      "sha256": "640d525aafcf644aee00ac77ad81526944d1b7b08eb0762aed0fe967673e51d2",
+      "passed": true
+    },
+    {
+      "file": "CatGray_Voxel_Animation_Preview.mp4",
+      "expected_frames": 852,
+      "decoded_frames": 852,
+      "mean_rgb_error": 0.005366119090467691,
+      "comparisons": [
+        {
+          "frame": 13,
+          "source_action": "Walk_InPlace",
+          "mean_rgb_error": 0.003928061109036207
+        },
+        {
+          "frame": 104,
+          "source_action": "Run_InPlace",
+          "mean_rgb_error": 0.003989411052316427
+        },
+        {
+          "frame": 215,
+          "source_action": "Jump",
+          "mean_rgb_error": 0.003650873666629195
+        },
+        {
+          "frame": 303,
+          "source_action": "Head_Nod",
+          "mean_rgb_error": 0.005366119090467691
+        },
+        {
+          "frame": 355,
+          "source_action": "Head_Shake",
+          "mean_rgb_error": 0.005345210433006287
+        },
+        {
+          "frame": 407,
+          "source_action": "Head_Turn",
+          "mean_rgb_error": 0.00451664486899972
+        },
+        {
+          "frame": 468,
+          "source_action": "Blink",
+          "mean_rgb_error": 0.003896324895322323
+        },
+        {
+          "frame": 511,
+          "source_action": "Mouth_Talk",
+          "mean_rgb_error": 0.0038088031578809023
+        },
+        {
+          "frame": 601,
+          "source_action": "Emotion_Joy",
+          "mean_rgb_error": 0.004267872776836157
+        },
+        {
+          "frame": 673,
+          "source_action": "Emotion_Sad",
+          "mean_rgb_error": 0.003573852125555277
+        },
+        {
+          "frame": 745,
+          "source_action": "Emotion_Pain",
+          "mean_rgb_error": 0.004592978395521641
+        },
+        {
+          "frame": 817,
+          "source_action": "Emotion_Angry",
+          "mean_rgb_error": 0.004506361670792103
+        }
+      ],
+      "sha256": "fa1607fd9c38fa818989204b5bd08ad61b41a92500682ae395efc9914a8e878a",
+      "passed": true
+    }
+  ]
+}

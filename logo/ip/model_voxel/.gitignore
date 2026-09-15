@@ -1,0 +1,5 @@
+__pycache__/
+qa/logs/
+qa/animation_frames/
+*.blend1
+*.blend2

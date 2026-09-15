@@ -1,0 +1,611 @@
+{
+  "version": "v3",
+  "style": "voxel",
+  "status": "rigged_with_animations",
+  "blender_version": "5.2.1 LTS",
+  "voxel_size": 0.1,
+  "grid_minimum": [
+    -18,
+    -14,
+    0
+  ],
+  "grid_dimensions": [
+    36,
+    29,
+    47
+  ],
+  "occupied_voxels": 18889,
+  "mesh_objects": 18,
+  "vertices": 12468,
+  "surface_quads": 11134,
+  "triangles": 22268,
+  "rest_exterior_vertices": 6290,
+  "rest_exterior_quads": 6292,
+  "parts": [
+    {
+      "bone": "Body",
+      "voxels": 879,
+      "vertices": 636,
+      "quads": 634
+    },
+    {
+      "bone": "Ear.L",
+      "voxels": 168,
+      "vertices": 232,
+      "quads": 230
+    },
+    {
+      "bone": "Ear.R",
+      "voxels": 168,
+      "vertices": 232,
+      "quads": 230
+    },
+    {
+      "bone": "Foot.L",
+      "voxels": 81,
+      "vertices": 134,
+      "quads": 132
+    },
+    {
+      "bone": "Foot.R",
+      "voxels": 81,
+      "vertices": 134,
+      "quads": 132
+    },
+    {
+      "bone": "Forearm.L",
+      "voxels": 72,
+      "vertices": 110,
+      "quads": 108
+    },
+    {
+      "bone": "Forearm.R",
+      "voxels": 72,
+      "vertices": 110,
+      "quads": 108
+    },
+    {
+      "bone": "Head",
+      "voxels": 16792,
+      "vertices": 4558,
+      "quads": 4556
+    },
+    {
+      "bone": "Shin.L",
+      "voxels": 36,
+      "vertices": 76,
+      "quads": 74
+    },
+    {
+      "bone": "Shin.R",
+      "voxels": 36,
+      "vertices": 76,
+      "quads": 74
+    },
+    {
+      "bone": "Tail.01",
+      "voxels": 103,
+      "vertices": 224,
+      "quads": 222
+    },
+    {
+      "bone": "Tail.02",
+      "voxels": 66,
+      "vertices": 144,
+      "quads": 142
+    },
+    {
+      "bone": "Tail.03",
+      "voxels": 49,
+      "vertices": 106,
+      "quads": 104
+    },
+    {
+      "bone": "Thigh.L",
+      "voxels": 75,
+      "vertices": 132,
+      "quads": 130
+    },
+    {
+      "bone": "Thigh.R",
+      "voxels": 75,
+      "vertices": 132,
+      "quads": 130
+    },
+    {
+      "bone": "UpperArm.L",
+      "voxels": 68,
+      "vertices": 116,
+      "quads": 114
+    },
+    {
+      "bone": "UpperArm.R",
+      "voxels": 68,
+      "vertices": 116,
+      "quads": 114
+    },
+    {
+      "bone": "Head",
+      "object": "Voxel_Face",
+      "voxels": 0,
+      "vertices": 5200,
+      "quads": 3900,
+      "is_face": true
+    }
+  ],
+  "materials": [
+    {
+      "name": "Fur",
+      "hex": "979797"
+    },
+    {
+      "name": "Tabby stripes",
+      "hex": "747474"
+    },
+    {
+      "name": "Inner ears",
+      "hex": "FFA3A3"
+    },
+    {
+      "name": "Belly",
+      "hex": "F4F3F0"
+    },
+    {
+      "name": "Charcoal outline",
+      "hex": "292928"
+    },
+    {
+      "name": "Amber edge",
+      "hex": "AC600C"
+    },
+    {
+      "name": "Golden iris",
+      "hex": "F79708"
+    },
+    {
+      "name": "Honey highlight",
+      "hex": "FFC451"
+    },
+    {
+      "name": "Pupil",
+      "hex": "080A09"
+    },
+    {
+      "name": "Catchlight",
+      "hex": "FFFFFF"
+    },
+    {
+      "name": "Tongue",
+      "hex": "FF939A"
+    }
+  ],
+  "palette_usage": {
+    "1": 17309,
+    "4": 74,
+    "2": 1320,
+    "5": 52,
+    "11": 2,
+    "6": 40,
+    "8": 8,
+    "9": 44,
+    "7": 8,
+    "10": 4,
+    "3": 28
+  },
+  "dimensions_blender_units": [
+    3.6,
+    2.9,
+    4.7
+  ],
+  "rig": {
+    "armature": "CATGRAY_VOXEL_RIG",
+    "bones": 18,
+    "deform_bones": 17,
+    "maximum_vertex_influences": 1,
+    "constraints": 0,
+    "fps": 24,
+    "preview_frames": [
+      1,
+      852
+    ],
+    "maximum_ik_reach_error": 0,
+    "clips": [
+      {
+        "name": "Walk_InPlace",
+        "frames": 32,
+        "repeat": 3,
+        "looping": true,
+        "label": "走动",
+        "group": "body",
+        "poster": 13,
+        "duration_seconds": 1.3333333333333333,
+        "keyframes": [
+          1,
+          33
+        ]
+      },
+      {
+        "name": "Run_InPlace",
+        "frames": 16,
+        "repeat": 6,
+        "looping": true,
+        "label": "跑动",
+        "group": "body",
+        "poster": 8,
+        "duration_seconds": 0.6666666666666666,
+        "keyframes": [
+          1,
+          17
+        ]
+      },
+      {
+        "name": "Jump",
+        "frames": 48,
+        "repeat": 2,
+        "looping": false,
+        "label": "跳跃",
+        "group": "body",
+        "poster": 23,
+        "duration_seconds": 2.0,
+        "keyframes": [
+          1,
+          49
+        ]
+      },
+      {
+        "name": "Head_Nod",
+        "frames": 48,
+        "repeat": 1,
+        "looping": false,
+        "label": "点头",
+        "group": "head",
+        "poster": 15,
+        "duration_seconds": 2.0,
+        "keyframes": [
+          1,
+          49
+        ]
+      },
+      {
+        "name": "Head_Shake",
+        "frames": 48,
+        "repeat": 1,
+        "looping": false,
+        "label": "摇头",
+        "group": "head",
+        "poster": 19,
+        "duration_seconds": 2.0,
+        "keyframes": [
+          1,
+          49
+        ]
+      },
+      {
+        "name": "Head_Turn",
+        "frames": 72,
+        "repeat": 1,
+        "looping": false,
+        "label": "转头",
+        "group": "head",
+        "poster": 23,
+        "duration_seconds": 3.0,
+        "keyframes": [
+          1,
+          73
+        ]
+      },
+      {
+        "name": "Blink",
+        "frames": 36,
+        "repeat": 1,
+        "looping": false,
+        "label": "眨眼",
+        "group": "face",
+        "poster": 12,
+        "duration_seconds": 1.5,
+        "keyframes": [
+          1,
+          37
+        ]
+      },
+      {
+        "name": "Mouth_Talk",
+        "frames": 72,
+        "repeat": 1,
+        "looping": false,
+        "label": "嘴型",
+        "group": "face",
+        "poster": 19,
+        "duration_seconds": 3.0,
+        "keyframes": [
+          1,
+          73
+        ]
+      },
+      {
+        "name": "Emotion_Joy",
+        "frames": 72,
+        "repeat": 1,
+        "looping": false,
+        "label": "喜悦",
+        "group": "emotion",
+        "poster": 37,
+        "duration_seconds": 3.0,
+        "keyframes": [
+          1,
+          73
+        ]
+      },
+      {
+        "name": "Emotion_Sad",
+        "frames": 72,
+        "repeat": 1,
+        "looping": false,
+        "label": "悲伤",
+        "group": "emotion",
+        "poster": 37,
+        "duration_seconds": 3.0,
+        "keyframes": [
+          1,
+          73
+        ]
+      },
+      {
+        "name": "Emotion_Pain",
+        "frames": 72,
+        "repeat": 1,
+        "looping": false,
+        "label": "痛苦",
+        "group": "emotion",
+        "poster": 37,
+        "duration_seconds": 3.0,
+        "keyframes": [
+          1,
+          73
+        ]
+      },
+      {
+        "name": "Emotion_Angry",
+        "frames": 72,
+        "repeat": 1,
+        "looping": false,
+        "label": "生气",
+        "group": "emotion",
+        "poster": 37,
+        "duration_seconds": 3.0,
+        "keyframes": [
+          1,
+          73
+        ]
+      }
+    ]
+  },
+  "face": {
+    "object": "Voxel_Face",
+    "morph_targets": [
+      "Eyes_Open",
+      "Eyes_Half",
+      "Eyes_Closed",
+      "Eyes_Joy",
+      "Eyes_Sad",
+      "Eyes_Pain",
+      "Eyes_Angry",
+      "Mouth_Neutral",
+      "Mouth_Closed",
+      "Mouth_A",
+      "Mouth_E",
+      "Mouth_O",
+      "Mouth_Joy",
+      "Mouth_Sad",
+      "Mouth_Pain",
+      "Mouth_Angry"
+    ],
+    "vertices": 5200,
+    "quads": 3900,
+    "tiles_per_state": {
+      "Eyes_Open": 136,
+      "Eyes_Half": 88,
+      "Eyes_Closed": 16,
+      "Eyes_Joy": 26,
+      "Eyes_Sad": 100,
+      "Eyes_Pain": 36,
+      "Eyes_Angry": 106,
+      "Mouth_Neutral": 14,
+      "Mouth_Closed": 8,
+      "Mouth_A": 20,
+      "Mouth_E": 14,
+      "Mouth_O": 16,
+      "Mouth_Joy": 26,
+      "Mouth_Sad": 12,
+      "Mouth_Pain": 18,
+      "Mouth_Angry": 14
+    },
+    "interpolation": "STEP",
+    "default_states": [
+      "Eyes_Open",
+      "Mouth_Neutral"
+    ],
+    "external_textures": false
+  },
+  "animations": [
+    {
+      "name": "Walk_InPlace",
+      "frames": 32,
+      "repeat": 3,
+      "looping": true,
+      "label": "走动",
+      "group": "body",
+      "poster": 13,
+      "duration_seconds": 1.3333333333333333,
+      "keyframes": [
+        1,
+        33
+      ]
+    },
+    {
+      "name": "Run_InPlace",
+      "frames": 16,
+      "repeat": 6,
+      "looping": true,
+      "label": "跑动",
+      "group": "body",
+      "poster": 8,
+      "duration_seconds": 0.6666666666666666,
+      "keyframes": [
+        1,
+        17
+      ]
+    },
+    {
+      "name": "Jump",
+      "frames": 48,
+      "repeat": 2,
+      "looping": false,
+      "label": "跳跃",
+      "group": "body",
+      "poster": 23,
+      "duration_seconds": 2.0,
+      "keyframes": [
+        1,
+        49
+      ]
+    },
+    {
+      "name": "Head_Nod",
+      "frames": 48,
+      "repeat": 1,
+      "looping": false,
+      "label": "点头",
+      "group": "head",
+      "poster": 15,
+      "duration_seconds": 2.0,
+      "keyframes": [
+        1,
+        49
+      ]
+    },
+    {
+      "name": "Head_Shake",
+      "frames": 48,
+      "repeat": 1,
+      "looping": false,
+      "label": "摇头",
+      "group": "head",
+      "poster": 19,
+      "duration_seconds": 2.0,
+      "keyframes": [
+        1,
+        49
+      ]
+    },
+    {
+      "name": "Head_Turn",
+      "frames": 72,
+      "repeat": 1,
+      "looping": false,
+      "label": "转头",
+      "group": "head",
+      "poster": 23,
+      "duration_seconds": 3.0,
+      "keyframes": [
+        1,
+        73
+      ]
+    },
+    {
+      "name": "Blink",
+      "frames": 36,
+      "repeat": 1,
+      "looping": false,
+      "label": "眨眼",
+      "group": "face",
+      "poster": 12,
+      "duration_seconds": 1.5,
+      "keyframes": [
+        1,
+        37
+      ]
+    },
+    {
+      "name": "Mouth_Talk",
+      "frames": 72,
+      "repeat": 1,
+      "looping": false,
+      "label": "嘴型",
+      "group": "face",
+      "poster": 19,
+      "duration_seconds": 3.0,
+      "keyframes": [
+        1,
+        73
+      ]
+    },
+    {
+      "name": "Emotion_Joy",
+      "frames": 72,
+      "repeat": 1,
+      "looping": false,
+      "label": "喜悦",
+      "group": "emotion",
+      "poster": 37,
+      "duration_seconds": 3.0,
+      "keyframes": [
+        1,
+        73
+      ]
+    },
+    {
+      "name": "Emotion_Sad",
+      "frames": 72,
+      "repeat": 1,
+      "looping": false,
+      "label": "悲伤",
+      "group": "emotion",
+      "poster": 37,
+      "duration_seconds": 3.0,
+      "keyframes": [
+        1,
+        73
+      ]
+    },
+    {
+      "name": "Emotion_Pain",
+      "frames": 72,
+      "repeat": 1,
+      "looping": false,
+      "label": "痛苦",
+      "group": "emotion",
+      "poster": 37,
+      "duration_seconds": 3.0,
+      "keyframes": [
+        1,
+        73
+      ]
+    },
+    {
+      "name": "Emotion_Angry",
+      "frames": 72,
+      "repeat": 1,
+      "looping": false,
+      "label": "生气",
+      "group": "emotion",
+      "poster": 37,
+      "duration_seconds": 3.0,
+      "keyframes": [
+        1,
+        73
+      ]
+    }
+  ],
+  "external_textures": [],
+  "coordinate_system": "Blender: Z up, front -Y; GLB: standard glTF Y up",
+  "vox_coordinates": "Nonnegative grid indices; add grid_minimum then multiply by voxel_size",
+  "reference_design": "../references + model_3d v10 bare-body design",
+  "build_inputs": [
+    "source/settings.json",
+    "scripts/voxel_model.py",
+    "scripts/blender_model.py",
+    "scripts/rig_voxel.py",
+    "scripts/facial_voxel.py"
+  ]
+}

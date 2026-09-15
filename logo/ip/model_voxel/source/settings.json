@@ -1,0 +1,17 @@
+{
+  "version": "v3",
+  "voxel_size": 0.1,
+  "palette": [
+    {"name": "Fur", "hex": "979797"},
+    {"name": "Tabby stripes", "hex": "747474"},
+    {"name": "Inner ears", "hex": "FFA3A3"},
+    {"name": "Belly", "hex": "F4F3F0"},
+    {"name": "Charcoal outline", "hex": "292928"},
+    {"name": "Amber edge", "hex": "AC600C"},
+    {"name": "Golden iris", "hex": "F79708"},
+    {"name": "Honey highlight", "hex": "FFC451"},
+    {"name": "Pupil", "hex": "080A09"},
+    {"name": "Catchlight", "hex": "FFFFFF"},
+    {"name": "Tongue", "hex": "FF939A"}
+  ]
+}

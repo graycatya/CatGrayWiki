@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "release": "v10",
+  "status": "final",
+  "approved_date": "2026-09-15",
+  "cleanup": {
+    "historical_versions_removed": "v1–v9",
+    "history_directory_removed": true,
+    "bytes_before": 434766846,
+    "bytes_after": 58263668,
+    "necessary_static_source": "source/CatGray_Base.blend"
+  },
+  "validated_runtime": {
+    "passed": true,
+    "blender": "5.2.1 LTS",
+    "python": "3.13.13",
+    "numpy": "2.3.4",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "validated_blender": "5.2.1",
+    "version_matches": true
+  },
+  "fresh_copy_commands": [
+    "doctor",
+    "build-base",
+    "rebuild",
+    "verify",
+    "preview",
+    "render",
+    "verify"
+  ],
+  "fresh_copy_full_pipeline_passed": true,
+  "approved_geometry_max_error": 3.216476898160181e-06,
+  "checks": [
+    "environment_verification",
+    "package_verification",
+    "rig_verification",
+    "wave_revision_verification",
+    "animated_export_verification",
+    "video_verification",
+    "runner_verification",
+    "rebuild_comparison"
+  ],
+  "sha256": {
+    "model_3d/CatGray_IP.blend": "edbaa207e77cda21de3698714c47a3f9aeea068cb9aca00f00989ea17c666846",
+    "model_3d/CatGray_IP.glb": "92357f9c47269cc5480cc5b2caf11a5f02dffb5113fe01e474e098de9b220c2a",
+    "model_3d/source/CatGray_Base.blend": "f1eaa76b41c81657c40cf90a41adf536a89b0e6fd020580cb230f2c6c4f25964",
+    "model_3d/textures/CatGray_BareBody_BaseColor.png": "84bc9d463079ffe3e872cfc1e4adf7ea9e25af4b66cc9acc6a8c027434ad9e4d",
+    "model_3d/textures/CatGray_Fur_BaseColor.png": "0f98d244e7e7440fe9406fb6448c156cf855cc7795257567828f1655b2a9b1c7",
+    "model_3d/animations/CatGray_Animation_Preview.mp4": "d3711071496b84bc9e40229b84c340d36bddf3558d16f141974cee8c3dc94853",
+    "model_3d/animations/Idle_Breathe.mp4": "3334021b05ba7173717393e618929b048d47a5cc35e84b1e54259e9f6046e657",
+    "model_3d/animations/Walk_InPlace.mp4": "7ef9f7568012f89fd3925fe3059522b5339092fcd9b1fc5fdedc88a1b5131b63",
+    "model_3d/animations/Wave.mp4": "ed38adad721ce6ce37dff9c38a92d1dcbfb7bd36647af061105b6401e0adf39b",
+    "model_3d/animations/Wave_Side.mp4": "a8fbc2e087d357ef209b01d30e9762392bacb24a3d91f52b73e88914e3424527"
+  }
+}

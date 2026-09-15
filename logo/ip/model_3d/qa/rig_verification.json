@@ -1,7 +1,7 @@
 {
   "revision": "v10",
   "checks": {
-    "approved_v7_rest_shape_preserved": {
+    "approved_base_rest_shape_preserved": {
       "passed": true,
       "objects": [
         {

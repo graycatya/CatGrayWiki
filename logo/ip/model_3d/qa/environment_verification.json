@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "blender": "5.2.1 LTS",
+  "python": "3.13.13",
+  "numpy": "2.3.4",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "validated_blender": "5.2.1",
+  "version_matches": true
+}

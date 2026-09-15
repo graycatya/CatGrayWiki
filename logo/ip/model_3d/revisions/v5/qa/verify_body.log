@@ -1,6 +1,0 @@
-TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
-BODY_REVISION_VERIFIED {"head_objects_unchanged": 29, "body_mesh_checks": {"Hoodie \u2022 continuous torso and sleeves": {"connected_components": 1, "boundary_edges": 0, "nonmanifold_edges": 0}, "Body \u2022 connected pelvis legs and paws": {"connected_components": 1, "boundary_edges": 0, "nonmanifold_edges": 0}}}
-Blender 4.1.1 (hash e1743a0317bc built 2024-04-15 23:33:30)
-Read blend: "E:\code\catgrayprj\CatGrayWiki\logo\ip\model_3d\CatGray_IP.blend"
-
-Blender quit

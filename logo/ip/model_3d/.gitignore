@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+qa/logs/
+qa/animation_frames/
+qa/wave_side_frames/
+*.blend1
+*.blend2

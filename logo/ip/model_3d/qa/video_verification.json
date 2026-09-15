@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "videos": [
+    {
+      "file": "Idle_Breathe.mp4",
+      "frames": 72,
+      "seconds": 3.0
+    },
+    {
+      "file": "Wave.mp4",
+      "frames": 96,
+      "seconds": 4.0
+    },
+    {
+      "file": "Walk_InPlace.mp4",
+      "frames": 72,
+      "seconds": 3.0
+    },
+    {
+      "file": "CatGray_Animation_Preview.mp4",
+      "frames": 240,
+      "seconds": 10.0
+    },
+    {
+      "file": "Wave_Side.mp4",
+      "frames": 96,
+      "seconds": 4.0
+    }
+  ],
+  "comparisons": [
+    {
+      "video": "CatGray_Animation_Preview",
+      "frame": 126,
+      "mean_rgb_error": 0.0030365402344614267
+    },
+    {
+      "video": "Wave_Side",
+      "frame": 54,
+      "mean_rgb_error": 0.002697198186069727
+    }
+  ]
+}

@@ -86,7 +86,7 @@
   },
   "rig_revision": {
     "revision": "v10",
-    "source": "revisions/v7/CatGray_IP.blend",
+    "source": "source/CatGray_Base.blend",
     "armature": "CATGRAY_RIG",
     "bones": 84,
     "deform_bones": 79,
@@ -347,5 +347,11 @@
       "ArmArc.R.39",
       "ArmArc.R.40"
     ]
+  },
+  "release": {
+    "version": "v10",
+    "status": "final",
+    "reference_images": "../references",
+    "rebuild_source": "source/CatGray_Base.blend"
   }
 }

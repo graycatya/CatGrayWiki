@@ -1,9 +1,0 @@
-00:01.561  translation      | WARNING Falling back to standard locale ("C")
-00:01.823  blend            | Read blend: "/Volumes/CatDisk/codes/catgray/CatGrayWiki/logo/ip/model_3d/CatGray_IP.blend"
-/Volumes/CatDisk/codes/catgray/CatGrayWiki/logo/ip/model_3d/render_comparison.py:28: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
-  label_material.use_nodes = True
-00:28.972  render           | Saved: '/Volumes/CatDisk/codes/catgray/CatGrayWiki/logo/ip/model_3d/preview_comparison.png'
-V6_V7_COMPARISON_COMPLETE
-Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
-
-Blender quit

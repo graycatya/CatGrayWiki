@@ -12,7 +12,7 @@
   "embedded_images": 2,
   "external_dependencies": false,
   "importer_display_helpers": [
-    "棱角球"
+    "Icosphere"
   ],
   "native_export_pose_comparisons": [
     {

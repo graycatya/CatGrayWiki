@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "invalid_threads_rejected": true,
+  "missing_executable_rejected": true,
+  "regenerated_textures_match": {
+    "CatGray_Fur_BaseColor.png": true,
+    "CatGray_BareBody_BaseColor.png": true
+  }
+}

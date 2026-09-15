@@ -1,6 +1,6 @@
 {
   "revision": "v10",
-  "source": "revisions/v7/CatGray_IP.blend",
+  "source": "source/CatGray_Base.blend",
   "armature": "CATGRAY_RIG",
   "bones": 84,
   "deform_bones": 79,

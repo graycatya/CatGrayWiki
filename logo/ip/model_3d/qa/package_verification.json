@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "version": "v10",
+  "files": [
+    {
+      "file": "source/CatGray_Base.blend",
+      "images": [
+        {
+          "image": "CatGray_BareBody_BaseColor",
+          "path": "//../textures/CatGray_BareBody_BaseColor.png",
+          "packed": true
+        },
+        {
+          "image": "CatGray_Fur_BaseColor.png",
+          "path": "//../textures/CatGray_Fur_BaseColor.png",
+          "packed": true
+        },
+        {
+          "image": "侧视.png",
+          "path": "//../../references/侧视.png",
+          "packed": true
+        },
+        {
+          "image": "正视.png",
+          "path": "//../../references/正视.png",
+          "packed": true
+        },
+        {
+          "image": "背视.png",
+          "path": "//../../references/背视.png",
+          "packed": true
+        }
+      ]
+    },
+    {
+      "file": "CatGray_IP.blend",
+      "images": [
+        {
+          "image": "CatGray_BareBody_BaseColor",
+          "path": "//textures/CatGray_BareBody_BaseColor.png",
+          "packed": true
+        },
+        {
+          "image": "CatGray_Fur_BaseColor.png",
+          "path": "//textures/CatGray_Fur_BaseColor.png",
+          "packed": true
+        },
+        {
+          "image": "侧视.png",
+          "path": "//../references/侧视.png",
+          "packed": true
+        },
+        {
+          "image": "正视.png",
+          "path": "//../references/正视.png",
+          "packed": true
+        },
+        {
+          "image": "背视.png",
+          "path": "//../references/背视.png",
+          "packed": true
+        }
+      ]
+    }
+  ]
+}

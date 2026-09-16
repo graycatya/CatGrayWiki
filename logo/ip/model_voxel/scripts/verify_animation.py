@@ -7,11 +7,15 @@ import struct
 
 import bpy
 import numpy as np
+from mathutils import Vector
+from mathutils.bvhtree import BVHTree
 from mathutils.kdtree import KDTree
 
 from voxel_model import ROOT,NAME,generate,settings,read_vox
-from rig_voxel import RIG,FPS,CLIPS,PLAYLIST,skins,set_action,rest_pose
-from facial_voxel import FACE,STATES,DEFAULT,face_keys,facial_state
+from rig_voxel import RIG,FPS,CLIPS,PLAYLIST,skins,set_action,rest_pose,partition
+from facial_voxel import (FACE,STATES,DEFAULT,EYES,MOUTHS,face_keys,facial_state,
+                          front_cells,eye_pixel,mouth_pixel,select_states)
+from voxel_model import DIRECTIONS
 
 
 def positions(objects):
@@ -26,6 +30,90 @@ def frame_set(scene,frame):
 
 def linear(value):
     return value/12.92 if value <= .04045 else ((value+.055)/1.055)**2.4
+
+
+def verify_face_surface(rig,objects,config):
+    """Probe visible fronts AND stair risers, including cleared expression pixels.
+
+    Rays begin close to the original head, avoiding occlusion by other stairs.
+    Several points across each face detect partial-depth coverage. Expected
+    colors come from the expression drawings, not the generated tile geometry.
+    """
+    rest_pose(rig)
+    step = config["voxel_size"]
+    head_cells = partition(generate(config),step)["Head"]
+    front = front_cells(head_cells,step)
+    pixels = {(i,k):j for (i,k),j in front.items() if
+              any(eye_pixel(s,(i+.5)*step,(k+.5)*step) is not None for s in EYES) or
+              any(mouth_pixel(s,(i+.5)*step,(k+.5)*step) is not None for s in MOUTHS)}
+    head = next(o for o in objects if o.name == "Voxel_Head")
+    face = next(o for o in objects if o.type == "MESH" and o.data.shape_keys)
+    palette = [(entry["name"],tuple(linear(int(entry["hex"][i:i+2],16)/255) for i in (0,2,4)))
+               for entry in config["palette"]]
+
+    def material_color_name(material):
+        # Reimport adds .001 to existing names; compare the rendered color.
+        shader = next((n for n in material.node_tree.nodes if n.type == "BSDF_PRINCIPLED"),None) if material.use_nodes else None
+        rgb = shader.inputs["Base Color"].default_value if shader else material.diffuse_color
+        return next((name for name,color in palette if all(abs(rgb[i]-color[i])<1e-5 for i in range(3))),material.name)
+
+    def tree_for(mesh_objects):
+        graph = bpy.context.evaluated_depsgraph_get()
+        points,polygons,materials = [],[],[]
+        for obj in mesh_objects:
+            evaluated = obj.evaluated_get(graph)
+            mesh = evaluated.to_mesh()
+            base = len(points)
+            color_names = [material_color_name(m) for m in mesh.materials]
+            points.extend(evaluated.matrix_world@v.co for v in mesh.vertices)
+            polygons.extend(tuple(base+i for i in p.vertices) for p in mesh.polygons)
+            materials.extend(color_names[p.material_index] for p in mesh.polygons)
+            evaluated.to_mesh_clear()
+        return BVHTree.FromPolygons(points,polygons),materials
+
+    head_tree,head_materials = tree_for([head])
+    probes = []
+    for (i,k),j in pixels.items():
+        cell = (i,j,k)
+        for direction,corners in DIRECTIONS:
+            if tuple(p+d for p,d in zip(cell,direction)) in head_cells:
+                continue
+            normal = Vector(direction)
+            a,b,_,d = (Vector(tuple((p+c)*step for p,c in zip(cell,corner))) for corner in corners)
+            for u,v in ((.5,.5),(.12,.12),(.12,.88),(.88,.12),(.88,.88)):
+                origin = a+(b-a)*u+(d-a)*v+normal*step*.3
+                _,_,index,distance = head_tree.ray_cast(origin,-normal,step*.6)
+                assert index is not None, (cell,direction)
+                probes.append(((i,k),direction,origin,normal,head_materials[index],distance))
+    combinations = [(s,"Neutral") for s in EYES]+[("Open",s) for s in MOUTHS if s != "Neutral"]
+    failures = []
+    counts = Counter()
+    for eyes,mouth in combinations:
+        select_states(eyes,mouth)
+        bpy.context.view_layer.update()
+        tree,materials = tree_for([head,face])
+        for (i,k),direction,origin,normal,base_color,base_distance in probes:
+            x,z = (i+.5)*step,(k+.5)*step
+            color = eye_pixel(eyes,x,z)
+            if color is None:
+                color = mouth_pixel(mouth,x,z)
+            expected_color = config["palette"][color-1]["name"] if color is not None else base_color
+            _,_,index,distance = tree.ray_cast(origin,-normal,step*.6)
+            actual = materials[index] if index is not None else None
+            # Colored surfaces must be in front of gray, never coplanar with it.
+            valid = actual == expected_color and (color is None or distance < base_distance-step*.01)
+            kind = "front" if direction == (0,-1,0) else "sidewall"
+            counts[kind] += 1
+            counts["painted" if color is not None else "cleared"] += 1
+            if not valid:
+                counts["failed"] += 1
+                if len(failures)<20:
+                    failures.append({"states":[eyes,mouth],"pixel":[i,k],"normal":direction,
+                                     "expected":expected_color,"actual":actual,"distance":distance})
+    select_states()
+    bpy.context.view_layer.update()
+    return {"passed":not counts["failed"] and counts["sidewall"]>0,
+            "state_combinations":len(combinations),"probes":dict(counts),"failures":failures}
 
 
 def verify(include_videos=False):
@@ -58,6 +146,8 @@ def verify(include_videos=False):
         playlist_samples[clip["name"]] = positions(objects)
         start += clip["frames"]*clip["repeat"]
     rest_pose(rig)
+    surface_report = verify_face_surface(rig,objects,config)
+    checks["face_front_and_sidewall_colors_all_states"] = surface_report["passed"]
     rest_cloud = positions(objects)
     checks["flat_voxel_faces"] = all(not p.use_smooth for o in objects for p in o.data.polygons)
     checks["grid_aligned_rest_vertices"] = all(np.max(np.abs(points/config["voxel_size"]-np.round(points/config["voxel_size"])))<1e-4
@@ -229,6 +319,8 @@ def verify(include_videos=False):
                 tree.balance()
                 max_import_error = max(max_import_error,max(tree.find(point)[2] for point in reference))
     checks["glb_reimport_all_clips"] = max_import_error < 1e-4
+    imported_surface_report = verify_face_surface(imported_rig,imported,config)
+    checks["glb_reimport_face_sidewalls_all_states"] = imported_surface_report["passed"]
     # Reimported action screenshot checks actual animated playback, not only rest bounds.
     from animation_media import setup,verify_videos
     setup(640)
@@ -248,6 +340,7 @@ def verify(include_videos=False):
     report = {"passed":all(checks.values()),"checks":checks,"clips":actions,"sample_step_frames":.25,
               "minimum_character_z":min_floor,"maximum_rigid_edge_error":max_rigid_error,
               "maximum_glb_reimport_vertex_error":max_import_error,"glb_durations_seconds":durations,
+              "face_surface":surface_report,"glb_face_surface":imported_surface_report,
               "blender_version":bpy.app.version_string,"triangles":triangles,
               "files_sha256":{NAME+ext:hashlib.sha256((ROOT/(NAME+ext)).read_bytes()).hexdigest() for ext in (".blend",".glb",".vox")}}
     (ROOT/"qa/verification.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n")

@@ -76,6 +76,41 @@ def preview_poses():
         scene.render.filepath = str(destination/("face_"+label+".png"))
         bpy.ops.render.render(write_still=True)
     expression_gallery()
+    sidewall_gallery()
+
+
+def sidewall_gallery():
+    """Keep an oblique closeup of open/cleared eyes and changing mouth shapes."""
+    scene = setup(640,closeup=True)
+    rest_pose(bpy.data.objects[RIG])
+    scene.camera.location = (10,-12,4.4)
+    scene.camera.rotation_euler = (Vector((0,-.3,3.0))-scene.camera.location).to_track_quat("-Z","Y").to_euler()
+    scene.camera.data.ortho_scale = 3.65
+    states = (("neutral","Open","Neutral"),("half","Half","E"),("closed","Closed","Closed"),
+              ("mouth_o","Open","O"),("joy","Joy","Joy"),("angry","Angry","Angry"))
+    size,gap = 640,12
+    width,height = 3*size+2*gap,2*size+gap
+    pixels = np.ones((height,width,4),dtype=np.float32)
+    for index,(label,eyes,mouth) in enumerate(states):
+        select_states(eyes,mouth)
+        bpy.context.view_layer.update()
+        path = ROOT/"previews"/("face_side_"+label+".png")
+        scene.render.filepath = str(path)
+        bpy.ops.render.render(write_still=True)
+        source = bpy.data.images.load(str(path),check_existing=False)
+        data = np.empty(size*size*4,dtype=np.float32)
+        source.pixels.foreach_get(data)
+        row,column = divmod(index,3)
+        y,x = (1-row)*(size+gap),column*(size+gap)
+        pixels[y:y+size,x:x+size] = data.reshape(size,size,4)
+        bpy.data.images.remove(source)
+    output = bpy.data.images.new("Oblique facial states",width=width,height=height)
+    output.pixels.foreach_set(pixels.ravel())
+    output.filepath_raw = str(ROOT/"previews/face_sidewalls.png")
+    output.file_format = "PNG"
+    output.save()
+    bpy.data.images.remove(output)
+    select_states()
 
 
 def expression_gallery():

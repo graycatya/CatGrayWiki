@@ -5,250 +5,250 @@
       "file": "Walk_InPlace.mp4",
       "expected_frames": 96,
       "decoded_frames": 96,
-      "mean_rgb_error": 0.003928061109036207,
+      "mean_rgb_error": 0.0038462483789771795,
       "comparisons": [
         {
           "frame": 13,
           "source_action": "Walk_InPlace",
-          "mean_rgb_error": 0.003928061109036207
+          "mean_rgb_error": 0.0038462483789771795
         }
       ],
-      "sha256": "3dff7b101ddd5f86ae3fb851367680d9b4f707c952b510c1a1370aa6c9248aa2",
+      "sha256": "c32d2fd5fbd1eaa2efaf7a69e820eda3d54ca3c8851d7d148aa108d49912e1ee",
       "passed": true
     },
     {
       "file": "Run_InPlace.mp4",
       "expected_frames": 96,
       "decoded_frames": 96,
-      "mean_rgb_error": 0.003989473916590214,
+      "mean_rgb_error": 0.00390073680318892,
       "comparisons": [
         {
           "frame": 8,
           "source_action": "Run_InPlace",
-          "mean_rgb_error": 0.003989473916590214
+          "mean_rgb_error": 0.00390073680318892
         }
       ],
-      "sha256": "6d889e310fbfb598de58fb16fb574038e4ac55e28d8b0c017b9e2bdea420cc60",
+      "sha256": "35787bb7c12403d4d62dc10ae493c143bd6ddf08b26f84b5fb9484101e1ab14e",
       "passed": true
     },
     {
       "file": "Jump.mp4",
       "expected_frames": 96,
       "decoded_frames": 96,
-      "mean_rgb_error": 0.0035802791826426983,
+      "mean_rgb_error": 0.0034537841565907,
       "comparisons": [
         {
           "frame": 23,
           "source_action": "Jump",
-          "mean_rgb_error": 0.0035802791826426983
+          "mean_rgb_error": 0.0034537841565907
         }
       ],
-      "sha256": "e38cc29f4d0b4f50dc3ce82d8f2053f795bf6f4343b0439cab2cdb23ba361fb2",
+      "sha256": "82132dcc793bfe50f01d8ef4df1e7432d4c0c0b6677b54d8eb6f9f694747eb3e",
       "passed": true
     },
     {
       "file": "Head_Nod.mp4",
       "expected_frames": 48,
       "decoded_frames": 48,
-      "mean_rgb_error": 0.005440975073724985,
+      "mean_rgb_error": 0.0053636301308870316,
       "comparisons": [
         {
           "frame": 15,
           "source_action": "Head_Nod",
-          "mean_rgb_error": 0.005440975073724985
+          "mean_rgb_error": 0.0053636301308870316
         }
       ],
-      "sha256": "76beb24ce02eb1b78643bd873c0cb5d49f9a4ecf87c026404b887933b20e13d1",
+      "sha256": "3371e7b55c26e212cca723d59cc22d506afce3695750cbb69367d8339f8ef11e",
       "passed": true
     },
     {
       "file": "Head_Shake.mp4",
       "expected_frames": 48,
       "decoded_frames": 48,
-      "mean_rgb_error": 0.00449484633281827,
+      "mean_rgb_error": 0.00441478006541729,
       "comparisons": [
         {
           "frame": 19,
           "source_action": "Head_Shake",
-          "mean_rgb_error": 0.00449484633281827
+          "mean_rgb_error": 0.00441478006541729
         }
       ],
-      "sha256": "0d84d237386907c3ba50c6f8b4efdcade927cf7f513a6fca6d2502e36cd82fbb",
+      "sha256": "ab7ce01ec7126f1ff4dc75d944f46bf92acb3c7e237bb7c39d4892fddc389075",
       "passed": true
     },
     {
       "file": "Head_Turn.mp4",
       "expected_frames": 72,
       "decoded_frames": 72,
-      "mean_rgb_error": 0.003871351247653365,
+      "mean_rgb_error": 0.0038325537461787462,
       "comparisons": [
         {
           "frame": 23,
           "source_action": "Head_Turn",
-          "mean_rgb_error": 0.003871351247653365
+          "mean_rgb_error": 0.0038325537461787462
         }
       ],
-      "sha256": "5b0b6156014a931474e293862c45381a5fa4b98f60ef138ac683b28876e5571b",
+      "sha256": "094cdd3ac69d49021d5e5d223a8b5151f46fe18eb25ef05d79537f8c0f337ed2",
       "passed": true
     },
     {
       "file": "Blink.mp4",
       "expected_frames": 36,
       "decoded_frames": 36,
-      "mean_rgb_error": 0.003681791014969349,
+      "mean_rgb_error": 0.003693886799737811,
       "comparisons": [
         {
           "frame": 12,
           "source_action": "Blink",
-          "mean_rgb_error": 0.003681791014969349
+          "mean_rgb_error": 0.003693886799737811
         }
       ],
-      "sha256": "c6a05423b4f8843a4e5591b85fd6a46c0ce8276f70166260770fb3cce3943d8e",
+      "sha256": "c7921d65bd64d04b7ac30068d4d30ca9e5249e32ac5ce6093d16e83f3cb08eec",
       "passed": true
     },
     {
       "file": "Mouth_Talk.mp4",
       "expected_frames": 72,
       "decoded_frames": 72,
-      "mean_rgb_error": 0.003803896252065897,
+      "mean_rgb_error": 0.0037523754872381687,
       "comparisons": [
         {
           "frame": 19,
           "source_action": "Mouth_Talk",
-          "mean_rgb_error": 0.003803896252065897
+          "mean_rgb_error": 0.0037523754872381687
         }
       ],
-      "sha256": "07dbd494c1225428e505e6fc1718491bb82f08634458fbc15e10092f93e22d52",
+      "sha256": "042ac44541bf34e32f212c756c48ebda617c6eb4959d305adc94a3a9e65074bf",
       "passed": true
     },
     {
       "file": "Emotion_Joy.mp4",
       "expected_frames": 72,
       "decoded_frames": 72,
-      "mean_rgb_error": 0.003768808441236615,
+      "mean_rgb_error": 0.0037861871533095837,
       "comparisons": [
         {
           "frame": 37,
           "source_action": "Emotion_Joy",
-          "mean_rgb_error": 0.003768808441236615
+          "mean_rgb_error": 0.0037861871533095837
         }
       ],
-      "sha256": "c3f93f3a85c6f6a08f00bb8ef4956157f9f66dc7cfcb9d0a7f86bbf97dd633b0",
+      "sha256": "fecee160ddcbe9d2f07cc2f2fcb1ced0efc7cd3d6061e954ae6ce3c4a5213336",
       "passed": true
     },
     {
       "file": "Emotion_Sad.mp4",
       "expected_frames": 72,
       "decoded_frames": 72,
-      "mean_rgb_error": 0.0035777301527559757,
+      "mean_rgb_error": 0.003530452959239483,
       "comparisons": [
         {
           "frame": 37,
           "source_action": "Emotion_Sad",
-          "mean_rgb_error": 0.0035777301527559757
+          "mean_rgb_error": 0.003530452959239483
         }
       ],
-      "sha256": "d86f095f9076648dc2f162cb9d30c7df0d23873bb3b6e1ca0e01ea23fcc0aee1",
+      "sha256": "c0c25af084941a22c98cd5fe215c81f8dd837d9c305d7889684e759c4b9de60b",
       "passed": true
     },
     {
       "file": "Emotion_Pain.mp4",
       "expected_frames": 72,
       "decoded_frames": 72,
-      "mean_rgb_error": 0.003948935307562351,
+      "mean_rgb_error": 0.003928991965949535,
       "comparisons": [
         {
           "frame": 37,
           "source_action": "Emotion_Pain",
-          "mean_rgb_error": 0.003948935307562351
+          "mean_rgb_error": 0.003928991965949535
         }
       ],
-      "sha256": "f7aa1fd9415b36ac964d499407b85d70cb3d014d3470820f3377044397d96c20",
+      "sha256": "f9c14e76c402cd111cf16c22059288b33f3a6045ef4d1935154179b55733720c",
       "passed": true
     },
     {
       "file": "Emotion_Angry.mp4",
       "expected_frames": 72,
       "decoded_frames": 72,
-      "mean_rgb_error": 0.0039609381929039955,
+      "mean_rgb_error": 0.0039005489088594913,
       "comparisons": [
         {
           "frame": 37,
           "source_action": "Emotion_Angry",
-          "mean_rgb_error": 0.0039609381929039955
+          "mean_rgb_error": 0.0039005489088594913
         }
       ],
-      "sha256": "640d525aafcf644aee00ac77ad81526944d1b7b08eb0762aed0fe967673e51d2",
+      "sha256": "99d57556bbb54ce9b1df77bd281fd57fe05de8bda6f5a54d1e0638111ccaa879",
       "passed": true
     },
     {
       "file": "CatGray_Voxel_Animation_Preview.mp4",
       "expected_frames": 852,
       "decoded_frames": 852,
-      "mean_rgb_error": 0.005366119090467691,
+      "mean_rgb_error": 0.005334215704351664,
       "comparisons": [
         {
           "frame": 13,
           "source_action": "Walk_InPlace",
-          "mean_rgb_error": 0.003928061109036207
+          "mean_rgb_error": 0.0038462483789771795
         },
         {
           "frame": 104,
           "source_action": "Run_InPlace",
-          "mean_rgb_error": 0.003989411052316427
+          "mean_rgb_error": 0.0038928643334656954
         },
         {
           "frame": 215,
           "source_action": "Jump",
-          "mean_rgb_error": 0.003650873666629195
+          "mean_rgb_error": 0.0035528570879250765
         },
         {
           "frame": 303,
           "source_action": "Head_Nod",
-          "mean_rgb_error": 0.005366119090467691
+          "mean_rgb_error": 0.005334215704351664
         },
         {
           "frame": 355,
           "source_action": "Head_Shake",
-          "mean_rgb_error": 0.005345210433006287
+          "mean_rgb_error": 0.005269965622574091
         },
         {
           "frame": 407,
           "source_action": "Head_Turn",
-          "mean_rgb_error": 0.00451664486899972
+          "mean_rgb_error": 0.004462183453142643
         },
         {
           "frame": 468,
           "source_action": "Blink",
-          "mean_rgb_error": 0.003896324895322323
+          "mean_rgb_error": 0.0039115301333367825
         },
         {
           "frame": 511,
           "source_action": "Mouth_Talk",
-          "mean_rgb_error": 0.0038088031578809023
+          "mean_rgb_error": 0.003771781222894788
         },
         {
           "frame": 601,
           "source_action": "Emotion_Joy",
-          "mean_rgb_error": 0.004267872776836157
+          "mean_rgb_error": 0.004302090499550104
         },
         {
           "frame": 673,
           "source_action": "Emotion_Sad",
-          "mean_rgb_error": 0.003573852125555277
+          "mean_rgb_error": 0.0035502503160387278
         },
         {
           "frame": 745,
           "source_action": "Emotion_Pain",
-          "mean_rgb_error": 0.004592978395521641
+          "mean_rgb_error": 0.0046117487363517284
         },
         {
           "frame": 817,
           "source_action": "Emotion_Angry",
-          "mean_rgb_error": 0.004506361670792103
+          "mean_rgb_error": 0.004451381042599678
         }
       ],
-      "sha256": "fa1607fd9c38fa818989204b5bd08ad61b41a92500682ae395efc9914a8e878a",
+      "sha256": "302d6d19911e0ad56df86f59ce7e10bfd0bc00031f178beaf44e2d794fca51ba",
       "passed": true
     }
   ]

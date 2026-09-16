@@ -13,6 +13,7 @@
     "native_playlist": true,
     "native_face_playlist": true,
     "no_external_textures": true,
+    "face_front_and_sidewall_colors_all_states": true,
     "flat_voxel_faces": true,
     "grid_aligned_rest_vertices": true,
     "face_morphs_independent": true,
@@ -140,7 +141,7 @@
     "Mouth_Talk_glb_independent_channels": true,
     "glb_clip_durations": true,
     "glb_reimport_all_clips": true,
-    "video_decode_and_source_match": true
+    "glb_reimport_face_sidewalls_all_states": true
   },
   "clips": [
     {
@@ -337,8 +338,8 @@
   ],
   "sample_step_frames": 0.25,
   "minimum_character_z": -0.0033192902337759733,
-  "maximum_rigid_edge_error": 1.3709068298339844e-06,
-  "maximum_glb_reimport_vertex_error": 1.9242702364863362e-06,
+  "maximum_rigid_edge_error": 1.3783574104309082e-06,
+  "maximum_glb_reimport_vertex_error": 1.911084837047383e-06,
   "glb_durations_seconds": {
     "Emotion_Angry": 3,
     "Emotion_Joy": 3,
@@ -353,11 +354,33 @@
     "Blink": 1.5,
     "Mouth_Talk": 3
   },
+  "face_surface": {
+    "passed": true,
+    "state_combinations": 15,
+    "probes": {
+      "front": 15450,
+      "cleared": 10800,
+      "sidewall": 9450,
+      "painted": 14100
+    },
+    "failures": []
+  },
+  "glb_face_surface": {
+    "passed": true,
+    "state_combinations": 15,
+    "probes": {
+      "front": 15450,
+      "cleared": 10800,
+      "sidewall": 9450,
+      "painted": 14100
+    },
+    "failures": []
+  },
   "blender_version": "5.2.1 LTS",
   "triangles": 22268,
   "files_sha256": {
-    "CatGray_Voxel.blend": "69e2069356db8da3fa9b8787450af8c15c3d406bc74bb764f9b83df7d3db36f5",
-    "CatGray_Voxel.glb": "52382c1b3ac1ddbf6597099f6c424378c40c6c570e96c6eeb0bb17be56f42ef7",
+    "CatGray_Voxel.blend": "5bc477a46a56274352c3ed69df73264217c8d6923d2deecc3b0f0d707ac391c0",
+    "CatGray_Voxel.glb": "32a6e909171e2ef6e8868fadf7e802a1a662978381c105b7847d220f284a2d16",
     "CatGray_Voxel.vox": "1e8ef972cfc8df2b4dfeaef845bc3c2464a6d3b909365ca95e7ef0776e351b52"
   }
 }

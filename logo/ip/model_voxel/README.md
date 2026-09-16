@@ -76,7 +76,11 @@
 | 眼睛 | `Eyes_Open`、`Eyes_Half`、`Eyes_Closed`、`Eyes_Joy`、`Eyes_Sad`、`Eyes_Pain`、`Eyes_Angry` |
 | 嘴巴 | `Mouth_Neutral`、`Mouth_Closed`、`Mouth_A`、`Mouth_E`、`Mouth_O`、`Mouth_Joy`、`Mouth_Sad`、`Mouth_Pain`、`Mouth_Angry` |
 
-每组同时启用一个形态键，权重设为 **1**，该组其余键设为 **0**。默认启用 `Eyes_Open` 和 `Mouth_Neutral`。形态键以 **STEP / 常量插值**切换像素图案；中间权重会使像素片穿过头部，编辑时应保持离散状态。未使用的像素片收在头部内部，所有面均保留面积，避免零面积面。
+每组同时启用一个形态键，权重设为 **1**，该组其余键设为 **0**。默认启用 `Eyes_Open` 和 `Mouth_Neutral`。形态键以 **STEP / 常量插值**切换像素图案；中间权重会使像素片穿过头部，编辑时应保持离散状态。未使用的像素块收在头部内部，所有面均保留面积，避免零面积面。
+
+五官色块覆盖完整一层体素，颜色延伸到对应体素的外露侧壁；只有外露面向外偏移 0.006 单位，共享边界不扩张，避免相邻颜色重叠闪烁。正面与侧壁由同一个形态键一起切换，闭眼、换嘴型时不会留下上一种表情的侧面颜色。该调整保持原有顶点数、面数和全部动作。
+
+[侧壁调整前后对照（左旧右新）](qa/face_sidewalls_comparison.png) · [侧面表情总览](previews/face_sidewalls.png)（上排：默认、半闭眼／E 嘴型、闭眼／闭嘴；下排：O 嘴型、喜悦、生气）。`pose-preview` 会同步更新侧面表情图。
 
 编辑单个 Action 前，关闭骨架与表情形态键的 `播放预览 • 身体 / 头部 / 表情` NLA 轨道。Action 的 `OBJECT` 插槽负责骨骼，`KEY` 插槽负责形态键；在两个数据块上选择对应 Action 与插槽，才能一起预览情绪。三个头部 Action 仅含骨骼插槽。各动作存档轨道默认静音。
 
@@ -101,7 +105,7 @@
 
 ## 重建与维护
 
-验证环境为 **Linux / Blender 5.2.1 LTS**。动画预览使用 Eevee，静态五视图使用 Cycles CPU。启动器仅需 Python 3.9+ 标准库，其他模块由 Blender 自带。
+本次侧壁调整的验证环境为 **macOS / Blender 5.2.1 LTS**。动画预览使用 Eevee，静态五视图使用 Cycles CPU。启动器仅需 Python 3.9+ 标准库，其他模块由 Blender 自带。
 
 在本目录执行：
 
@@ -121,7 +125,7 @@ python3 manage.py verify
 | `render` | 660 张独立动作帧 → 12 个动作视频、35.5 秒完整预览和封面 |
 | `encode` | 使用失败后保留的完整帧序列重试编码 |
 | `export` | 当前 `.blend` → 含 12 个动作和面部动画的 `.glb` |
-| `verify-rig` | 检查模型、每四分之一帧的动作与表情、GLB 重新导入 |
+| `verify-rig` | 检查模型、每四分之一帧的动作与表情、各表情正面及侧壁颜色、GLB 重新导入 |
 | `verify` | 上述检查，以及 13 个视频的帧数与解码画面对照 |
 
 **`rebuild` 会覆盖手工修改。** 手工编辑 `.blend` 后使用 `export`、`pose-preview`、`render` 更新交付文件。验证器按约定的骨骼、部件、动作和源码设计，结构变化时应同步源码与元数据。

@@ -1,0 +1,388 @@
+{
+  "before": {
+    "passed": false,
+    "state_combinations": 15,
+    "probes": {
+      "front": 15450,
+      "cleared": 10800,
+      "sidewall": 9450,
+      "painted": 14100,
+      "failed": 4990
+    },
+    "failures": [
+      {
+        "states": [
+          "Open",
+          "Neutral"
+        ],
+        "pixel": [
+          -1,
+          22
+        ],
+        "normal": [
+          0,
+          0,
+          -1
+        ],
+        "expected": "Charcoal outline",
+        "actual": "Fur",
+        "distance": 0.029999736696481705
+      },
+      {
+        "states": [
+          "Open",
+          "Neutral"
+        ],
+        "pixel": [
+          -1,
+          22
+        ],
+        "normal": [
+          0,
+          0,
+          -1
+        ],
+        "expected": "Charcoal outline",
+        "actual": "Fur",
+        "distance": 0.029999732971191406
+      },
+      {
+        "states": [
+          "Open",
+          "Neutral"
+        ],
+        "pixel": [
+          -1,
+          22
+        ],
+        "normal": [
+          0,
+          0,
+          -1
+        ],
+        "expected": "Charcoal outline",
+        "actual": "Fur",
+        "distance": 0.029999732971191406
+      },
+      {
+        "states": [
+          "Open",
+          "Neutral"
+        ],
+        "pixel": [
+          -1,
+          22
+        ],
+        "normal": [
+          0,
+          0,
+          -1
+        ],
+        "expected": "Charcoal outline",
+        "actual": "Fur",
+        "distance": 0.029999736696481705
+      },
+      {
+        "states": [
+          "Open",
+          "Neutral"
+        ],
+        "pixel": [
+          -1,
+          22
+        ],
+        "normal": [
+          0,
+          0,
+          -1
+        ],
+        "expected": "Charcoal outline",
+        "actual": "Fur",
+        "distance": 0.029999732971191406
+      },
+      {
+        "states": [
+          "Open",
+          "Neutral"
+        ],
+        "pixel": [
+          0,
+          22
+        ],
+        "normal": [
+          0,
+          0,
+          -1
+        ],
+        "expected": "Charcoal outline",
+        "actual": "Fur",
+        "distance": 0.029999732971191406
+      },
+      {
+        "states": [
+          "Open",
+          "Neutral"
+        ],
+        "pixel": [
+          0,
+          22
+        ],
+        "normal": [
+          0,
+          0,
+          -1
+        ],
+        "expected": "Charcoal outline",
+        "actual": "Fur",
+        "distance": 0.029999732971191406
+      },
+      {
+        "states": [
+          "Open",
+          "Neutral"
+        ],
+        "pixel": [
+          0,
+          22
+        ],
+        "normal": [
+          0,
+          0,
+          -1
+        ],
+        "expected": "Charcoal outline",
+        "actual": "Fur",
+        "distance": 0.029999732971191406
+      },
+      {
+        "states": [
+          "Open",
+          "Neutral"
+        ],
+        "pixel": [
+          0,
+          22
+        ],
+        "normal": [
+          0,
+          0,
+          -1
+        ],
+        "expected": "Charcoal outline",
+        "actual": "Fur",
+        "distance": 0.029999732971191406
+      },
+      {
+        "states": [
+          "Open",
+          "Neutral"
+        ],
+        "pixel": [
+          0,
+          22
+        ],
+        "normal": [
+          0,
+          0,
+          -1
+        ],
+        "expected": "Charcoal outline",
+        "actual": "Charcoal outline",
+        "distance": 0.029999732971191406
+      },
+      {
+        "states": [
+          "Open",
+          "Neutral"
+        ],
+        "pixel": [
+          -2,
+          23
+        ],
+        "normal": [
+          0,
+          0,
+          -1
+        ],
+        "expected": "Charcoal outline",
+        "actual": "Fur",
+        "distance": 0.029999732971191406
+      },
+      {
+        "states": [
+          "Open",
+          "Neutral"
+        ],
+        "pixel": [
+          -2,
+          23
+        ],
+        "normal": [
+          0,
+          0,
+          -1
+        ],
+        "expected": "Charcoal outline",
+        "actual": "Fur",
+        "distance": 0.029999734833836555
+      },
+      {
+        "states": [
+          "Open",
+          "Neutral"
+        ],
+        "pixel": [
+          -2,
+          23
+        ],
+        "normal": [
+          0,
+          0,
+          -1
+        ],
+        "expected": "Charcoal outline",
+        "actual": "Charcoal outline",
+        "distance": 0.029999732971191406
+      },
+      {
+        "states": [
+          "Open",
+          "Neutral"
+        ],
+        "pixel": [
+          -2,
+          23
+        ],
+        "normal": [
+          0,
+          0,
+          -1
+        ],
+        "expected": "Charcoal outline",
+        "actual": "Fur",
+        "distance": 0.029999731108546257
+      },
+      {
+        "states": [
+          "Open",
+          "Neutral"
+        ],
+        "pixel": [
+          -2,
+          23
+        ],
+        "normal": [
+          0,
+          0,
+          -1
+        ],
+        "expected": "Charcoal outline",
+        "actual": "Charcoal outline",
+        "distance": 0.029999732971191406
+      },
+      {
+        "states": [
+          "Open",
+          "Neutral"
+        ],
+        "pixel": [
+          -1,
+          23
+        ],
+        "normal": [
+          0,
+          0,
+          -1
+        ],
+        "expected": "Tongue",
+        "actual": "Fur",
+        "distance": 0.029999734833836555
+      },
+      {
+        "states": [
+          "Open",
+          "Neutral"
+        ],
+        "pixel": [
+          -1,
+          23
+        ],
+        "normal": [
+          0,
+          0,
+          -1
+        ],
+        "expected": "Tongue",
+        "actual": "Fur",
+        "distance": 0.029999731108546257
+      },
+      {
+        "states": [
+          "Open",
+          "Neutral"
+        ],
+        "pixel": [
+          -1,
+          23
+        ],
+        "normal": [
+          0,
+          0,
+          -1
+        ],
+        "expected": "Tongue",
+        "actual": "Fur",
+        "distance": 0.029999731108546257
+      },
+      {
+        "states": [
+          "Open",
+          "Neutral"
+        ],
+        "pixel": [
+          -1,
+          23
+        ],
+        "normal": [
+          0,
+          0,
+          -1
+        ],
+        "expected": "Tongue",
+        "actual": "Fur",
+        "distance": 0.029999729245901108
+      },
+      {
+        "states": [
+          "Open",
+          "Neutral"
+        ],
+        "pixel": [
+          -1,
+          23
+        ],
+        "normal": [
+          0,
+          0,
+          -1
+        ],
+        "expected": "Tongue",
+        "actual": "Fur",
+        "distance": 0.029999732971191406
+      }
+    ]
+  },
+  "after": {
+    "passed": true,
+    "state_combinations": 15,
+    "probes": {
+      "front": 15450,
+      "cleared": 10800,
+      "sidewall": 9450,
+      "painted": 14100
+    },
+    "failures": []
+  },
+  "before_blend_sha256": "69e2069356db8da3fa9b8787450af8c15c3d406bc74bb764f9b83df7d3db36f5",
+  "after_blend_sha256": "5bc477a46a56274352c3ed69df73264217c8d6923d2deecc3b0f0d707ac391c0"
+}

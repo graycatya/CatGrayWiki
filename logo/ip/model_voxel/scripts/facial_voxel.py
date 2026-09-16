@@ -1,7 +1,7 @@
 """Pixel face states carried by glTF morph targets, with STEP animation.
 
 Unused colored tiles are stored inside the opaque head. Each morph translates
-one state to the front surface; there are no zero-area faces, textures,
+one state to the front surface and its exposed voxel sidewalls; no textures,
 visibility drivers, or animated materials. Eyes and mouths switch independently.
 """
 import math
@@ -16,6 +16,7 @@ MOUTHS = ("Neutral","Closed","A","E","O","Joy","Sad","Pain","Angry")
 STATES = tuple("Eyes_"+s for s in EYES)+tuple("Mouth_"+s for s in MOUTHS)
 DEFAULT = ("Eyes_Open","Mouth_Neutral")
 DEPTH = 1.3
+SURFACE_OFFSET_RATIO = .06
 
 
 def animated_paint(x,z):
@@ -95,12 +96,33 @@ def mouth_pixel(state,x,z):
     return None
 
 
-def build_face(head_cells,step,materials,rig,collection):
+def front_cells(head_cells,step):
     front = {}
     for (i,j,k),color in head_cells.items():
         x,y,z = ((v+.5)*step for v in (i,j,k))
         if in_loft(x,y,profile_at(HEAD,z)):
             front[i,k] = min(j,front.get((i,k),j))
+    return front
+
+
+def tile_bounds(cell,head_cells,step):
+    """Wrap one whole voxel; expand only faces exposed on the gray head.
+
+    Expanding shared faces would overlap adjacent colors on coplanar fronts.
+    Keeping the old shallow depth would leave gray stair risers uncovered.
+    """
+    lower = [v*step for v in cell]
+    upper = [(v+1)*step for v in cell]
+    for direction,_ in DIRECTIONS:
+        neighbor = tuple(p+d for p,d in zip(cell,direction))
+        if neighbor not in head_cells:
+            axis = next(i for i,d in enumerate(direction) if d)
+            (upper if direction[axis]>0 else lower)[axis] += direction[axis]*step*SURFACE_OFFSET_RATIO
+    return lower,upper
+
+
+def build_face(head_cells,step,materials,rig,collection):
+    front = front_cells(head_cells,step)
     vertices,faces,colors,ranges = [],[],[],{}
     for state in STATES:
         start = len(vertices)
@@ -111,9 +133,11 @@ def build_face(head_cells,step,materials,rig,collection):
             if color is None:
                 continue
             base = len(vertices)
-            # Full colored voxel tiles seated just in front of the head surface.
+            lower,upper = tile_bounds((i,j,k),head_cells,step)
             for a,b,c in ((0,0,0),(1,0,0),(0,1,0),(1,1,0),(0,0,1),(1,0,1),(0,1,1),(1,1,1)):
-                vertices.append(((i+a)*step,j*step-.006+b*.045+DEPTH,(k+c)*step))
+                vertices.append((upper[0] if a else lower[0],
+                                 (upper[1] if b else lower[1])+DEPTH,
+                                 upper[2] if c else lower[2]))
             for _,corners in DIRECTIONS:
                 faces.append(tuple(base+a+2*b+4*c for a,b,c in corners))
                 colors.append(color-1)
@@ -133,6 +157,7 @@ def build_face(head_cells,step,materials,rig,collection):
     obj.modifiers.new("Follow Head","ARMATURE").object = rig
     obj["bone"],obj["voxels"],obj["is_face"] = "Head",0,True
     obj["hiding_strategy"] = "Unused pixel states embedded inside opaque head; STEP morph weights"
+    obj["surface_strategy"] = "Full voxel tiles; only exposed head faces offset outwards"
     obj.shape_key_add(name="Basis")
     for state,(a,b) in ranges.items():
         key = obj.shape_key_add(name=state,from_mix=False)
@@ -142,6 +167,8 @@ def build_face(head_cells,step,materials,rig,collection):
     obj.data.shape_keys.name = "CatGray • Facial states"
     return obj,{"object":FACE,"morph_targets":list(STATES),"vertices":len(vertices),"quads":len(faces),
                 "tiles_per_state":{n:(b-a)//8 for n,(a,b) in ranges.items()},"interpolation":"STEP",
+                "surface_coverage":"front_and_exposed_voxel_sidewalls",
+                "surface_offset":step*SURFACE_OFFSET_RATIO,"tile_depth":step,
                 "default_states":list(DEFAULT),"external_textures":False}
 
 

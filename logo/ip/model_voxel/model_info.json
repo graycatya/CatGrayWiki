@@ -421,6 +421,9 @@
       "Mouth_Angry": 14
     },
     "interpolation": "STEP",
+    "surface_coverage": "front_and_exposed_voxel_sidewalls",
+    "surface_offset": 0.006,
+    "tile_depth": 0.1,
     "default_states": [
       "Eyes_Open",
       "Mouth_Neutral"

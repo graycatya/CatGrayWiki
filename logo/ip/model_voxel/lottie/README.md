@@ -10,12 +10,15 @@
 
 全套动画直接采样原始 GLB 的骨骼、形态键及其插值，每秒 24 帧。
 将共面三角形合并，按实际深度裁切遮挡，再转换为二维矢量路径；背景透明，无图片资源。
+交叉平面按深度相等线分区裁切；布尔运算使用统一精度网格，避免播放时内部色块被误裁掉。
 身体动作采用略偏侧的全身正交视角；头部、表情动作采用接近正面的头部近景。
 采用简化的矢量明暗，不包含原摄影棚的真实光影。所有动作已烘焙为二维路径，不能改变相机或实时混合骨骼。
 逐帧矢量文件较大，适合按需加载独立动作；移动端性能和其他 Lottie 播放器仍需在目标设备验证。
 
 重建：安装 `numpy`、`shapely` 后，在模型目录运行 `python scripts/export_all_lottie.py`。
 可用 `CATGRAY_LOTTIE_DEPS` 指定额外的 Python 包目录。此脚本会更新全套预览首页。
+回归检查：`python scripts/test_lottie_occlusion.py`，检查交叉遮挡和运动帧的轮廓覆盖。
+浏览器检查：`python scripts/verify_lottie.py`；可用 `CATGRAY_CHROME` 指定 Chrome/Chromium 可执行文件。
 
 ## 最初的正面表情循环
 

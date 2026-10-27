@@ -173,6 +173,49 @@ class Model:
         return result
 
 
+def front_half_plane(delta, bounds):
+    """Clip a bounding rectangle to dx*x + dy*y + dc >= 0."""
+    x0, y0, x1, y1 = bounds
+    corners = [(x0-1, y0-1), (x1+1, y0-1), (x1+1, y1+1), (x0-1, y1+1)]
+    result = []
+    for a, b in zip(corners, corners[1:]+corners[:1]):
+        da, db = np.dot(delta, [*a, 1]), np.dot(delta, [*b, 1])
+        if da >= 0:
+            result.append(a)
+        if (da >= 0) != (db >= 0):
+            f = da/(da-db)
+            result.append((a[0]+f*(b[0]-a[0]), a[1]+f*(b[1]-a[1])))
+    return Polygon(result) if len(result) >= 3 else Polygon()
+
+
+def occlusion_cuts(polygons, planes):
+    """Use affine depth over the entire overlap, including intersecting planes."""
+    pairs = shapely.STRtree(polygons).query(polygons, predicate='intersects')
+    pairs = pairs[:, pairs[0] < pairs[1]]
+    intersections = shapely.intersection(polygons[pairs[0]], polygons[pairs[1]])
+    keep = shapely.area(intersections) > .00001
+    pairs, intersections = pairs[:, keep], intersections[keep]
+    cuts = {}
+    for (a, b), overlap in zip(pairs.T, intersections):
+        delta = planes[a]-planes[b]
+        coords = shapely.get_coordinates(overlap)
+        depths = coords @ delta[:2]+delta[2]
+        lo, hi = depths.min(), depths.max()
+        if max(abs(lo), abs(hi)) < .000001:
+            continue  # Coplanar faces do not occlude one another.
+        if lo >= 0:
+            cuts.setdefault(b, []).append(overlap)
+        elif hi <= 0:
+            cuts.setdefault(a, []).append(overlap)
+        else:
+            # Each face is in front on one side of the depth equality line.
+            front_a = overlap.intersection(front_half_plane(delta, overlap.bounds))
+            front_b = overlap.difference(front_a)
+            cuts.setdefault(b, []).append(front_a)
+            cuts.setdefault(a, []).append(front_b)
+    return cuts
+
+
 def projected(model, animation, frame, head_only):
     skins, weights = model.sample(animation, frame/24)
     camera = np.array([.34, .14, 1.] if not head_only else [0., .08, 1.])
@@ -207,25 +250,13 @@ def projected(model, animation, frame, head_only):
         dy = n.dot(up)/scale/denominator
         dc = n.dot(transformed[0][0, :3]-center)/denominator-256*dx-256*dy
         depth_planes.append([dx, dy, dc])
-    polygons = np.array([Polygon(rings[0], rings[1:]) for _,_,rings in faces], dtype=object)
+    # Use a shared precision grid during Boolean operations. Near-coincident
+    # voxel edges otherwise produce unstable slivers and even whole-face holes.
+    polygons = shapely.set_precision(
+        np.array([Polygon(rings[0], rings[1:]) for _,_,rings in faces], dtype=object), .00001)
     # Clip each plane by overlapping planes that are closer to the camera.
     # Merged faces cannot be sorted correctly by a single centroid depth.
-    pairs = shapely.STRtree(polygons).query(polygons, predicate='intersects')
-    pairs = pairs[:, pairs[0] < pairs[1]]
-    intersections = shapely.intersection(polygons[pairs[0]], polygons[pairs[1]])
-    keep = shapely.area(intersections) > .00001
-    pairs, intersections = pairs[:, keep], intersections[keep]
-    points = shapely.point_on_surface(intersections)
-    xy = np.column_stack((shapely.get_x(points), shapely.get_y(points), np.ones(len(points))))
-    planes = np.array(depth_planes)
-    depths_a = np.sum(planes[pairs[0]]*xy, axis=1)
-    depths_b = np.sum(planes[pairs[1]]*xy, axis=1)
-    cuts = {}
-    for k, (a,b) in enumerate(pairs.T):
-        if abs(depths_a[k]-depths_b[k]) < .000001:
-            continue
-        behind = a if depths_a[k] < depths_b[k] else b
-        cuts.setdefault(behind, []).append(intersections[k])
+    cuts = occlusion_cuts(polygons, np.array(depth_planes))
     by_color = {}
     for i, (_, color, _) in enumerate(faces):
         visible = polygons[i].difference(unary_union(cuts[i])) if i in cuts else polygons[i]
@@ -233,12 +264,13 @@ def projected(model, animation, frame, head_only):
             by_color.setdefault(tuple(color), []).append(visible)
     visible_faces = []
     for color, pieces in by_color.items():
-        merged = unary_union(pieces).simplify(.025, preserve_topology=True)
-        parts = [merged] if merged.geom_type == 'Polygon' else list(merged.geoms)
+        merged = unary_union(pieces).simplify(.00001, preserve_topology=True)
+        parts = shapely.get_parts(merged)
         for part in parts:
             if part.geom_type == 'Polygon' and part.area > .005:
                 # Keep precision until after clipping to avoid intersecting rounding slivers.
-                rings = [np.round(np.array(r.coords)[:-1], 2).tolist()
+                part = shapely.geometry.polygon.orient(part, sign=-1)
+                rings = [np.round(np.array(r.coords)[:-1], 5).tolist()
                          for r in [part.exterior, *part.interiors]]
                 visible_faces.append((0, list(color), rings))
     return visible_faces

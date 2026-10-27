@@ -3,12 +3,12 @@
     {
       "name": "Walk_InPlace",
       "assets": 32,
-      "bytes": 5221826,
+      "bytes": 5795705,
       "browser_state": {
         "ready": true,
         "totalFrames": 32,
         "frame": 31,
-        "paths": 1607,
+        "paths": 1656,
         "images": 0
       },
       "screenshot": "Walk_InPlace.png"
@@ -16,25 +16,25 @@
     {
       "name": "Run_InPlace",
       "assets": 16,
-      "bytes": 2603946,
+      "bytes": 2884069,
       "browser_state": {
         "ready": true,
         "totalFrames": 16,
         "frame": 15,
-        "paths": 778,
+        "paths": 794,
         "images": 0
       },
       "screenshot": "Run_InPlace.png"
     },
     {
       "name": "Jump",
-      "assets": 48,
-      "bytes": 7649018,
+      "assets": 45,
+      "bytes": 7887575,
       "browser_state": {
         "ready": true,
         "totalFrames": 48,
         "frame": 47,
-        "paths": 2097,
+        "paths": 2105,
         "images": 0
       },
       "screenshot": "Jump.png"
@@ -42,7 +42,7 @@
     {
       "name": "Head_Nod",
       "assets": 37,
-      "bytes": 3027407,
+      "bytes": 3295632,
       "browser_state": {
         "ready": true,
         "totalFrames": 48,
@@ -55,7 +55,7 @@
     {
       "name": "Head_Shake",
       "assets": 45,
-      "bytes": 5674863,
+      "bytes": 6433508,
       "browser_state": {
         "ready": true,
         "totalFrames": 48,
@@ -67,8 +67,8 @@
     },
     {
       "name": "Head_Turn",
-      "assets": 57,
-      "bytes": 7245513,
+      "assets": 55,
+      "bytes": 7907047,
       "browser_state": {
         "ready": true,
         "totalFrames": 72,
@@ -81,7 +81,7 @@
     {
       "name": "Blink",
       "assets": 3,
-      "bytes": 223750,
+      "bytes": 249847,
       "browser_state": {
         "ready": true,
         "totalFrames": 36,
@@ -94,75 +94,75 @@
     {
       "name": "Mouth_Talk",
       "assets": 7,
-      "bytes": 534982,
+      "bytes": 601206,
       "browser_state": {
         "ready": true,
         "totalFrames": 72,
         "frame": 71,
-        "paths": 1228,
+        "paths": 1241,
         "images": 0
       },
       "screenshot": "Mouth_Talk.png"
     },
     {
       "name": "Emotion_Joy",
-      "assets": 67,
-      "bytes": 7602397,
+      "assets": 65,
+      "bytes": 8480283,
       "browser_state": {
         "ready": true,
         "totalFrames": 72,
         "frame": 71,
-        "paths": 1537,
+        "paths": 1593,
         "images": 0
       },
       "screenshot": "Emotion_Joy.png"
     },
     {
       "name": "Emotion_Sad",
-      "assets": 33,
-      "bytes": 4053741,
+      "assets": 30,
+      "bytes": 4283620,
       "browser_state": {
         "ready": true,
         "totalFrames": 72,
         "frame": 71,
-        "paths": 1858,
+        "paths": 1861,
         "images": 0
       },
       "screenshot": "Emotion_Sad.png"
     },
     {
       "name": "Emotion_Pain",
-      "assets": 65,
-      "bytes": 7576811,
+      "assets": 62,
+      "bytes": 8451547,
       "browser_state": {
         "ready": true,
         "totalFrames": 72,
         "frame": 71,
-        "paths": 1519,
+        "paths": 1565,
         "images": 0
       },
       "screenshot": "Emotion_Pain.png"
     },
     {
       "name": "Emotion_Angry",
-      "assets": 68,
-      "bytes": 8631275,
+      "assets": 65,
+      "bytes": 9310616,
       "browser_state": {
         "ready": true,
         "totalFrames": 72,
         "frame": 71,
-        "paths": 1802,
+        "paths": 1806,
         "images": 0
       },
       "screenshot": "Emotion_Angry.png"
     }
   ],
-  "browser": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+  "browser": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
   "combined": {
     "ready": true,
     "totalFrames": 852,
     "frame": 851,
-    "paths": 26052,
+    "paths": 26433,
     "images": 0
   }
 }

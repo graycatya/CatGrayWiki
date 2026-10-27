@@ -1,9 +1,12 @@
 """Verify all vector assets and render representative frames using local Chrome."""
 import concurrent.futures
 import json
+import os
 from pathlib import Path
 import re
+import shutil
 import subprocess
+import tempfile
 
 from export_lottie import OUT
 
@@ -34,13 +37,18 @@ def main():
     qa = OUT / 'qa_all_actions'
     qa.mkdir(exist_ok=True)
     manifest = json.loads((dest / 'manifest.json').read_text(encoding='utf-8'))
-    chrome = Path('C:/Program Files/Google/Chrome/Application/chrome.exe')
+    chrome = (os.environ.get('CATGRAY_CHROME') or shutil.which('chromium')
+              or shutil.which('google-chrome')
+              or 'C:/Program Files/Google/Chrome/Application/chrome.exe')
+    assert Path(chrome).exists(), 'Set CATGRAY_CHROME to a Chrome/Chromium executable'
+    profiles = tempfile.TemporaryDirectory(prefix='catgray-lottie-chrome-')
     report = {'clips': [], 'browser': str(chrome)}
     def check(clip):
         name = clip['name']
         animation = json.loads((dest / f'{name}.json').read_text(encoding='utf-8'))
         asset_count = inspect(animation)
         common = [str(chrome), '--headless', '--disable-gpu', '--no-sandbox',
+                  '--user-data-dir='+str(Path(profiles.name)/name),
                   '--allow-file-access-from-files', '--virtual-time-budget=2500', '--window-size=700,780']
         uri = (dest / f'{name}.html').as_uri()
         result = subprocess.run(common+['--dump-dom', uri+f'?frame={clip["frames"]-1}&qa=1'],
@@ -66,6 +74,7 @@ def main():
     assert combined['op'] == 852 and len(combined['markers']) == 12
     uri = (dest / 'CatGray_All_Actions.html').as_uri()+'?frame=851&qa=1'
     result = subprocess.run([str(chrome), '--headless', '--disable-gpu', '--no-sandbox',
+                             '--user-data-dir='+str(Path(profiles.name)/'combined'),
                              '--allow-file-access-from-files', '--virtual-time-budget=4000', '--dump-dom', uri],
                             capture_output=True, timeout=120)
     html = result.stdout.decode('utf-8', errors='replace')
@@ -84,6 +93,7 @@ def main():
     sheet.save(qa / 'all_actions.png')
     (qa / 'verification.json').write_text(json.dumps(report, indent=2), encoding='utf-8')
     print('All 12 clips and 852-frame combined animation verified.', flush=True)
+    profiles.cleanup()
 
 
 if __name__ == '__main__':

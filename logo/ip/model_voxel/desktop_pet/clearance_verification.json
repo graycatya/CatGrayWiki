@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "tolerance": 0.01,
+  "sampling": "24 FPS, half-frame increments",
+  "scope": [
+    "upper arms/head",
+    "forearms/head",
+    "forearms/torso",
+    "working arms/keyboard"
+  ],
+  "exclusions": [
+    "attached upper-arm/torso joints",
+    "other body part pairs"
+  ],
+  "actions": {
+    "Thinking": {
+      "samples": 145,
+      "incidents": []
+    },
+    "Working": {
+      "samples": 97,
+      "incidents": []
+    },
+    "Waiting": {
+      "samples": 193,
+      "incidents": []
+    },
+    "Speaking": {
+      "samples": 145,
+      "incidents": []
+    }
+  }
+}

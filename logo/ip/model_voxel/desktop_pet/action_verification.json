@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "speechMouth": {
+    "dedicatedShapes": [
+      "Mouth_TalkMedium",
+      "Mouth_TalkOpen",
+      "Mouth_TalkRest",
+      "Mouth_TalkSmall"
+    ],
+    "oneActiveShapePerFrame": true,
+    "legacyMouthShapesUsed": false
+  },
+  "sourceActionsPreserved": true,
+  "nativeTimeline": {
+    "Thinking": {
+      "start": 1,
+      "end": 72,
+      "keyboardVisible": false,
+      "nativeNlaMotion": true
+    },
+    "Working": {
+      "start": 73,
+      "end": 120,
+      "keyboardVisible": true,
+      "nativeNlaMotion": true
+    },
+    "Waiting": {
+      "start": 121,
+      "end": 216,
+      "keyboardVisible": false,
+      "nativeNlaMotion": true
+    },
+    "Speaking": {
+      "start": 217,
+      "end": 288,
+      "keyboardVisible": false,
+      "nativeNlaMotion": true
+    }
+  },
+  "bakedActions": {
+    "Thinking": {
+      "loopClosed": true,
+      "feetPlanted": true,
+      "maximumBoneMatrixChange": 0.1733347587287426,
+      "frames": 72
+    },
+    "Working": {
+      "loopClosed": true,
+      "feetPlanted": true,
+      "maximumBoneMatrixChange": 0.1733577363193035,
+      "frames": 48
+    },
+    "Waiting": {
+      "loopClosed": true,
+      "feetPlanted": true,
+      "maximumBoneMatrixChange": 0.4895002469420433,
+      "frames": 96
+    },
+    "Speaking": {
+      "loopClosed": true,
+      "feetPlanted": true,
+      "maximumBoneMatrixChange": 0.1733347587287426,
+      "frames": 72
+    }
+  }
+}

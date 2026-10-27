@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "checks": [
+    "four local MP4s decode at 384x416",
+    "all four videos autoplay and advance"
+  ]
+}

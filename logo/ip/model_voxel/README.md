@@ -139,3 +139,7 @@ python3 manage.py --blender /path/to/blender --threads 6 render
 ```
 
 Blender 坐标为 **Z 向上、正面朝 -Y**，GLB 使用标准 glTF 的 Y 向上坐标。模型没有对应现实单位。VOX 是独立的静态编辑副本，其中的修改不会自动同步到骨骼工程。
+
+## 桌宠 Sprite 角色包
+
+[desktop_pet/](desktop_pet/README.md) 提供统一全身镜头的透明 Sprite 角色包，覆盖七个标准状态，以及走、跑、跳扩展动作。打开 [离线预览](desktop_pet/preview.html) 检查动作。制作源仍为本目录的 Blender 模型，桌宠导出不会覆盖现有 GLB 或 Lottie。

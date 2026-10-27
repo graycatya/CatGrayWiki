@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": [
+    "offline image loading",
+    "preview/manifest parity",
+    "seven state switches",
+    "pause/resume",
+    "state switch while paused",
+    "jump returns to logical state",
+    "2x scaling"
+  ]
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MathPath · 数学基础重建</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-mark">∑</div>
+      <div class="brand-txt"><b>MathPath</b><span>数学基础重建</span></div>
+    </div>
+
+    <div class="side-scroll">
+      <div class="side-section-title">学习路径</div>
+      <div class="track-tabs" id="trackTabs"></div>
+      <div id="navTree"></div>
+      <div class="side-section-title side-gap">工具</div>
+      <div class="side-tools">
+        <button class="side-tool" id="btnMap"><span class="st-ico">▦</span>学习地图</button>
+        <button class="side-tool" id="btnDiag"><span class="st-ico">◎</span>入学诊断</button>
+        <button class="side-tool" id="btnWrong"><span class="st-ico">✎</span>错题本 <em id="wrongCount"></em></button>
+        <button class="side-tool" id="btnIndex"><span class="st-ico">▤</span>课本索引</button>
+      </div>
+    </div>
+    <div class="side-foot">
+      <div class="foot-row"><span>总进度</span><b id="footPct">0%</b></div>
+      <div class="foot-bar"><i id="footFill"></i></div>
+      <div class="foot-note" id="footNote">0 / 0 个知识点已掌握</div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <button class="menu-btn" id="menuBtn" aria-label="菜单">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <div class="crumb" id="crumb">学习地图</div>
+      <div class="top-actions">
+        <span class="top-badge" id="topBadge">小学 → 初中 → 甲种本</span>
+        <button class="btn btn-ghost" id="btnReset" title="清空全部学习记录">重置进度</button>
+      </div>
+    </header>
+
+    <div class="content" id="content">
+      <!-- 由 app.js 填充 -->
+    </div>
+  </main>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/core.js"></script>
+<script src="js/views.js"></script>
+<script src="js/course-primary.js"></script>
+<script src="js/course-middle.js"></script>
+<script src="js/course-bridge.js"></script>
+<script src="js/course-alg.js"></script>
+<script src="js/course-geo.js"></script>
+<script src="js/course-calc.js"></script>
+<script src="js/textbook-index.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
